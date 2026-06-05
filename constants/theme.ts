@@ -1,44 +1,49 @@
 /**
  * Design Tokens — Single source of truth for all colors, spacing, and typography.
- * NO hardcoded color values anywhere else in the codebase.
- * All values reference these tokens via NativeWind className strings.
+ * Neubrutalism Theme — inspired by the provided Homelogy UI.
  */
 
 export const ThemeColors = {
   // Brand
-  primary: '#6C3DE8',          // Deep violet
-  primaryLight: '#8B5CF6',     // Light violet
-  primaryDark: '#4C1D95',      // Dark violet
-  accent: '#F59E0B',           // Amber accent
+  primary: '#FFD166',          // Warm yellow (for main buttons)
+  primaryLight: '#FFE3A1',     // Lighter yellow
+  primaryDark: '#E5B13D',      // Darker yellow
 
-  // Background layers
-  background: '#0A0A0F',       // App background
-  surface: '#12121A',          // Card surface
-  surfaceElevated: '#1A1A26',  // Elevated surface
-  border: '#2A2A3A',           // Borders
+  // Accents
+  accent: '#A0E8AF',           // Mint green (used in headers/tabbars)
+  accentSecondary: '#F1EAFD',  // Soft lavender (app background)
+  accentPeach: '#FFB5A7',      // Soft peach
+  accentBlue: '#A9DEF9',       // Soft blue
+
+  // Backgrounds
+  background: '#F8F4FF',       // Lavender white app bg
+  surface: '#FFFFFF',          // Pure white cards
+  surfaceElevated: '#FFFFFF',  // Also white
+  surfaceMint: '#C6EDD4',      // Mint background for tab/header
+  border: '#000000',           // Heavy black border
 
   // Text
-  textPrimary: '#F8FAFC',      // Main text
-  textSecondary: '#94A3B8',    // Secondary text
-  textMuted: '#64748B',        // Muted text
+  textPrimary: '#000000',      // Solid black text
+  textSecondary: '#444444',    // Dark grey
+  textMuted: '#777777',        // Mid grey
 
-  // Semantic colors
-  success: '#10B981',          // Active/New
-  warning: '#F59E0B',          // Expiring soon
-  danger: '#EF4444',           // Expired / Urgent
-  info: '#3B82F6',             // Informational
+  // Semantic
+  success: '#A0E8AF',          // Mint
+  warning: '#FFD166',          // Yellow
+  danger: '#FF6B6B',           // Red
+  info: '#A9DEF9',             // Blue
 
-  // Category colors (mapped to category keys)
+  // Category palette — pastel blocks
   categories: {
-    SSC: '#8B5CF6',
-    UPSC: '#3B82F6',
-    Railway: '#F59E0B',
-    Banking: '#10B981',
-    Police: '#EF4444',
-    Teaching: '#06B6D4',
-    Defence: '#F97316',
-    State: '#EC4899',
-    All: '#6C3DE8',
+    SSC: '#E2D4F0',      // Purple pastel
+    UPSC: '#A9DEF9',     // Blue pastel
+    Railway: '#FFD166',  // Yellow
+    Banking: '#A0E8AF',  // Mint
+    Police: '#FFB5A7',   // Peach
+    Teaching: '#F4C2C2', // Pink pastel
+    Defence: '#FF9F1C',  // Orange
+    State: '#C6EDD4',    // Light mint
+    All: '#FFFFFF',      // White
   },
 } as const;
 
@@ -71,7 +76,33 @@ export const ThemeBorderRadius = {
   md: 12,
   lg: 16,
   xl: 20,
+  xxl: 24,
   full: 9999,
+} as const;
+
+// The classic Neubrutalist offset shadow
+export const ThemeShadow = {
+  card: {
+    shadowColor: '#000',
+    shadowOffset: { width: 4, height: 4 },
+    shadowOpacity: 1,
+    shadowRadius: 0,
+    elevation: 8, // For Android (though it uses standard blur, React Native handles it best this way)
+  },
+  button: {
+    shadowColor: '#000',
+    shadowOffset: { width: 3, height: 3 },
+    shadowOpacity: 1,
+    shadowRadius: 0,
+    elevation: 6,
+  },
+  sheet: {
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: -4 },
+    shadowOpacity: 1,
+    shadowRadius: 0,
+    elevation: 10,
+  }
 } as const;
 
 export type CategoryKey = keyof typeof ThemeColors.categories;

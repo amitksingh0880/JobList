@@ -13,8 +13,8 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import type { Job } from '../types/job';
-import { formatDeadline, getDeadlineUrgency } from '../services/jobsService';
-import { ThemeColors, ThemeBorderRadius, ThemeSpacing, ThemeFonts } from '../constants/theme';
+import { formatDeadline } from '../services/jobsService';
+import { ThemeColors, ThemeBorderRadius, ThemeSpacing, ThemeFonts, ThemeShadow } from '../constants/theme';
 
 const { height: SCREEN_HEIGHT } = Dimensions.get('window');
 
@@ -71,16 +71,6 @@ export const JobDetailSheet: React.FC<JobDetailSheetProps> = ({
 
   if (!job) return null;
 
-  const urgency = getDeadlineUrgency(job.lastDate);
-  const deadlineColors: Record<string, string> = {
-    expired: ThemeColors.textMuted,
-    critical: ThemeColors.danger,
-    warning: ThemeColors.warning,
-    safe: ThemeColors.success,
-  };
-  const deadlineColor = deadlineColors[urgency];
-  const categoryColor = ThemeColors.categories[job.category as keyof typeof ThemeColors.categories] ?? ThemeColors.primary;
-
   return (
     <Modal
       visible={visible}
@@ -96,103 +86,98 @@ export const JobDetailSheet: React.FC<JobDetailSheetProps> = ({
       <Animated.View
         style={[styles.sheet, { transform: [{ translateY: slideAnim }] }]}
       >
-        {/* Handle */}
-        <View style={styles.handle} />
-
-        {/* Header */}
-        <View style={styles.header}>
-          <View style={[styles.deptBadge, { backgroundColor: `${categoryColor}15`, borderColor: `${categoryColor}30` }]}>
-            <Text style={[styles.deptBadgeText, { color: categoryColor }]}>{job.departmentShort}</Text>
-          </View>
-          <Pressable onPress={onClose} style={styles.closeBtn} hitSlop={10}>
-            <Ionicons name="close" size={22} color={ThemeColors.textSecondary} />
-          </Pressable>
-        </View>
-
         <ScrollView showsVerticalScrollIndicator={false} style={styles.content}>
-          {/* Title */}
-          <Text style={styles.title}>{job.title}</Text>
-          <Text style={styles.department}>{job.department}</Text>
+          {/* Header */}
+          <View style={styles.header}>
+            <Pressable onPress={onClose} hitSlop={10} style={styles.iconBtn}>
+              <Ionicons name="arrow-back" size={24} color="#000" />
+            </Pressable>
+            <View style={styles.headerPill}>
+              <Text style={styles.headerPillText}>{job.departmentShort}</Text>
+            </View>
+            <Pressable onPress={onBookmark} hitSlop={10} style={styles.iconBtn}>
+              <Ionicons
+                name={isBookmarked ? 'bookmark' : 'bookmark-outline'}
+                size={22}
+                color="#000"
+              />
+            </Pressable>
+          </View>
+
+          {/* Title Box */}
+          <View style={[styles.cardBox, { backgroundColor: ThemeColors.primaryLight, marginBottom: ThemeSpacing.xl }]}>
+            <Text style={styles.title}>{job.title}</Text>
+            <Text style={styles.department}>{job.department}</Text>
+          </View>
 
           {/* Key Stats Grid */}
           <View style={styles.statsGrid}>
             <StatCard
-              icon="people-outline"
-              label="Total Posts"
-              value={job.totalPosts > 0 ? job.totalPosts.toLocaleString('en-IN') : 'Eligibility'}
-              color={ThemeColors.primary}
+              icon="people"
+              label="Posts"
+              value={job.totalPosts > 0 ? job.totalPosts.toLocaleString('en-IN') : 'Check'}
             />
             <StatCard
-              icon="time-outline"
-              label="Last Date"
+              icon="time"
+              label="Deadline"
               value={formatDeadline(job.lastDate)}
-              color={deadlineColor}
             />
             <StatCard
-              icon="calendar-outline"
-              label="Age Limit"
-              value={`${job.ageLimit.min} – ${job.ageLimit.max === 999 ? 'No limit' : job.ageLimit.max} yrs`}
-              color={ThemeColors.info}
+              icon="calendar"
+              label="Age"
+              value={`${job.ageLimit.min}-${job.ageLimit.max === 999 ? 'N/A' : job.ageLimit.max}y`}
             />
             <StatCard
-              icon="cash-outline"
-              label="Gen Fee"
+              icon="wallet"
+              label="Fee"
               value={job.applicationFee.general === 0 ? 'FREE' : `₹${job.applicationFee.general}`}
-              color={ThemeColors.warning}
             />
           </View>
 
           {/* Qualification */}
           <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Qualification</Text>
-            <Text style={styles.sectionBody}>{job.qualification}</Text>
+            <View style={[styles.cardBox, { backgroundColor: '#FFF' }]}>
+              <Text style={styles.sectionTitle}>Qualification</Text>
+              <Text style={styles.sectionBody}>{job.qualification}</Text>
+            </View>
           </View>
 
           {/* Important Dates */}
           <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Important Dates</Text>
-            {job.importantDates.map((d, i) => (
-              <View {...{ key: i }} style={styles.dateRow}>
-                <Text style={styles.dateLabel}>{d.label}</Text>
-                <Text style={styles.dateValue}>
-                  {new Date(d.date).toLocaleDateString('en-IN', {
-                    day: '2-digit',
-                    month: 'short',
-                    year: 'numeric',
+            <View style={[styles.cardBox, { backgroundColor: '#FFF' }]}>
+              <Text style={styles.sectionTitle}>Important Dates</Text>
+              {job.importantDates.map((d, i) => (
+                <View {...{ key: i }} style={[styles.dateRow, i === job.importantDates.length - 1 && { borderBottomWidth: 0 }]}>
+                  <Text style={styles.dateLabel}>{d.label}</Text>
+                  <Text style={styles.dateValue}>
+                    {new Date(d.date).toLocaleDateString('en-IN', {
+                      day: '2-digit',
+                      month: 'short',
+                      year: 'numeric',
                     })}
-                </Text>
-              </View>
-            ))}
-          </View>
-
-          {/* Fee Table */}
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Application Fee</Text>
-            <View style={styles.feeTable}>
-              <FeeRow label="General / OBC / EWS" fee={job.applicationFee.general} />
-              <FeeRow label="SC / ST" fee={job.applicationFee.sc_st} />
-              <FeeRow label="Female (All Categories)" fee={job.applicationFee.female} />
+                  </Text>
+                </View>
+              ))}
             </View>
           </View>
-        </ScrollView>
 
-        {/* Action Buttons */}
-        <View style={styles.actions}>
-          <Pressable style={styles.viewFullBtn} onPress={onViewFull}>
-            <Text style={styles.viewFullBtnText}>View Full Details</Text>
-            <Ionicons name="arrow-forward" size={16} color={ThemeColors.textPrimary} />
-          </Pressable>
-
-          {job.applyLink && (
-            <Pressable
-              style={styles.applyBtn}
-              onPress={() => Linking.openURL(job.applyLink!)}
-            >
-              <Ionicons name="open-outline" size={16} color={ThemeColors.textPrimary} />
-              <Text style={styles.applyBtnText}>Apply Online</Text>
+          {/* Action Buttons */}
+          <View style={styles.actions}>
+            <Pressable style={styles.viewFullBtn} onPress={onViewFull}>
+              <Text style={styles.viewFullBtnText}>Details</Text>
             </Pressable>
-          )}
-        </View>
+
+            {job.applyLink && (
+              <Pressable
+                style={styles.applyBtn}
+                onPress={() => Linking.openURL(job.applyLink!)}
+              >
+                <Text style={styles.applyBtnText}>Apply Now</Text>
+              </Pressable>
+            )}
+          </View>
+          <View style={{ height: 40 }} />
+        </ScrollView>
       </Animated.View>
     </Modal>
   );
@@ -202,28 +187,17 @@ const StatCard = ({
   icon,
   label,
   value,
-  color,
 }: {
   icon: any;
   label: string;
   value: string;
-  color: string;
 }) => (
-  <View style={[statStyles.card, { borderColor: `${color}30` }]}>
-    <View style={[statStyles.iconWrap, { backgroundColor: `${color}15` }]}>
-      <Ionicons name={icon} size={16} color={color} />
+  <View style={statStyles.card}>
+    <Ionicons name={icon} size={20} color="#000" />
+    <View style={statStyles.textWrap}>
+      <Text style={statStyles.label}>{label}</Text>
+      <Text style={statStyles.value} numberOfLines={1}>{value}</Text>
     </View>
-    <Text style={statStyles.label}>{label}</Text>
-    <Text style={[statStyles.value, { color }]} numberOfLines={1}>{value}</Text>
-  </View>
-);
-
-const FeeRow = ({ label, fee }: { label: string; fee: number }) => (
-  <View style={feeStyles.row}>
-    <Text style={feeStyles.label}>{label}</Text>
-    <Text style={[feeStyles.fee, { color: fee === 0 ? ThemeColors.success : ThemeColors.textPrimary }]}>
-      {fee === 0 ? 'FREE' : `₹${fee}`}
-    </Text>
   </View>
 );
 
@@ -234,196 +208,181 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'rgba(0,0,0,0.7)',
+    backgroundColor: 'rgba(0,0,0,0.4)',
   },
   sheet: {
     position: 'absolute',
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: ThemeColors.surfaceElevated,
-    borderTopLeftRadius: ThemeBorderRadius.xl,
-    borderTopRightRadius: ThemeBorderRadius.xl,
-    maxHeight: SCREEN_HEIGHT * 0.88,
-    borderWidth: 1,
-    borderColor: ThemeColors.border,
+    backgroundColor: ThemeColors.accentSecondary,
+    borderTopLeftRadius: ThemeBorderRadius.xxl,
+    borderTopRightRadius: ThemeBorderRadius.xxl,
+    borderWidth: 3,
+    borderColor: '#000',
     borderBottomWidth: 0,
-  },
-  handle: {
-    width: 40,
-    height: 4,
-    backgroundColor: ThemeColors.border,
-    borderRadius: ThemeBorderRadius.full,
-    alignSelf: 'center',
-    marginTop: ThemeSpacing.sm,
+    maxHeight: SCREEN_HEIGHT * 0.9,
+    paddingTop: ThemeSpacing.lg,
+    ...ThemeShadow.sheet,
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: ThemeSpacing.xl,
-    paddingTop: ThemeSpacing.md,
-    paddingBottom: ThemeSpacing.sm,
+    marginBottom: ThemeSpacing.xl,
   },
-  deptBadge: {
-    borderWidth: 1,
-    paddingHorizontal: ThemeSpacing.sm,
-    paddingVertical: 4,
-    borderRadius: ThemeBorderRadius.sm,
+  iconBtn: {
+    width: 44,
+    height: 44,
+    backgroundColor: '#FFF',
+    borderWidth: 2,
+    borderColor: '#000',
+    borderRadius: ThemeBorderRadius.full,
+    alignItems: 'center',
+    justifyContent: 'center',
+    ...ThemeShadow.button,
   },
-  deptBadgeText: {
-    fontSize: ThemeFonts.sizes.xs,
-    fontWeight: '700',
-    letterSpacing: 0.5,
+  headerPill: {
+    backgroundColor: '#FFF',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderRadius: ThemeBorderRadius.full,
+    borderWidth: 2,
+    borderColor: '#000',
+    ...ThemeShadow.button,
   },
-  closeBtn: { padding: 4 },
-  content: { paddingHorizontal: ThemeSpacing.xl },
+  headerPillText: {
+    fontSize: ThemeFonts.sizes.md,
+    fontWeight: '800',
+    color: '#000',
+  },
+  content: { 
+    paddingHorizontal: ThemeSpacing.lg,
+  },
+  cardBox: {
+    borderRadius: ThemeBorderRadius.xl,
+    padding: ThemeSpacing.lg,
+    borderWidth: 2,
+    borderColor: '#000',
+    ...ThemeShadow.card,
+    elevation: 4,
+  },
   title: {
     color: ThemeColors.textPrimary,
     fontSize: ThemeFonts.sizes.xl,
-    fontWeight: '800',
+    fontWeight: '900',
     lineHeight: 28,
-    marginBottom: 4,
+    marginBottom: 8,
   },
   department: {
     color: ThemeColors.textSecondary,
-    fontSize: ThemeFonts.sizes.sm,
-    fontWeight: '500',
-    marginBottom: ThemeSpacing.lg,
+    fontSize: ThemeFonts.sizes.md,
+    fontWeight: '700',
   },
   statsGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: ThemeSpacing.sm,
-    marginBottom: ThemeSpacing.lg,
+    gap: ThemeSpacing.md,
+    marginBottom: ThemeSpacing.xl,
   },
   section: {
-    marginBottom: ThemeSpacing.lg,
+    marginBottom: ThemeSpacing.xl,
   },
   sectionTitle: {
-    color: ThemeColors.textSecondary,
-    fontSize: ThemeFonts.sizes.xs,
-    fontWeight: '700',
-    letterSpacing: 1,
-    textTransform: 'uppercase',
-    marginBottom: ThemeSpacing.sm,
+    color: ThemeColors.textPrimary,
+    fontSize: ThemeFonts.sizes.lg,
+    fontWeight: '900',
+    marginBottom: ThemeSpacing.md,
   },
   sectionBody: {
-    color: ThemeColors.textPrimary,
-    fontSize: ThemeFonts.sizes.sm,
-    lineHeight: 20,
+    color: ThemeColors.textSecondary,
+    fontSize: ThemeFonts.sizes.md,
+    lineHeight: 24,
+    fontWeight: '600',
   },
   dateRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingVertical: 6,
-    borderBottomWidth: 1,
-    borderBottomColor: ThemeColors.border,
+    paddingVertical: 12,
+    borderBottomWidth: 2,
+    borderBottomColor: '#000',
   },
   dateLabel: {
     color: ThemeColors.textSecondary,
-    fontSize: ThemeFonts.sizes.sm,
+    fontSize: ThemeFonts.sizes.md,
+    fontWeight: '700',
     flex: 1,
   },
   dateValue: {
     color: ThemeColors.textPrimary,
-    fontSize: ThemeFonts.sizes.sm,
-    fontWeight: '600',
-  },
-  feeTable: {
-    backgroundColor: ThemeColors.surface,
-    borderRadius: ThemeBorderRadius.md,
-    borderWidth: 1,
-    borderColor: ThemeColors.border,
-    overflow: 'hidden',
+    fontSize: ThemeFonts.sizes.md,
+    fontWeight: '900',
   },
   actions: {
     flexDirection: 'row',
-    padding: ThemeSpacing.lg,
-    gap: ThemeSpacing.sm,
-    borderTopWidth: 1,
-    borderTopColor: ThemeColors.border,
+    gap: ThemeSpacing.lg,
+    marginTop: ThemeSpacing.sm,
   },
   viewFullBtn: {
     flex: 1,
-    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: ThemeColors.surfaceElevated,
-    borderWidth: 1,
-    borderColor: ThemeColors.border,
-    borderRadius: ThemeBorderRadius.md,
-    paddingVertical: ThemeSpacing.md,
-    gap: ThemeSpacing.xs,
+    backgroundColor: '#FFF',
+    borderWidth: 2,
+    borderColor: '#000',
+    borderRadius: ThemeBorderRadius.full,
+    paddingVertical: 16,
+    ...ThemeShadow.button,
   },
   viewFullBtnText: {
     color: ThemeColors.textPrimary,
-    fontSize: ThemeFonts.sizes.sm,
-    fontWeight: '700',
+    fontSize: ThemeFonts.sizes.md,
+    fontWeight: '900',
   },
   applyBtn: {
-    flex: 1,
-    flexDirection: 'row',
+    flex: 1.5,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: ThemeColors.primary,
-    borderRadius: ThemeBorderRadius.md,
-    paddingVertical: ThemeSpacing.md,
-    gap: ThemeSpacing.xs,
+    borderWidth: 2,
+    borderColor: '#000',
+    borderRadius: ThemeBorderRadius.full,
+    paddingVertical: 16,
+    ...ThemeShadow.button,
   },
   applyBtnText: {
-    color: ThemeColors.textPrimary,
-    fontSize: ThemeFonts.sizes.sm,
-    fontWeight: '700',
+    color: '#000',
+    fontSize: ThemeFonts.sizes.md,
+    fontWeight: '900',
   },
 });
 
 const statStyles = StyleSheet.create({
   card: {
     width: '47%',
-    backgroundColor: ThemeColors.surface,
-    borderWidth: 1,
-    borderRadius: ThemeBorderRadius.md,
+    backgroundColor: '#FFF',
+    borderRadius: ThemeBorderRadius.lg,
     padding: ThemeSpacing.md,
-  },
-  iconWrap: {
-    width: 32,
-    height: 32,
-    borderRadius: ThemeBorderRadius.sm,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: ThemeSpacing.xs,
-  },
-  label: {
-    color: ThemeColors.textMuted,
-    fontSize: 10,
-    fontWeight: '600',
-    letterSpacing: 0.5,
-    marginBottom: 2,
-  },
-  value: {
-    fontSize: ThemeFonts.sizes.sm,
-    fontWeight: '800',
-  },
-});
-
-const feeStyles = StyleSheet.create({
-  row: {
+    borderWidth: 2,
+    borderColor: '#000',
     flexDirection: 'row',
-    justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: ThemeSpacing.md,
-    paddingVertical: ThemeSpacing.sm,
-    borderBottomWidth: 1,
-    borderBottomColor: ThemeColors.border,
+    gap: 12,
+    ...ThemeShadow.button,
+    elevation: 3,
+  },
+  textWrap: {
+    flex: 1,
   },
   label: {
     color: ThemeColors.textSecondary,
-    fontSize: ThemeFonts.sizes.sm,
-    flex: 1,
+    fontSize: 12,
+    fontWeight: '800',
+    marginBottom: 2,
   },
-  fee: {
+  value: {
+    color: ThemeColors.textPrimary,
     fontSize: ThemeFonts.sizes.sm,
-    fontWeight: '700',
+    fontWeight: '900',
   },
 });

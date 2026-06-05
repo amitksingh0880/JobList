@@ -1,225 +1,272 @@
 /**
- * SarkariResult Crawler — Scrapes the latest government job vacancies,
- * results, admit cards, and answer keys, saving them to a local JSON file.
- * Run using: npm run crawl
+ * Dual-Source Crawler — Scrapes SarkariResult + GovtJobsAlert,
+ * merges unique jobs by title, and writes to data/jobs.json.
+ * Run: npm run crawl
  */
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const TARGET_URL = 'https://www.sarkariresult.com/';
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 
-console.log('Starting SarkariResult Crawler...');
-
-// Fetch the HTML page
 function fetchPage(url) {
   return new Promise((resolve, reject) => {
-    const options = {
-      headers: { 'User-Agent': USER_AGENT }
-    };
-    https.get(url, options, (res) => {
-      if (res.statusCode !== 200) {
-        reject(new Error(`Failed to fetch page. Status: ${res.statusCode}`));
-        return;
-      }
+    https.get(url, { headers: { 'User-Agent': USER_AGENT } }, (res) => {
+      if (res.statusCode !== 200) { reject(new Error(`Status ${res.statusCode}`)); return; }
       let html = '';
-      res.on('data', chunk => html += chunk);
+      res.on('data', c => html += c);
       res.on('end', () => resolve(html));
     }).on('error', reject);
   });
 }
 
-// Map exam keywords to predefined categories
-function getCategory(title, desc) {
-  const t = (title + ' ' + desc).toLowerCase();
+// ─── Shared Helpers ────────────────────────────────────────────────────────────
+
+function getCategory(text) {
+  const t = text.toLowerCase();
   if (t.includes('ssc') || t.includes('staff selection')) return 'SSC';
   if (t.includes('upsc') || t.includes('union public service')) return 'UPSC';
-  if (t.includes('railway') || t.includes('rrb') || t.includes('rrc')) return 'Railway';
-  if (t.includes('bank') || t.includes('ibps') || t.includes('sbi') || t.includes('rbi') || t.includes('insurance') || t.includes('po ') || t.includes('clerk')) return 'Banking';
-  if (t.includes('police') || t.includes('constable') || t.includes('sub inspector') || t.includes('si ') || t.includes('cop ') || t.includes('daroga')) return 'Police';
-  if (t.includes('teacher') || t.includes('teaching') || t.includes('tet') || t.includes('tgt') || t.includes('pgt') || t.includes('professor') || t.includes('lecturer') || t.includes('school') || t.includes('d.el.ed')) return 'Teaching';
-  if (t.includes('defence') || t.includes('army') || t.includes('navy') || t.includes('air force') || t.includes('military') || t.includes('nda') || t.includes('cds') || t.includes('agniveer') || t.includes('bsf') || t.includes('crpf') || t.includes('itbp') || t.includes('cisf')) return 'Defence';
-  return 'State'; // Default category
+  if (t.includes('railway') || t.includes('rrb') || t.includes('rrc') || t.includes('ntpc') || t.includes('alp') || t.includes('loco pilot')) return 'Railway';
+  if (t.includes('bank') || t.includes('ibps') || t.includes('sbi') || t.includes('rbi') || t.includes('lic') || t.includes('nabard') || t.includes('insurance') || t.includes('po ') || t.includes('clerk') || t.includes('apprentice')) return 'Banking';
+  if (t.includes('police') || t.includes('constable') || t.includes('sub inspector') || t.includes(' si ') || t.includes('daroga') || t.includes('bsf') || t.includes('crpf') || t.includes('cisf') || t.includes('itbp') || t.includes('ssb ')) return 'Police';
+  if (t.includes('teacher') || t.includes('teaching') || t.includes(' tet') || t.includes('tgt') || t.includes('pgt') || t.includes('professor') || t.includes('lecturer') || t.includes('school') || t.includes('d.el.ed') || t.includes('ctet') || t.includes('htet') || t.includes('jhtet')) return 'Teaching';
+  if (t.includes('defence') || t.includes('army') || t.includes('navy') || t.includes('air force') || t.includes('military') || t.includes('nda') || t.includes('cds') || t.includes('agniveer') || t.includes('havildar') || t.includes('jco') || t.includes('ssb')) return 'Defence';
+  return 'State';
 }
 
-// Map link text to tab status (latest, results, admit_card, answer_key)
 function getStatus(text) {
   const t = text.toLowerCase();
-  if (t.includes('result') || t.includes('score card') || t.includes('marks')) return 'results';
-  if (t.includes('admit card') || t.includes('exam city') || t.includes('exam date') || t.includes('admitcard') || t.includes('hall ticket')) return 'admit_card';
-  if (t.includes('answer key') || t.includes('answerkey') || t.includes('key paper')) return 'answer_key';
+  if (t.includes('result') || t.includes('score card') || t.includes('marks out') || t.includes('merit list')) return 'results';
+  if (t.includes('admit card') || t.includes('exam city') || t.includes('hall ticket') || t.includes('call letter')) return 'admit_card';
+  if (t.includes('answer key') || t.includes('answerkey') || t.includes('key paper') || t.includes('response sheet')) return 'answer_key';
   return 'latest';
 }
 
-// Deduce clean department name by splitting common text suffixes
-function getDepartment(title) {
-  const cleanTitle = title.replace(/\s+/g, ' ').trim();
-  const splitKeywords = [
-    'Online Form', 'Apply Online', 'Admit Card', 'Result', 
-    'Answer Key', 'Exam City', 'Recruitment', 'Vacancy', 
-    'Various Post', 'Admission', 'Entrance', 'Score Card',
-    'Tier I', 'Tier II', 'Compartment', 'Counseling', 'Document Verification'
+function getDepartmentShort(dept) {
+  const words = dept.split(/\s+/);
+  const acronyms = words.filter(w => /^[A-Z]{2,10}$/.test(w));
+  return acronyms.length > 0 ? acronyms.join(' ') : words.slice(0, 2).join(' ');
+}
+
+function getQualification(text) {
+  const t = text.toLowerCase();
+  if (t.includes('technician') || t.includes(' iti')) return '10th Pass with ITI Certificate';
+  if (t.includes('ldc') || t.includes('stenographer') || t.includes('chsl') || t.includes('constable') || t.includes('agniveer')) return '10+2 / Intermediate Pass';
+  if (t.includes('teacher') || t.includes('lecturer') || t.includes('professor') || t.includes('tet')) return 'B.Ed / D.El.Ed / Graduate in Education';
+  if (t.includes('engineer') || t.includes(' je ') || t.includes('junior engineer')) return 'Diploma / B.E. / B.Tech in Engineering';
+  if (t.includes('nursing') || t.includes('medical') || t.includes('doctor')) return 'B.Sc Nursing / GNM / MBBS';
+  if (t.includes('officer') || t.includes('grade b') || t.includes(' aao') || t.includes(' po ') || t.includes('manager')) return 'Graduate Degree (Any Stream)';
+  return '10th / 12th / Graduation as per post';
+}
+
+function makeDates(lastDateStr) {
+  const today = new Date();
+  let lastDate;
+  if (lastDateStr) {
+    const year = /\d{4}/.test(lastDateStr) ? '' : ` ${today.getFullYear()}`;
+    const parsed = new Date(`${lastDateStr}${year}`);
+    lastDate = isNaN(parsed.getTime()) ? new Date(today.getTime() + 14 * 86400000) : parsed;
+  } else {
+    lastDate = new Date(today.getTime() + (Math.floor(Math.random() * 20) + 5) * 86400000);
+  }
+  const notif = new Date(today.getTime() - Math.floor(Math.random() * 5) * 86400000);
+  return { lastDate: lastDate.toISOString(), notif: notif.toISOString() };
+}
+
+function makeJob({ id, title, department, totalPosts, lastDateStr, salary, status, applyLink, category }) {
+  const dept = department || title.split(/recruitment|online form|apply|result|admit card|answer key/i)[0].trim().replace(/[^A-Za-z0-9\s]/g,'').replace(/\b202\d\b/g,'').trim() || 'Central Govt';
+  const { lastDate, notif } = makeDates(lastDateStr);
+  const cat = category || getCategory(title);
+  const qual = getQualification(title);
+  const feeGen = status === 'latest' && Math.random() > 0.5 ? (Math.random() > 0.5 ? 500 : 100) : 0;
+  const today = new Date();
+
+  return {
+    id,
+    title,
+    department: dept,
+    departmentShort: getDepartmentShort(dept),
+    category: cat,
+    totalPosts: totalPosts || (status === 'latest' ? Math.floor(Math.random() * 900) + 50 : 0),
+    lastDate,
+    notificationDate: notif,
+    applicationStartDate: notif,
+    applicationEndDate: lastDate,
+    ageLimit: { min: 18, max: cat === 'Defence' ? 22 : 35, relaxation: 'As per government rules' },
+    qualification: qual,
+    applicationFee: { general: feeGen, sc_st: feeGen > 0 ? Math.floor(feeGen / 2) : 0, female: 0 },
+    applyLink,
+    notificationLink: applyLink,
+    status,
+    isNew: (today.getTime() - new Date(notif).getTime()) < 3 * 86400000,
+    isUrgent: (new Date(lastDate).getTime() - today.getTime()) < 3 * 86400000 && (new Date(lastDate).getTime() - today.getTime()) > 0,
+    description: `Government recruitment notification for ${title}. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.`,
+    howToApply: [
+      'Click "Apply Online" to visit the official recruitment page.',
+      'Read the detailed notification / advertisement carefully.',
+      'Register with your email and phone number on the official portal.',
+      'Fill in personal, educational, and experience details.',
+      'Upload photo, signature and required documents.',
+      'Pay the application fee (if applicable) and submit.',
+      'Download and save the confirmation / printout.'
+    ],
+    importantDates: [
+      { label: 'Notification Released', date: notif },
+      { label: 'Application Start Date', date: notif },
+      { label: 'Last Date to Apply', date: lastDate }
+    ],
+    salary: salary || (status === 'latest' ? (cat === 'Railway' ? '₹21,700 – ₹69,100/- PM' : cat === 'Banking' ? '₹35,000 – ₹1,05,000/- PM' : '₹25,500 – ₹81,100/- PM') : undefined),
+    location: 'All India'
+  };
+}
+
+// ─── Source 1: SarkariResult ────────────────────────────────────────────────────
+
+async function crawlSarkariResult() {
+  console.log('  Fetching SarkariResult.com...');
+  const html = await fetchPage('https://www.sarkariresult.com/');
+  console.log(`  Fetched ${html.length} bytes`);
+  const jobs = [];
+  const seen = new Set();
+  const linkRx = /<a\s+[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
+  let m;
+  while ((m = linkRx.exec(html)) !== null) {
+    const href = m[1];
+    const rawText = m[2].replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+    if (!rawText || rawText.length < 5 || rawText.toLowerCase() === 'view more') continue;
+    if (!(/\/2025\//i.test(href) || /\/2026\//i.test(href))) continue;
+    const id = href.split('/').filter(Boolean).pop() || '';
+    if (!id || seen.has(id)) continue;
+    seen.add(id);
+    const status = getStatus(rawText);
+    const postsM = rawText.match(/(\d[\d,]*)\s*(?:post|vacancy|vacancies)/i);
+    const totalPosts = postsM ? parseInt(postsM[1].replace(/,/g, ''), 10) : 0;
+    jobs.push(makeJob({ id, title: rawText, totalPosts, status, applyLink: href }));
+  }
+  console.log(`  SarkariResult: ${jobs.length} jobs`);
+  return jobs;
+}
+
+// ─── Source 2: GovtJobsAlert ────────────────────────────────────────────────────
+
+async function crawlGovtJobsAlert() {
+  console.log('  Fetching govtjobsalert.in...');
+  const html = await fetchPage('https://govtjobsalert.in/');
+  console.log(`  Fetched ${html.length} bytes`);
+  const jobs = [];
+  const seen = new Set();
+  const SKIP_SUFFIXES = [
+    '/govt-jobs/', '/upsc-jobs/', '/ssc-jobs/', '/railway-jobs/', '/banking-jobs/',
+    '/defence-jobs/', '/other-govt-jobs/', '/teaching-faculty-govt-jobs/', '/psu-jobs/',
+    '/results/', '/admit-cards/', '/answer-keys/', '/contact-us/', '/privacy-policy/',
+    '/disclaimer/', '/about-us/', '/sitemap/', '/page/', '#'
   ];
-  let dept = cleanTitle;
-  for (const kw of splitKeywords) {
-    const idx = dept.toLowerCase().indexOf(kw.toLowerCase());
-    if (idx !== -1) {
-      dept = dept.substring(0, idx);
+  const linkRx = /<a\s+[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
+  let m;
+  while ((m = linkRx.exec(html)) !== null) {
+    const href = m[1];
+    const rawText = m[2].replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+    if (!href.startsWith('https://govtjobsalert.in/')) continue;
+    if (SKIP_SUFFIXES.some(s => href.endsWith(s) || href === 'https://govtjobsalert.in/')) continue;
+    if (rawText.length < 15) continue;
+    const slug = href.split('/').filter(Boolean).pop() || '';
+    if (!slug || seen.has(slug)) continue;
+    seen.add(slug);
+
+    // Parse rich text: "Job PostLast Date: 03 Aug 2026UPSSSC...Vacancy: 1829..."
+    const status = rawText.startsWith('Result') ? 'results'
+      : rawText.startsWith('Admit Card') ? 'admit_card'
+      : rawText.startsWith('Answer Key') ? 'answer_key'
+      : 'latest';
+
+    // Extract last date
+    const ldM = rawText.match(/Last Date:\s*([0-9]{1,2}\s+[A-Za-z]+(?:\s+[0-9]{4})?)/i);
+    const lastDateStr = ldM ? ldM[1] : null;
+
+    // Extract vacancy count
+    const vacM = rawText.match(/Vacancy:\s*([\d,]+)/i);
+    const totalPosts = vacM ? parseInt(vacM[1].replace(/,/g, ''), 10) : 0;
+
+    // Extract org/category
+    const orgM = rawText.match(/Org:\s*([A-Za-z]+)/i);
+    const orgText = orgM ? orgM[1] : '';
+    let category;
+    if (orgText === 'Railway') category = 'Railway';
+    else if (orgText === 'Banking') category = 'Banking';
+    else if (orgText === 'SSC') category = 'SSC';
+    else if (orgText === 'Defence') category = 'Defence';
+    else category = getCategory(rawText);
+
+    // Strip prefix and trailing metadata to get clean title
+    let title = rawText
+      .replace(/^(Job Post|Result|Admit Card|Answer Key)(Trending)?/i, '')
+      .replace(ldM ? `Last Date: ${ldM[1]}` : '', '')
+      .split(/(?:State:|Org:|Vacancy:|Updated on)/i)[0]
+      .replace(/&#038;/g, '&')
+      .replace(/&#8211;/g, '–')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    // Extract salary from title if present
+    const salM = title.match(/(₹[\d,]+(?:\s*[–-]\s*₹?[\d,]+)?(?:\s*\/?\s*PM|Per Month)?)/i);
+    const salary = salM ? salM[1].trim() : undefined;
+
+    // Clean salary from title for cleanliness
+    if (salary) title = title.replace(salary, '').replace(/,\s*$/, '').trim();
+    // Remove "Salary" word
+    title = title.replace(/,?\s*Salary\s*$/i, '').trim();
+
+    if (title.length < 5) continue;
+
+    jobs.push(makeJob({ id: slug, title, totalPosts, lastDateStr, salary, status, applyLink: href, category }));
+  }
+  console.log(`  GovtJobsAlert: ${jobs.length} jobs`);
+  return jobs;
+}
+
+// ─── Merge & Deduplicate ────────────────────────────────────────────────────────
+
+function normalizeTitle(t) {
+  return t.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function merge(src1, src2) {
+  const combined = [...src1];
+  const existingTitles = new Set(src1.map(j => normalizeTitle(j.title)));
+  let added = 0;
+  for (const job of src2) {
+    const norm = normalizeTitle(job.title);
+    if (!existingTitles.has(norm)) {
+      combined.push(job);
+      existingTitles.add(norm);
+      added++;
     }
   }
-  
-  // Clean special characters
-  dept = dept.replace(/[^A-Za-z0-9\s]/g, '').trim();
-  // Remove years (like 2026, 2025)
-  dept = dept.replace(/\b202\d\b/g, '').trim();
-  return dept || 'Central Government';
+  console.log(`  Added ${added} unique jobs from GovtJobsAlert not in SarkariResult`);
+  return combined;
 }
 
-// Deduce standard qualification based on title keywords
-function getQualification(title, status) {
-  if (status !== 'latest') return 'Refer to Official Instructions';
-  const t = title.toLowerCase();
-  if (t.includes('technician') || t.includes('iti')) return '10th Pass with ITI Certificate';
-  if (t.includes('ldc') || t.includes('stenographer') || t.includes('chsl') || t.includes('constable')) return '10+2 Intermediate Exam Pass';
-  if (t.includes('graduate') || t.includes('cgl') || t.includes('officer') || t.includes('assistant') || t.includes('manager')) return 'Bachelor Degree in Any Stream';
-  if (t.includes('teacher') || t.includes('lecturer') || t.includes('professor') || t.includes('tet')) return 'Bachelor Degree in Education (B.Ed / D.El.Ed / NET)';
-  if (t.includes('nursing') || t.includes('medical') || t.includes('doctor')) return 'B.Sc Nursing / GNM / MBBS / PG Degree';
-  if (t.includes('engineer') || t.includes('technician') || t.includes('je ')) return 'Diploma / BE / B.Tech in Engineering';
-  return '10th / 12th Pass / Graduate Degree';
-}
+// ─── Main ───────────────────────────────────────────────────────────────────────
 
-// Main execution
 async function main() {
-  try {
-    const html = await fetchPage(TARGET_URL);
-    console.log(`Fetched ${html.length} bytes of HTML.`);
+  console.log('\n🕷️  Starting Dual-Source Job Crawler...\n');
 
-    const jobs = [];
-    const linkRegex = /<a\s+[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
-    let match;
+  const [srJobs, gjaJobs] = await Promise.all([
+    crawlSarkariResult(),
+    crawlGovtJobsAlert()
+  ]);
 
-    while ((match = linkRegex.exec(html)) !== null) {
-      const href = match[1];
-      let text = match[2].replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
-      
-      if (!text || text.length < 5 || text.toLowerCase() === 'view more') continue;
-      
-      // Match active years directories (representing posts)
-      if (/\/2025\//i.test(href) || /\/2026\//i.test(href)) {
-        const id = href.split('/').filter(Boolean).pop() || Math.random().toString(36).substring(7);
-        const status = getStatus(text);
-        const department = getDepartment(text);
-        
-        // Extract acronym
-        const words = department.split(/\s+/);
-        const acronymWords = words.filter(w => /^[A-Z]{2,10}$/.test(w));
-        const departmentShort = acronymWords.length > 0 ? acronymWords.join(' ') : words.slice(0, 2).join(' ');
+  const merged = merge(srJobs, gjaJobs);
+  console.log(`\n📦 Total unique jobs: ${merged.length}`);
 
-        // Deduce total posts
-        let totalPosts = 0;
-        const postMatch = text.match(/(\d+)\s*(?:post|vacancy|vacancies)/i);
-        if (postMatch) {
-          totalPosts = parseInt(postMatch[1], 10);
-        } else {
-          if (status === 'latest') {
-            totalPosts = Math.floor(Math.random() * 850) + 50; // Random posts count for look & feel
-          }
-        }
+  const jsonPath = path.join(__dirname, '..', 'data', 'jobs.json');
+  fs.writeFileSync(jsonPath, JSON.stringify(merged, null, 2), 'utf8');
+  console.log(`✅ Saved → ${jsonPath}`);
 
-        const category = getCategory(text, '');
-        const qualification = getQualification(text, status);
-
-        // Date calculations
-        const today = new Date();
-        const notificationDate = new Date(today.getTime() - Math.floor(Math.random() * 5 * 24 * 60 * 60 * 1000)).toISOString();
-        const lastDate = new Date(today.getTime() + Math.floor(Math.random() * 15 * 24 * 60 * 60 * 1000) + 2 * 24 * 60 * 60 * 1000).toISOString();
-
-        // Calculate application fee
-        const feeGeneral = status === 'latest' ? (Math.random() > 0.4 ? (Math.random() > 0.5 ? 500 : 100) : 0) : 0;
-        const feeScSt = feeGeneral > 0 ? Math.floor(feeGeneral / 2) : 0;
-        const feeFemale = feeGeneral > 0 ? 0 : 0;
-
-        jobs.push({
-          id,
-          title: text,
-          department,
-          departmentShort,
-          category,
-          totalPosts,
-          lastDate,
-          notificationDate,
-          applicationStartDate: notificationDate,
-          applicationEndDate: lastDate,
-          ageLimit: {
-            min: 18,
-            max: status === 'latest' ? (category === 'Defence' ? 22 : 35) : 40,
-            relaxation: 'As per government recruitment guidelines'
-          },
-          qualification,
-          applicationFee: {
-            general: feeGeneral,
-            sc_st: feeScSt,
-            female: feeFemale
-          },
-          applyLink: href,
-          notificationLink: href,
-          status,
-          isNew: (today.getTime() - new Date(notificationDate).getTime()) < (3 * 24 * 60 * 60 * 1000),
-          isUrgent: (new Date(lastDate).getTime() - today.getTime()) < (3 * 24 * 60 * 60 * 1000) && (new Date(lastDate).getTime() - today.getTime()) > 0,
-          description: `Sarkari Result recruitment details for ${text}. Check the official advertisement, online form links, age relaxation rules, pay scale details, exam syllabuses, and complete selection criteria.`,
-          howToApply: [
-            'Click the "Apply Online" button to visit the primary Sarkari Result portal page.',
-            'Read the detailed criteria, requirements, and document checklist.',
-            'Navigate to the application URL at the bottom of the portal page.',
-            'Register, fill in your personal/educational details, and verify credentials.',
-            'Upload scanned copies of required documents (photo, signature, thumb impression).',
-            'Submit the form fee (if applicable) and download your submitted printout.'
-          ],
-          importantDates: [
-            { label: 'Notification Released', date: notificationDate },
-            { label: 'Application Start Date', date: notificationDate },
-            { label: 'Last Date to Apply', date: lastDate }
-          ],
-          salary: status === 'latest' ? (category === 'Railway' ? '₹21,700 – ₹69,100/- PM' : '₹35,400 – ₹1,12,400/- PM') : undefined,
-          location: 'All India'
-        });
-      }
-    }
-
-    // De-duplicate by ID
-    const uniqueJobs = [];
-    const seen = new Set();
-    for (const job of jobs) {
-      if (!seen.has(job.id)) {
-        seen.add(job.id);
-        uniqueJobs.push(job);
-      }
-    }
-
-    console.log(`Successfully parsed ${uniqueJobs.length} unique items.`);
-
-    // Write to data/jobs.json
-    const outputJsonPath = path.join(__dirname, '..', 'data', 'jobs.json');
-    fs.writeFileSync(outputJsonPath, JSON.stringify(uniqueJobs, null, 2), 'utf8');
-    console.log(`Saved parsed data to: ${outputJsonPath}`);
-
-    // Update data/jobs.ts fallback to export MOCK_JOBS as crawled list in case imports fail
-    const outputTsPath = path.join(__dirname, '..', 'data', 'jobs.ts');
-    const tsContent = `// Fallback and mock data generated from crawler
-import type { Job } from '../types/job';
-import jobsJson from './jobs.json';
-
-export const MOCK_JOBS: Job[] = jobsJson as Job[];
-`;
-    fs.writeFileSync(outputTsPath, tsContent, 'utf8');
-    console.log(`Saved fallback module to: ${outputTsPath}`);
-    console.log('Crawler run completed successfully!');
-    
-  } catch (error) {
-    console.error('Crawler failed with error:', error);
-    process.exit(1);
-  }
+  const tsPath = path.join(__dirname, '..', 'data', 'jobs.ts');
+  fs.writeFileSync(tsPath, `// Auto-generated by crawler — do not edit manually\nimport type { Job } from '../types/job';\nimport jobsJson from './jobs.json';\n\nexport const MOCK_JOBS: Job[] = jobsJson as Job[];\n`, 'utf8');
+  console.log(`✅ Saved → ${tsPath}`);
+  console.log('\n🎉 Crawler completed successfully!\n');
 }
 
-main();
+main().catch(e => { console.error('❌ Crawler failed:', e); process.exit(1); });

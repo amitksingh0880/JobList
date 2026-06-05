@@ -18,9 +18,8 @@ import { SkeletonJobCard } from '../../components/SkeletonJobCard';
 import { CategoryChip } from '../../components/CategoryChip';
 import { JobDetailSheet } from '../../components/JobDetailSheet';
 import { EmptyState } from '../../components/EmptyState';
-import { SearchBar } from '../../components/SearchBar';
 import { JOB_CATEGORIES, JOB_TABS } from '../../constants/categories';
-import { ThemeColors, ThemeSpacing, ThemeFonts, ThemeBorderRadius } from '../../constants/theme';
+import { ThemeColors, ThemeSpacing, ThemeFonts, ThemeBorderRadius, ThemeShadow } from '../../constants/theme';
 import type { Job } from '../../types/job';
 import type { JobTabKey } from '../../constants/categories';
 
@@ -34,7 +33,6 @@ export default function HomeScreen() {
     onRefresh,
     setCategory,
     setStatus,
-    setSearchQuery,
   } = useJobs();
   const { isBookmarked, toggleBookmark } = useBookmarks();
 
@@ -71,7 +69,7 @@ export default function HomeScreen() {
         {/* Header */}
         <View style={styles.header}>
           <View>
-            <Text style={styles.headerGreeting}>सरकारी नौकरी 🇮🇳</Text>
+            <Text style={styles.headerGreeting}>GovLink ✨</Text>
             <Text style={styles.headerSubtitle}>Find Your Government Job</Text>
           </View>
           <View style={styles.headerActions}>
@@ -79,22 +77,13 @@ export default function HomeScreen() {
               style={styles.headerBtn}
               onPress={() => router.push('/search')}
             >
-              <Ionicons name="search-outline" size={20} color={ThemeColors.textSecondary} />
+              <Ionicons name="search" size={20} color="#000" />
             </Pressable>
-            <View style={styles.notifBtn}>
-              <Ionicons name="notifications-outline" size={20} color={ThemeColors.textSecondary} />
+            <View style={styles.headerBtn}>
+              <Ionicons name="notifications" size={20} color="#000" />
               <View style={styles.notifDot} />
             </View>
           </View>
-        </View>
-
-        {/* Stats Bar */}
-        <View style={styles.statsBar}>
-          <StatPill icon="briefcase-outline" label="Active Jobs" value="12,000+" />
-          <View style={styles.statDivider} />
-          <StatPill icon="flash-outline" label="New Today" value="47" />
-          <View style={styles.statDivider} />
-          <StatPill icon="time-outline" label="Closing Soon" value="8" />
         </View>
 
         {/* Category Chips */}
@@ -114,34 +103,35 @@ export default function HomeScreen() {
           ))}
         </ScrollView>
 
-        {/* Tab Bar */}
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.tabsScroll}
-          style={styles.tabsContainer}
-        >
-          {JOB_TABS.map((tab) => (
-            <Pressable
-              key={tab.key}
-              onPress={() => setStatus(tab.key as JobTabKey)}
-              style={[
-                styles.tab,
-                filter.status === tab.key && styles.tabActive,
-              ]}
-            >
-              <Text
+        {/* Tab Bar Filter */}
+        <View style={styles.tabsWrapper}>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.tabsScroll}
+            style={styles.tabsContainer}
+          >
+            {JOB_TABS.map((tab) => (
+              <Pressable
+                key={tab.key}
+                onPress={() => setStatus(tab.key as JobTabKey)}
                 style={[
-                  styles.tabText,
-                  filter.status === tab.key && styles.tabTextActive,
+                  styles.tab,
+                  filter.status === tab.key && styles.tabActive,
                 ]}
               >
-                {tab.label}
-              </Text>
-              {filter.status === tab.key && <View style={styles.tabIndicator} />}
-            </Pressable>
-          ))}
-        </ScrollView>
+                <Text
+                  style={[
+                    styles.tabText,
+                    filter.status === tab.key && styles.tabTextActive,
+                  ]}
+                >
+                  {tab.label}
+                </Text>
+              </Pressable>
+            ))}
+          </ScrollView>
+        </View>
 
         {/* Job Count */}
         {!loading && (
@@ -174,8 +164,8 @@ export default function HomeScreen() {
               <RefreshControl
                 refreshing={refreshing}
                 onRefresh={onRefresh}
-                tintColor={ThemeColors.primary}
-                colors={[ThemeColors.primary]}
+                tintColor="#000"
+                colors={['#000']}
               />
             }
           />
@@ -195,24 +185,6 @@ export default function HomeScreen() {
   );
 }
 
-const StatPill = ({
-  icon,
-  label,
-  value,
-}: {
-  icon: any;
-  label: string;
-  value: string;
-}) => (
-  <View style={styles.statPill}>
-    <Ionicons name={icon} size={14} color={ThemeColors.primary} />
-    <View>
-      <Text style={styles.statValue}>{value}</Text>
-      <Text style={styles.statLabel}>{label}</Text>
-    </View>
-  </View>
-);
-
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
@@ -226,146 +198,108 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: ThemeSpacing.lg,
-    paddingTop: ThemeSpacing.md,
-    paddingBottom: ThemeSpacing.sm,
+    paddingHorizontal: ThemeSpacing.xl,
+    paddingTop: ThemeSpacing.lg,
+    paddingBottom: ThemeSpacing.md,
   },
   headerGreeting: {
     color: ThemeColors.textPrimary,
-    fontSize: ThemeFonts.sizes.xl,
-    fontWeight: '800',
-    letterSpacing: -0.3,
+    fontSize: ThemeFonts.sizes.xxl,
+    fontWeight: '900',
+    letterSpacing: -0.5,
   },
   headerSubtitle: {
-    color: ThemeColors.textMuted,
+    color: ThemeColors.textSecondary,
     fontSize: ThemeFonts.sizes.sm,
-    fontWeight: '500',
-    marginTop: 1,
+    fontWeight: '700',
+    marginTop: 2,
   },
   headerActions: {
     flexDirection: 'row',
-    gap: ThemeSpacing.xs,
+    gap: ThemeSpacing.sm,
   },
   headerBtn: {
-    width: 38,
-    height: 38,
-    borderRadius: ThemeBorderRadius.md,
-    backgroundColor: ThemeColors.surface,
-    borderWidth: 1,
-    borderColor: ThemeColors.border,
+    width: 44,
+    height: 44,
+    borderRadius: ThemeBorderRadius.full,
+    backgroundColor: '#FFF',
+    borderWidth: 2,
+    borderColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  notifBtn: {
-    width: 38,
-    height: 38,
-    borderRadius: ThemeBorderRadius.md,
-    backgroundColor: ThemeColors.surface,
-    borderWidth: 1,
-    borderColor: ThemeColors.border,
-    alignItems: 'center',
-    justifyContent: 'center',
+    ...ThemeShadow.button,
   },
   notifDot: {
     position: 'absolute',
-    top: 7,
-    right: 7,
-    width: 8,
-    height: 8,
-    borderRadius: 4,
+    top: 10,
+    right: 12,
+    width: 10,
+    height: 10,
+    borderRadius: 5,
     backgroundColor: ThemeColors.danger,
-    borderWidth: 1.5,
-    borderColor: ThemeColors.background,
-  },
-  statsBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginHorizontal: ThemeSpacing.lg,
-    marginBottom: ThemeSpacing.md,
-    backgroundColor: ThemeColors.surface,
-    borderRadius: ThemeBorderRadius.md,
-    borderWidth: 1,
-    borderColor: ThemeColors.border,
-    paddingVertical: ThemeSpacing.sm,
-    paddingHorizontal: ThemeSpacing.md,
-  },
-  statPill: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-  },
-  statDivider: {
-    width: 1,
-    height: 28,
-    backgroundColor: ThemeColors.border,
-    marginHorizontal: ThemeSpacing.xs,
-  },
-  statValue: {
-    color: ThemeColors.primary,
-    fontSize: ThemeFonts.sizes.sm,
-    fontWeight: '800',
-  },
-  statLabel: {
-    color: ThemeColors.textMuted,
-    fontSize: 10,
-    fontWeight: '500',
+    borderWidth: 2,
+    borderColor: '#000',
   },
   categoryScrollContainer: {
+    marginTop: ThemeSpacing.sm,
     marginBottom: ThemeSpacing.xs,
   },
   categoryScroll: {
     paddingHorizontal: ThemeSpacing.lg,
     paddingVertical: ThemeSpacing.xs,
   },
+  tabsWrapper: {
+    marginHorizontal: ThemeSpacing.lg,
+    marginBottom: ThemeSpacing.sm,
+    backgroundColor: '#FFF',
+    borderRadius: ThemeBorderRadius.full,
+    borderWidth: 2,
+    borderColor: '#000',
+    overflow: 'hidden',
+    ...ThemeShadow.button,
+    elevation: 2,
+  },
   tabsContainer: {
-    borderBottomWidth: 1,
-    borderBottomColor: ThemeColors.border,
-    marginBottom: ThemeSpacing.xs,
+    //
   },
   tabsScroll: {
-    paddingHorizontal: ThemeSpacing.lg,
+    paddingHorizontal: 4,
+    paddingVertical: 4,
   },
   tab: {
-    paddingHorizontal: ThemeSpacing.md,
-    paddingVertical: ThemeSpacing.md,
-    position: 'relative',
-    marginRight: ThemeSpacing.xs,
+    paddingHorizontal: ThemeSpacing.lg,
+    paddingVertical: 10,
+    borderRadius: ThemeBorderRadius.full,
   },
-  tabActive: {},
+  tabActive: {
+    backgroundColor: ThemeColors.primary,
+    borderWidth: 2,
+    borderColor: '#000',
+  },
   tabText: {
-    color: ThemeColors.textMuted,
-    fontSize: ThemeFonts.sizes.sm,
-    fontWeight: '600',
+    color: ThemeColors.textSecondary,
+    fontSize: ThemeFonts.sizes.md,
+    fontWeight: '800',
   },
   tabTextActive: {
-    color: ThemeColors.primary,
-    fontWeight: '700',
-  },
-  tabIndicator: {
-    position: 'absolute',
-    bottom: 0,
-    left: ThemeSpacing.md,
-    right: ThemeSpacing.md,
-    height: 2,
-    backgroundColor: ThemeColors.primary,
-    borderRadius: 1,
+    color: ThemeColors.textPrimary,
+    fontWeight: '900',
   },
   countRow: {
-    paddingHorizontal: ThemeSpacing.lg,
+    paddingHorizontal: ThemeSpacing.xl,
     paddingVertical: ThemeSpacing.xs,
   },
   countText: {
-    color: ThemeColors.textMuted,
-    fontSize: ThemeFonts.sizes.xs,
-    fontWeight: '500',
-  },
-  countNum: {
     color: ThemeColors.textSecondary,
+    fontSize: ThemeFonts.sizes.sm,
     fontWeight: '700',
   },
+  countNum: {
+    color: ThemeColors.textPrimary,
+    fontWeight: '900',
+  },
   listContent: {
-    paddingBottom: ThemeSpacing.xxl,
+    paddingBottom: 100, // Make room for floating tab bar
     paddingTop: ThemeSpacing.xs,
   },
 });

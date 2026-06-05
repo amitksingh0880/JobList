@@ -1,7 +1,7 @@
 import { Tabs } from 'expo-router';
 import { View, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { ThemeColors, ThemeBorderRadius } from '../../constants/theme';
+import { ThemeColors, ThemeBorderRadius, ThemeShadow, ThemeSpacing } from '../../constants/theme';
 
 export default function TabsLayout() {
   return (
@@ -9,7 +9,7 @@ export default function TabsLayout() {
       screenOptions={{
         headerShown: false,
         tabBarStyle: styles.tabBar,
-        tabBarActiveTintColor: ThemeColors.primary,
+        tabBarActiveTintColor: '#000',
         tabBarInactiveTintColor: ThemeColors.textMuted,
         tabBarLabelStyle: styles.tabLabel,
         tabBarBackground: () => <View style={styles.tabBarBg} />,
@@ -18,10 +18,10 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Jobs',
+          title: 'Home',
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? 'briefcase' : 'briefcase-outline'}
+              name={focused ? 'home' : 'home-outline'}
               size={24}
               color={color}
             />
@@ -31,11 +31,11 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="categories"
         options={{
-          title: 'Categories',
+          title: 'Explore',
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? 'grid' : 'grid-outline'}
-              size={24}
+              name={focused ? 'compass' : 'compass-outline'}
+              size={26}
               color={color}
             />
           ),
@@ -73,25 +73,29 @@ export default function TabsLayout() {
 
 const styles = StyleSheet.create({
   tabBar: {
-    backgroundColor: ThemeColors.surfaceElevated,
-    borderTopWidth: 1,
-    borderTopColor: ThemeColors.border,
-    height: 62,
-    paddingBottom: 8,
-    paddingTop: 6,
-    elevation: 20,
-    shadowColor: ThemeColors.primary,
-    shadowOffset: { width: 0, height: -4 },
-    shadowOpacity: 0.08,
-    shadowRadius: 12,
+    position: 'absolute',
+    bottom: ThemeSpacing.lg,
+    left: ThemeSpacing.lg,
+    right: ThemeSpacing.lg,
+    backgroundColor: '#FFF',
+    borderRadius: ThemeBorderRadius.full,
+    borderWidth: 2,
+    borderColor: '#000',
+    height: 70,
+    paddingBottom: 0, // override expo's safe area padding since it's floating
+    borderTopWidth: 2,
+    ...ThemeShadow.button,
+    elevation: 6,
   },
   tabBarBg: {
     flex: 1,
-    backgroundColor: ThemeColors.surfaceElevated,
+    backgroundColor: '#FFF',
+    borderRadius: ThemeBorderRadius.full,
   },
   tabLabel: {
     fontSize: 11,
-    fontWeight: '600',
+    fontWeight: '800',
     letterSpacing: 0.2,
+    marginBottom: 10,
   },
 });

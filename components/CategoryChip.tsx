@@ -6,7 +6,7 @@ import {
   Pressable,
   Animated,
 } from 'react-native';
-import { ThemeColors, ThemeBorderRadius, ThemeSpacing, ThemeFonts } from '../constants/theme';
+import { ThemeColors, ThemeBorderRadius, ThemeSpacing, ThemeFonts, ThemeShadow } from '../constants/theme';
 import type { Category } from '../constants/categories';
 import type { CategoryKey } from '../constants/theme';
 
@@ -25,7 +25,7 @@ export const CategoryChip: React.FC<CategoryChipProps> = ({
 
   const handlePressIn = () => {
     Animated.spring(scaleAnim, {
-      toValue: 0.93,
+      toValue: 0.95,
       useNativeDriver: true,
       tension: 300,
       friction: 20,
@@ -49,29 +49,12 @@ export const CategoryChip: React.FC<CategoryChipProps> = ({
         onPressOut={handlePressOut}
         style={[
           styles.chip,
-          isSelected
-            ? {
-                backgroundColor: `${category.color}22`,
-                borderColor: `${category.color}80`,
-              }
-            : {
-                backgroundColor: ThemeColors.surface,
-                borderColor: ThemeColors.border,
-              },
+          { backgroundColor: isSelected ? ThemeColors.primary : ThemeColors.surface },
+          isSelected && ThemeShadow.button,
         ]}
       >
         <Text style={styles.emoji}>{category.emoji}</Text>
-        <Text
-          style={[
-            styles.label,
-            { color: isSelected ? category.color : ThemeColors.textSecondary },
-          ]}
-        >
-          {category.label}
-        </Text>
-        {isSelected && (
-          <View style={[styles.activeDot, { backgroundColor: category.color }]} />
-        )}
+        <Text style={styles.label}>{category.label}</Text>
       </Pressable>
     </Animated.View>
   );
@@ -82,23 +65,20 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: ThemeSpacing.md,
-    paddingVertical: ThemeSpacing.xs + 2,
+    paddingVertical: 10,
     borderRadius: ThemeBorderRadius.full,
-    borderWidth: 1.5,
-    gap: 5,
-    marginRight: ThemeSpacing.xs,
+    borderWidth: 2,
+    borderColor: ThemeColors.border,
+    gap: 6,
+    marginRight: ThemeSpacing.sm,
+    marginBottom: 6, // space for shadow
   },
   emoji: {
-    fontSize: 13,
+    fontSize: 14,
   },
   label: {
     fontSize: ThemeFonts.sizes.sm,
-    fontWeight: '600',
-  },
-  activeDot: {
-    width: 5,
-    height: 5,
-    borderRadius: 3,
-    marginLeft: 2,
+    fontWeight: '800',
+    color: ThemeColors.textPrimary,
   },
 });
