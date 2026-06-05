@@ -18,14 +18,14 @@ interface SearchBarProps {
   autoFocus?: boolean;
 }
 
-export const SearchBar: React.FC<SearchBarProps> = ({
+export const SearchBar = ({
   value,
   onChangeText,
   onFocus,
   onClear,
   placeholder = 'Search jobs, departments...',
   autoFocus = false,
-}) => {
+}: SearchBarProps) => {
   const [isFocused, setIsFocused] = React.useState(false);
   const borderAnim = React.useRef(new Animated.Value(0)).current;
 

@@ -9,11 +9,11 @@ interface EmptyStateProps {
   subtitle?: string;
 }
 
-export const EmptyState: React.FC<EmptyStateProps> = ({
+export const EmptyState = ({
   icon = 'document-text-outline',
   title,
   subtitle,
-}) => {
+}: EmptyStateProps) => {
   return (
     <View style={styles.container}>
       <View style={styles.iconWrap}>

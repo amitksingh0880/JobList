@@ -9,12 +9,12 @@ interface SkeletonBoxProps {
   style?: object;
 }
 
-const SkeletonBox: React.FC<SkeletonBoxProps> = ({
+const SkeletonBox = ({
   width = '100%',
   height = 16,
   borderRadius = ThemeBorderRadius.sm,
   style,
-}) => {
+}: SkeletonBoxProps) => {
   const shimmer = React.useRef(new Animated.Value(0)).current;
 
   React.useEffect(() => {
@@ -57,7 +57,11 @@ const SkeletonBox: React.FC<SkeletonBoxProps> = ({
   );
 };
 
-export const SkeletonJobCard: React.FC = () => {
+interface SkeletonJobCardProps {
+  key?: React.Key;
+}
+
+export const SkeletonJobCard = ({}: SkeletonJobCardProps) => {
   return (
     <View style={styles.card}>
       {/* Top row */}

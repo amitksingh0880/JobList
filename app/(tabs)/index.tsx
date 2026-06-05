@@ -195,24 +195,25 @@ const styles = StyleSheet.create({
     backgroundColor: ThemeColors.background,
   },
   header: {
+    flexShrink: 0,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: ThemeSpacing.xl,
+    paddingHorizontal: ThemeSpacing.lg,
     paddingTop: ThemeSpacing.lg,
     paddingBottom: ThemeSpacing.md,
   },
   headerGreeting: {
     color: ThemeColors.textPrimary,
-    fontSize: ThemeFonts.sizes.xxl,
+    fontSize: ThemeFonts.sizes.xxxl, // Make it punchier
     fontWeight: '900',
-    letterSpacing: -0.5,
+    letterSpacing: -1,
   },
   headerSubtitle: {
     color: ThemeColors.textSecondary,
     fontSize: ThemeFonts.sizes.sm,
     fontWeight: '700',
-    marginTop: 2,
+    marginTop: 0,
   },
   headerActions: {
     flexDirection: 'row',
@@ -241,6 +242,7 @@ const styles = StyleSheet.create({
     borderColor: '#000',
   },
   categoryScrollContainer: {
+    flexShrink: 0,
     marginTop: ThemeSpacing.sm,
     marginBottom: ThemeSpacing.xs,
   },
@@ -249,8 +251,9 @@ const styles = StyleSheet.create({
     paddingVertical: ThemeSpacing.xs,
   },
   tabsWrapper: {
+    flexShrink: 0,
     marginHorizontal: ThemeSpacing.lg,
-    marginBottom: ThemeSpacing.sm,
+    marginBottom: ThemeSpacing.md,
     backgroundColor: '#FFF',
     borderRadius: ThemeBorderRadius.full,
     borderWidth: 2,
@@ -260,7 +263,7 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   tabsContainer: {
-    //
+    // 
   },
   tabsScroll: {
     paddingHorizontal: 4,
@@ -270,10 +273,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: ThemeSpacing.lg,
     paddingVertical: 10,
     borderRadius: ThemeBorderRadius.full,
+    borderWidth: 2,
+    borderColor: 'transparent',
   },
   tabActive: {
     backgroundColor: ThemeColors.primary,
-    borderWidth: 2,
     borderColor: '#000',
   },
   tabText: {
@@ -282,20 +286,30 @@ const styles = StyleSheet.create({
     fontWeight: '800',
   },
   tabTextActive: {
-    color: ThemeColors.textPrimary,
+    color: '#000',
     fontWeight: '900',
   },
   countRow: {
-    paddingHorizontal: ThemeSpacing.xl,
-    paddingVertical: ThemeSpacing.xs,
+    flexShrink: 0,
+    paddingHorizontal: ThemeSpacing.lg,
+    marginBottom: ThemeSpacing.sm,
+    flexDirection: 'row',
   },
   countText: {
-    color: ThemeColors.textSecondary,
-    fontSize: ThemeFonts.sizes.sm,
-    fontWeight: '700',
+    backgroundColor: '#FFF',
+    borderWidth: 2,
+    borderColor: '#000',
+    paddingHorizontal: ThemeSpacing.md,
+    paddingVertical: 6,
+    borderRadius: ThemeBorderRadius.full,
+    color: ThemeColors.textPrimary,
+    fontSize: ThemeFonts.sizes.xs,
+    fontWeight: '800',
+    ...ThemeShadow.button,
+    elevation: 2,
   },
   countNum: {
-    color: ThemeColors.textPrimary,
+    color: ThemeColors.primaryDark,
     fontWeight: '900',
   },
   listContent: {

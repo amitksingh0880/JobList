@@ -11,16 +11,17 @@ import type { Category } from '../constants/categories';
 import type { CategoryKey } from '../constants/theme';
 
 interface CategoryChipProps {
+  key?: React.Key;
   category: Category;
   isSelected: boolean;
   onPress: (key: CategoryKey) => void;
 }
 
-export const CategoryChip: React.FC<CategoryChipProps> = ({
+export const CategoryChip = ({
   category,
   isSelected,
   onPress,
-}) => {
+}: CategoryChipProps) => {
   const scaleAnim = React.useRef(new Animated.Value(1)).current;
 
   const handlePressIn = () => {

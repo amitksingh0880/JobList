@@ -18,12 +18,12 @@ interface JobCardProps {
   onBookmark: () => void;
 }
 
-export const JobCard: React.FC<JobCardProps> = ({
+export const JobCard = ({
   job,
   isBookmarked,
   onPress,
   onBookmark,
-}) => {
+}: JobCardProps) => {
   const scaleAnim = React.useRef(new Animated.Value(1)).current;
   const urgency = getDeadlineUrgency(job.lastDate);
   const deadlineText = formatDeadline(job.lastDate);

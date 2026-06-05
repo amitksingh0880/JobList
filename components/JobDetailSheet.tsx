@@ -27,14 +27,14 @@ interface JobDetailSheetProps {
   onBookmark: () => void;
 }
 
-export const JobDetailSheet: React.FC<JobDetailSheetProps> = ({
+export const JobDetailSheet = ({
   job,
   visible,
   onClose,
   onViewFull,
   isBookmarked,
   onBookmark,
-}) => {
+}: JobDetailSheetProps) => {
   const slideAnim = React.useRef(new Animated.Value(SCREEN_HEIGHT)).current;
   const backdropAnim = React.useRef(new Animated.Value(0)).current;
 
