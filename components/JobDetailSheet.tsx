@@ -152,14 +152,14 @@ export const JobDetailSheet: React.FC<JobDetailSheetProps> = ({
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Important Dates</Text>
             {job.importantDates.map((d, i) => (
-              <View key={i} style={styles.dateRow}>
+              <View {...{ key: i }} style={styles.dateRow}>
                 <Text style={styles.dateLabel}>{d.label}</Text>
                 <Text style={styles.dateValue}>
                   {new Date(d.date).toLocaleDateString('en-IN', {
                     day: '2-digit',
                     month: 'short',
                     year: 'numeric',
-                  })}
+                    })}
                 </Text>
               </View>
             ))}
@@ -229,7 +229,11 @@ const FeeRow = ({ label, fee }: { label: string; fee: number }) => (
 
 const styles = StyleSheet.create({
   backdrop: {
-    ...StyleSheet.absoluteFillObject,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
     backgroundColor: 'rgba(0,0,0,0.7)',
   },
   sheet: {
