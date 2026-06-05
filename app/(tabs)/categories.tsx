@@ -27,7 +27,6 @@ export default function CategoriesScreen() {
 
   const [selectedJob, setSelectedJob] = React.useState<Job | null>(null);
   const [sheetVisible, setSheetVisible] = React.useState(false);
-  const [viewMode, setViewMode] = React.useState<'grid' | 'list'>('grid');
 
   const activeCat = filter.category;
 
