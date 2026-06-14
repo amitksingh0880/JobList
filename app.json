@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Sarkari Naukri",
-    "slug": "sarkari-naukri",
+    "slug": "joblist",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -37,6 +37,16 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "expo-status-bar": {
+        "style": "light"
+      },
+      "eas": {
+        "projectId": "47dc00bb-5d5e-40fe-9cc6-7293f6ad470b"
+      }
+    },
+    "owner": "amit.k.singh"
   }
 }
