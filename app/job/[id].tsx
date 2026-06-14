@@ -27,6 +27,14 @@ export default function JobDetailScreen() {
     new Set(['dates', 'eligibility'])
   );
 
+  const handleBack = () => {
+    if (router.canGoBack()) {
+      router.back();
+    } else {
+      router.replace('/');
+    }
+  };
+
   React.useEffect(() => {
     if (id) {
       fetchJobById(id).then((j) => {
@@ -71,7 +79,7 @@ export default function JobDetailScreen() {
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.loadingContainer}>
           <Text style={styles.errorText}>Job not found</Text>
-          <Pressable onPress={() => router.back()} style={styles.backButton}>
+          <Pressable onPress={handleBack} style={styles.backButton}>
             <Text style={styles.backButtonText}>Go Back</Text>
           </Pressable>
         </View>
@@ -163,7 +171,7 @@ export default function JobDetailScreen() {
     <SafeAreaView style={styles.safeArea}>
       {/* Top Nav */}
       <View style={styles.topNav}>
-        <Pressable onPress={() => router.back()} style={styles.navBtn} hitSlop={10}>
+        <Pressable onPress={handleBack} style={styles.navBtn} hitSlop={10}>
           <Ionicons name="arrow-back" size={22} color={ThemeColors.textPrimary} />
         </Pressable>
         <Text style={styles.navTitle} numberOfLines={1}>{job.departmentShort}</Text>

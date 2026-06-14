@@ -69,7 +69,7 @@ export default function HomeScreen() {
         {/* Header */}
         <View style={styles.header}>
           <View>
-            <Text style={styles.headerGreeting}>GovLink ✨</Text>
+            <Text style={styles.headerGreeting}>Sarkari Job Listing</Text>
             <Text style={styles.headerSubtitle}>Find Your Government Job</Text>
           </View>
           <View style={styles.headerActions}>
