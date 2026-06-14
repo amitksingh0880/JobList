@@ -11,15 +11,40 @@ import type { JobTabKey } from '../constants/categories';
  * Fetch all jobs.
  */
 export async function fetchJobs(): Promise<Job[]> {
-  // Return pre-crawled jobs list instantly
-  return MOCK_JOBS;
+  const uniqueJobs: Job[] = [];
+  const seenUrls = new Set<string>();
+  const seenTitles = new Set<string>();
+
+  for (const job of MOCK_JOBS) {
+    if (!job.applyLink) {
+      uniqueJobs.push(job);
+      continue;
+    }
+    const url = job.applyLink.toLowerCase().trim();
+    // Normalize title to strip non-alphanumeric and noise words
+    const normTitle = job.title
+      .toLowerCase()
+      .replace(/recruitment|online form|apply|result|admit card|answer key|vacancy|vacancies|job/g, '')
+      .replace(/[^a-z0-9]/g, '');
+
+    if (seenUrls.has(url) || seenTitles.has(normTitle)) {
+      continue;
+    }
+
+    seenUrls.add(url);
+    seenTitles.add(normTitle);
+    uniqueJobs.push(job);
+  }
+
+  return uniqueJobs;
 }
 
 /**
  * Fetch a single job by ID.
  */
 export async function fetchJobById(id: string): Promise<Job | null> {
-  return MOCK_JOBS.find((j) => j.id === id) ?? null;
+  const jobs = await fetchJobs();
+  return jobs.find((j) => j.id === id) ?? null;
 }
 
 /**
@@ -35,6 +60,13 @@ export function filterJobs(jobs: Job[], filter: JobFilter): Job[] {
       job.title.toLowerCase().includes(filter.searchQuery.toLowerCase()) ||
       job.department.toLowerCase().includes(filter.searchQuery.toLowerCase()) ||
       job.category.toLowerCase().includes(filter.searchQuery.toLowerCase());
+
+    // Hide expired jobs under the Latest Jobs tab
+    if (filter.status === 'latest') {
+      const days = getDaysUntilDeadline(job.lastDate);
+      if (days < 0) return false;
+    }
+
     return categoryMatch && statusMatch && searchMatch;
   });
 }
