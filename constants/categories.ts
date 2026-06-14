@@ -3,20 +3,20 @@ import type { CategoryKey } from './theme';
 export interface Category {
   key: CategoryKey;
   label: string;
-  emoji: string;
+  iconName: string;
   color: string;
 }
 
 export const JOB_CATEGORIES: Category[] = [
-  { key: 'All',      label: 'All Jobs',   emoji: '🏛️', color: '#6C3DE8' },
-  { key: 'SSC',      label: 'SSC',        emoji: '📝', color: '#8B5CF6' },
-  { key: 'UPSC',     label: 'UPSC',       emoji: '🎯', color: '#3B82F6' },
-  { key: 'Railway',  label: 'Railway',    emoji: '🚂', color: '#F59E0B' },
-  { key: 'Banking',  label: 'Banking',    emoji: '🏦', color: '#10B981' },
-  { key: 'Police',   label: 'Police',     emoji: '👮', color: '#EF4444' },
-  { key: 'Teaching', label: 'Teaching',   emoji: '📚', color: '#06B6D4' },
-  { key: 'Defence',  label: 'Defence',    emoji: '🪖', color: '#F97316' },
-  { key: 'State',    label: 'State PSC',  emoji: '🏢', color: '#EC4899' },
+  { key: 'All',      label: 'All Jobs',   iconName: 'grid-outline', color: '#E2D4F0' },
+  { key: 'SSC',      label: 'SSC',        iconName: 'document-text-outline', color: '#E2D4F0' },
+  { key: 'UPSC',     label: 'UPSC',       iconName: 'ribbon-outline', color: '#A9DEF9' },
+  { key: 'Railway',  label: 'Railway',    iconName: 'train-outline', color: '#FFD166' },
+  { key: 'Banking',  label: 'Banking',    iconName: 'cash-outline', color: '#A0E8AF' },
+  { key: 'Police',   label: 'Police',     iconName: 'shield-half-outline', color: '#FFB5A7' },
+  { key: 'Teaching', label: 'Teaching',   iconName: 'school-outline', color: '#F4C2C2' },
+  { key: 'Defence',  label: 'Defence',    iconName: 'shield-outline', color: '#FF9F1C' },
+  { key: 'State',    label: 'State PSC',  iconName: 'business-outline', color: '#C6EDD4' },
 ];
 
 export const JOB_TABS = [

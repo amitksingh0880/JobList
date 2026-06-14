@@ -126,6 +126,7 @@ const styles = StyleSheet.create({
   cardWrapper: {
     marginHorizontal: ThemeSpacing.lg,
     marginVertical: 8,
+    borderRadius: ThemeBorderRadius.xl,
     ...ThemeShadow.card,
   },
   card: {

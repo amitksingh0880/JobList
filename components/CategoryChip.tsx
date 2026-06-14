@@ -6,6 +6,7 @@ import {
   Pressable,
   Animated,
 } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import { ThemeColors, ThemeBorderRadius, ThemeSpacing, ThemeFonts, ThemeShadow } from '../constants/theme';
 import type { Category } from '../constants/categories';
 import type { CategoryKey } from '../constants/theme';
@@ -54,7 +55,11 @@ export const CategoryChip = ({
           isSelected && ThemeShadow.button,
         ]}
       >
-        <Text style={styles.emoji}>{category.emoji}</Text>
+        <Ionicons
+          name={category.iconName as any}
+          size={15}
+          color={ThemeColors.textPrimary}
+        />
         <Text style={styles.label}>{category.label}</Text>
       </Pressable>
     </Animated.View>
@@ -73,9 +78,6 @@ const styles = StyleSheet.create({
     gap: 6,
     marginRight: ThemeSpacing.sm,
     marginBottom: 6, // space for shadow
-  },
-  emoji: {
-    fontSize: 14,
   },
   label: {
     fontSize: ThemeFonts.sizes.sm,

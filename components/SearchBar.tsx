@@ -7,7 +7,7 @@ import {
   Animated,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { ThemeColors, ThemeBorderRadius, ThemeSpacing, ThemeFonts } from '../constants/theme';
+import { ThemeColors, ThemeBorderRadius, ThemeSpacing, ThemeFonts, ThemeShadow } from '../constants/theme';
 
 interface SearchBarProps {
   value: string;
@@ -95,10 +95,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: ThemeColors.surface,
     borderRadius: ThemeBorderRadius.md,
-    borderWidth: 1.5,
+    borderWidth: 2,
     paddingHorizontal: ThemeSpacing.md,
     paddingVertical: ThemeSpacing.sm,
     gap: ThemeSpacing.sm,
+    ...ThemeShadow.button,
+    elevation: 2,
   },
   icon: {
     flexShrink: 0,

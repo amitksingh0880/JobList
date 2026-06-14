@@ -14,7 +14,7 @@ import { JobDetailSheet } from '../../components/JobDetailSheet';
 import { EmptyState } from '../../components/EmptyState';
 import { useJobs } from '../../hooks/useJobs';
 import { useBookmarks } from '../../hooks/useBookmarks';
-import { ThemeColors, ThemeSpacing, ThemeFonts, ThemeBorderRadius } from '../../constants/theme';
+import { ThemeColors, ThemeSpacing, ThemeFonts, ThemeBorderRadius, ThemeShadow } from '../../constants/theme';
 import type { Job } from '../../types/job';
 
 export default function BookmarksScreen() {
@@ -127,16 +127,17 @@ const styles = StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: ThemeBorderRadius.md,
-    backgroundColor: `${ThemeColors.primary}20`,
-    borderWidth: 1,
-    borderColor: `${ThemeColors.primary}40`,
+    backgroundColor: ThemeColors.primary,
+    borderWidth: 2,
+    borderColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
+    ...ThemeShadow.button,
   },
   countBadgeText: {
-    color: ThemeColors.primary,
+    color: '#000',
     fontSize: ThemeFonts.sizes.md,
-    fontWeight: '800',
+    fontWeight: '900',
   },
   listContent: {
     paddingBottom: ThemeSpacing.xxl,

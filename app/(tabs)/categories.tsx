@@ -16,7 +16,7 @@ import { EmptyState } from '../../components/EmptyState';
 import { useJobs } from '../../hooks/useJobs';
 import { useBookmarks } from '../../hooks/useBookmarks';
 import { JOB_CATEGORIES } from '../../constants/categories';
-import { ThemeColors, ThemeSpacing, ThemeFonts, ThemeBorderRadius } from '../../constants/theme';
+import { ThemeColors, ThemeSpacing, ThemeFonts, ThemeBorderRadius, ThemeShadow } from '../../constants/theme';
 import type { Job } from '../../types/job';
 import type { CategoryKey } from '../../constants/theme';
 
@@ -76,44 +76,42 @@ export default function CategoriesScreen() {
 
         {/* Category Grid */}
         <View style={styles.categoryGrid}>
-          {JOB_CATEGORIES.filter((c) => c.key !== 'All').map((cat) => (
-            <Pressable
-              key={cat.key}
-              style={[
-                styles.categoryCard,
-                activeCat === cat.key && {
-                  backgroundColor: `${cat.color}18`,
-                  borderColor: `${cat.color}50`,
-                },
-              ]}
-              onPress={() => setCategory(cat.key as CategoryKey)}
-            >
-              <Text style={styles.catEmoji}>{cat.emoji}</Text>
-              <Text
+          {JOB_CATEGORIES.filter((c) => c.key !== 'All').map((cat) => {
+            const isActive = activeCat === cat.key;
+            return (
+              <Pressable
+                key={cat.key}
                 style={[
-                  styles.catLabel,
-                  { color: activeCat === cat.key ? cat.color : ThemeColors.textSecondary },
+                  styles.categoryCard,
+                  {
+                    backgroundColor: isActive ? cat.color : '#FFF',
+                  },
+                  isActive && ThemeShadow.button,
                 ]}
+                onPress={() => setCategory(cat.key as CategoryKey)}
               >
-                {cat.label}
-              </Text>
-              <View
-                style={[
-                  styles.catCount,
-                  { backgroundColor: activeCat === cat.key ? `${cat.color}25` : ThemeColors.surfaceElevated },
-                ]}
-              >
-                <Text
+                <Ionicons
+                  name={cat.iconName as any}
+                  size={20}
+                  color="#000"
+                  style={{ marginBottom: 2 }}
+                />
+                <Text style={styles.catLabel}>
+                  {cat.label}
+                </Text>
+                <View
                   style={[
-                    styles.catCountText,
-                    { color: activeCat === cat.key ? cat.color : ThemeColors.textMuted },
+                    styles.catCount,
+                    { backgroundColor: isActive ? 'rgba(0,0,0,0.12)' : '#F0F0F0' },
                   ]}
                 >
-                  {catCounts[cat.key as Exclude<CategoryKey, 'All'>] || 0}
-                </Text>
-              </View>
-            </Pressable>
-          ))}
+                  <Text style={styles.catCountText}>
+                    {catCounts[cat.key as Exclude<CategoryKey, 'All'>] || 0}
+                  </Text>
+                </View>
+              </Pressable>
+            );
+          })}
         </View>
 
         {/* Divider */}
@@ -196,32 +194,35 @@ const styles = StyleSheet.create({
     paddingBottom: ThemeSpacing.sm,
   },
   categoryCard: {
-    width: '30%',
+    flexBasis: '29%',
+    flexGrow: 1,
     backgroundColor: ThemeColors.surface,
-    borderWidth: 1,
+    borderWidth: 2,
     borderColor: ThemeColors.border,
     borderRadius: ThemeBorderRadius.md,
     padding: ThemeSpacing.sm,
     alignItems: 'center',
     gap: 4,
-  },
-  catEmoji: {
-    fontSize: 22,
+    marginBottom: 6, // space for offset shadow
   },
   catLabel: {
     fontSize: 11,
-    fontWeight: '700',
+    fontWeight: '900',
+    color: '#000',
     textAlign: 'center',
   },
   catCount: {
     paddingHorizontal: 8,
     paddingVertical: 2,
     borderRadius: ThemeBorderRadius.full,
-    marginTop: 2,
+    borderWidth: 1,
+    borderColor: '#000',
+    marginTop: 4,
   },
   catCountText: {
     fontSize: 10,
-    fontWeight: '700',
+    fontWeight: '900',
+    color: '#000',
   },
   divider: {
     height: 1,

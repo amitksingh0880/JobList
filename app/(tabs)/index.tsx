@@ -69,7 +69,7 @@ export default function HomeScreen() {
         {/* Header */}
         <View style={styles.header}>
           <View>
-            <Text style={styles.headerGreeting}>Sarkari Job Listing</Text>
+            <Text style={styles.headerGreeting}>Sarkari Jobs</Text>
             <Text style={styles.headerSubtitle}>Find Your Government Job</Text>
           </View>
           <View style={styles.headerActions}>
@@ -106,34 +106,33 @@ export default function HomeScreen() {
           ))}
         </ScrollView>
 
-        {/* Tab Bar Filter */}
-        <View style={styles.tabsWrapper}>
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.tabsScroll}
-            style={styles.tabsContainer}
-          >
-            {JOB_TABS.map((tab) => (
+        {/* Tab Grid Filter */}
+        <View style={styles.tabsGrid}>
+          {JOB_TABS.map((tab) => {
+            const isActive = filter.status === tab.key;
+            // Distinct pastel colors for each tab when active
+            const activeColor = 
+              tab.key === 'latest' ? ThemeColors.primary :
+              tab.key === 'results' ? ThemeColors.accent :
+              tab.key === 'admit_card' ? ThemeColors.accentPeach :
+              ThemeColors.accentBlue;
+
+            return (
               <Pressable
                 key={tab.key}
                 onPress={() => setStatus(tab.key as JobTabKey)}
                 style={[
-                  styles.tab,
-                  filter.status === tab.key && styles.tabActive,
+                  styles.tabGridBtn,
+                  { backgroundColor: isActive ? activeColor : '#FFF' },
+                  isActive && ThemeShadow.button,
                 ]}
               >
-                <Text
-                  style={[
-                    styles.tabText,
-                    filter.status === tab.key && styles.tabTextActive,
-                  ]}
-                >
+                <Text style={styles.tabGridText}>
                   {tab.label}
                 </Text>
               </Pressable>
-            ))}
-          </ScrollView>
+            );
+          })}
         </View>
 
         {/* Job Count */}
@@ -253,43 +252,27 @@ const styles = StyleSheet.create({
     paddingHorizontal: ThemeSpacing.lg,
     paddingVertical: ThemeSpacing.xs,
   },
-  tabsWrapper: {
-    flexShrink: 0,
+  tabsGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
     marginHorizontal: ThemeSpacing.lg,
     marginBottom: ThemeSpacing.md,
-    backgroundColor: '#FFF',
-    borderRadius: ThemeBorderRadius.full,
+  },
+  tabGridBtn: {
+    flexBasis: '47%',
+    flexGrow: 1,
+    paddingVertical: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: ThemeBorderRadius.md,
     borderWidth: 2,
     borderColor: '#000',
-    overflow: 'hidden',
-    ...ThemeShadow.button,
-    elevation: 2,
+    marginBottom: 4, // space for offset shadow
   },
-  tabsContainer: {
-    // 
-  },
-  tabsScroll: {
-    paddingHorizontal: 4,
-    paddingVertical: 4,
-  },
-  tab: {
-    paddingHorizontal: ThemeSpacing.lg,
-    paddingVertical: 10,
-    borderRadius: ThemeBorderRadius.full,
-    borderWidth: 2,
-    borderColor: 'transparent',
-  },
-  tabActive: {
-    backgroundColor: ThemeColors.primary,
-    borderColor: '#000',
-  },
-  tabText: {
-    color: ThemeColors.textSecondary,
-    fontSize: ThemeFonts.sizes.md,
-    fontWeight: '800',
-  },
-  tabTextActive: {
+  tabGridText: {
     color: '#000',
+    fontSize: ThemeFonts.sizes.sm,
     fontWeight: '900',
   },
   countRow: {

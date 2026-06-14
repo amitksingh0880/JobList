@@ -83,14 +83,20 @@ export default function NotificationsScreen() {
               {item.title}
             </Text>
 
-            <Text style={styles.departmentText} numberOfLines={1}>
-              🏢 {item.department}
-            </Text>
+            <View style={styles.infoRow}>
+              <Ionicons name="business-outline" size={14} color={ThemeColors.textSecondary} style={{ marginRight: 6 }} />
+              <Text style={styles.departmentText} numberOfLines={1}>
+                {item.department}
+              </Text>
+            </View>
 
             {item.qualification && (
-              <Text style={styles.qualificationText} numberOfLines={1}>
-                🎓 {item.qualification}
-              </Text>
+              <View style={styles.infoRow}>
+                <Ionicons name="school-outline" size={14} color={ThemeColors.textMuted} style={{ marginRight: 6 }} />
+                <Text style={styles.qualificationText} numberOfLines={1}>
+                  {item.qualification}
+                </Text>
+              </View>
             )}
           </View>
 
@@ -223,6 +229,7 @@ const styles = StyleSheet.create({
   cardWrapper: {
     marginHorizontal: ThemeSpacing.lg,
     marginVertical: 10,
+    borderRadius: ThemeBorderRadius.xl,
     ...ThemeShadow.card,
   },
   card: {
@@ -281,7 +288,12 @@ const styles = StyleSheet.create({
     color: ThemeColors.textSecondary,
     fontSize: ThemeFonts.sizes.sm,
     fontWeight: '700',
-    marginBottom: 4,
+    flex: 1,
+  },
+  infoRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
   },
   qualificationText: {
     color: ThemeColors.textMuted,

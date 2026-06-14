@@ -19,13 +19,23 @@ import type { Job } from '../../types/job';
 
 export default function SearchScreen() {
   const router = useRouter();
-  const { jobs, filter, loading, setSearchQuery } = useJobs();
+  const { allJobs, filter, loading, setSearchQuery } = useJobs();
   const { isBookmarked, toggleBookmark } = useBookmarks();
   const [selectedJob, setSelectedJob] = React.useState<Job | null>(null);
   const [sheetVisible, setSheetVisible] = React.useState(false);
 
   const hasSearched = filter.searchQuery.length > 0;
-  const searchResults = hasSearched ? jobs : [];
+  const searchResults = React.useMemo(() => {
+    if (!hasSearched) return [];
+    const query = filter.searchQuery.toLowerCase().trim();
+    return allJobs.filter((job) => {
+      return (
+        job.title.toLowerCase().includes(query) ||
+        job.department.toLowerCase().includes(query) ||
+        job.category.toLowerCase().includes(query)
+      );
+    });
+  }, [allJobs, filter.searchQuery, hasSearched]);
 
   const handleJobPress = (job: Job) => {
     setSelectedJob(job);
