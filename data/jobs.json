@@ -5409,11 +5409,11 @@
     "department": "Certificate",
     "departmentShort": "Certificate",
     "category": "State",
-    "totalPosts": 709,
-    "lastDate": "2026-06-27T00:02:46.155Z",
-    "notificationDate": "2026-06-13T00:02:46.155Z",
-    "applicationStartDate": "2026-06-13T00:02:46.155Z",
-    "applicationEndDate": "2026-06-27T00:02:46.155Z",
+    "totalPosts": 268,
+    "lastDate": "2026-06-29T03:30:03.087Z",
+    "notificationDate": "2026-06-13T03:30:03.087Z",
+    "applicationStartDate": "2026-06-13T03:30:03.087Z",
+    "applicationEndDate": "2026-06-29T03:30:03.087Z",
     "ageLimit": {
       "min": 18,
       "max": 35,
@@ -5421,8 +5421,8 @@
     },
     "qualification": "10th / 12th / Graduation as per post",
     "applicationFee": {
-      "general": 0,
-      "sc_st": 0,
+      "general": 500,
+      "sc_st": 250,
       "female": 0
     },
     "applyLink": "https://sarkariresult.com/certificate/",
@@ -5443,15 +5443,15 @@
     "importantDates": [
       {
         "label": "Notification Released",
-        "date": "2026-06-13T00:02:46.155Z"
+        "date": "2026-06-13T03:30:03.087Z"
       },
       {
         "label": "Application Start Date",
-        "date": "2026-06-13T00:02:46.155Z"
+        "date": "2026-06-13T03:30:03.087Z"
       },
       {
         "label": "Last Date to Apply",
-        "date": "2026-06-27T00:02:46.155Z"
+        "date": "2026-06-29T03:30:03.087Z"
       }
     ],
     "salary": "₹25,500 – ₹81,100/- PM",
@@ -6207,11 +6207,11 @@
     "department": "UPSSSC",
     "departmentShort": "UPSSSC",
     "category": "State",
-    "totalPosts": 779,
-    "lastDate": "2026-06-21T00:02:46.156Z",
-    "notificationDate": "2026-06-10T00:02:46.156Z",
-    "applicationStartDate": "2026-06-10T00:02:46.156Z",
-    "applicationEndDate": "2026-06-21T00:02:46.156Z",
+    "totalPosts": 758,
+    "lastDate": "2026-07-08T03:30:03.088Z",
+    "notificationDate": "2026-06-10T03:30:03.088Z",
+    "applicationStartDate": "2026-06-10T03:30:03.088Z",
+    "applicationEndDate": "2026-07-08T03:30:03.088Z",
     "ageLimit": {
       "min": 18,
       "max": 35,
@@ -6219,8 +6219,8 @@
     },
     "qualification": "10th / 12th / Graduation as per post",
     "applicationFee": {
-      "general": 0,
-      "sc_st": 0,
+      "general": 500,
+      "sc_st": 250,
       "female": 0
     },
     "applyLink": "https://sarkariresult.com/upsssc/",
@@ -6241,15 +6241,15 @@
     "importantDates": [
       {
         "label": "Notification Released",
-        "date": "2026-06-10T00:02:46.156Z"
+        "date": "2026-06-10T03:30:03.088Z"
       },
       {
         "label": "Application Start Date",
-        "date": "2026-06-10T00:02:46.156Z"
+        "date": "2026-06-10T03:30:03.088Z"
       },
       {
         "label": "Last Date to Apply",
-        "date": "2026-06-21T00:02:46.156Z"
+        "date": "2026-07-08T03:30:03.088Z"
       }
     ],
     "salary": "₹25,500 – ₹81,100/- PM",
@@ -6261,11 +6261,11 @@
     "department": "Air Force",
     "departmentShort": "Air Force",
     "category": "Defence",
-    "totalPosts": 571,
-    "lastDate": "2026-06-26T00:02:46.156Z",
-    "notificationDate": "2026-06-14T00:02:46.156Z",
-    "applicationStartDate": "2026-06-14T00:02:46.156Z",
-    "applicationEndDate": "2026-06-26T00:02:46.156Z",
+    "totalPosts": 135,
+    "lastDate": "2026-06-19T03:30:03.088Z",
+    "notificationDate": "2026-06-13T03:30:03.088Z",
+    "applicationStartDate": "2026-06-13T03:30:03.088Z",
+    "applicationEndDate": "2026-06-19T03:30:03.088Z",
     "ageLimit": {
       "min": 18,
       "max": 22,
@@ -6273,8 +6273,8 @@
     },
     "qualification": "10th / 12th / Graduation as per post",
     "applicationFee": {
-      "general": 0,
-      "sc_st": 0,
+      "general": 500,
+      "sc_st": 250,
       "female": 0
     },
     "applyLink": "https://sarkariresult.com/indian-air-force/",
@@ -6295,15 +6295,15 @@
     "importantDates": [
       {
         "label": "Notification Released",
-        "date": "2026-06-14T00:02:46.156Z"
+        "date": "2026-06-13T03:30:03.088Z"
       },
       {
         "label": "Application Start Date",
-        "date": "2026-06-14T00:02:46.156Z"
+        "date": "2026-06-13T03:30:03.088Z"
       },
       {
         "label": "Last Date to Apply",
-        "date": "2026-06-26T00:02:46.156Z"
+        "date": "2026-06-19T03:30:03.088Z"
       }
     ],
     "salary": "₹25,500 – ₹81,100/- PM",
@@ -9101,280 +9101,6 @@
     "location": "All India"
   },
   {
-    "id": "cabinet-secretariat-sfo-technical",
-    "title": "Cabinet Secretariat SFO Technical Recruitment 2026 – Application Form for 25 Posts",
-    "department": "Cabinet Secretariat SFO Technical",
-    "departmentShort": "SFO",
-    "category": "Banking",
-    "totalPosts": 905,
-    "lastDate": "2026-07-12T00:00:00.000Z",
-    "notificationDate": "2026-06-13T00:00:00.000Z",
-    "applicationStartDate": "2026-06-13T00:00:00.000Z",
-    "applicationEndDate": "2026-07-12T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "BE/B.Tech or Master&#8217;s Degree in Science (Relevant Discipline) + Valid GATE Score",
-    "applicationFee": {
-      "general": 100,
-      "sc_st": 10202,
-      "female": 0
-    },
-    "applyLink": "https://www.indgovtjobs.in/2026/06/cabinet-secretariat-sfo-technical.html",
-    "notificationLink": "https://drive.google.com/file/d/1cb4GnwTLV1BJD82XC1ddIqXbtguWyaY3/view?usp=sharing",
-    "status": "latest",
-    "isNew": true,
-    "isUrgent": false,
-    "description": "Government recruitment notification for Cabinet Secretariat SFO Technical Recruitment 2026 – Application Form for 25 Posts. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Last Date",
-        "date": "2026-07-12T00:00:00.000Z"
-      },
-      {
-        "label": "Date of Notification",
-        "date": "2026-06-13T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Receipt of Application",
-        "date": "2026-07-12T00:00:00.000Z"
-      }
-    ],
-    "salary": "₹35,000 – ₹1,05,000/- PM",
-    "location": "All India"
-  },
-  {
-    "id": "csir-igib-technician-recruitment",
-    "title": "CSIR IGIB Technician Recruitment 2026 – Apply Online for 15 Posts | Closing Date 04-07-2026",
-    "department": "CSIR IGIB Technician",
-    "departmentShort": "CSIR IGIB",
-    "category": "State",
-    "totalPosts": 15,
-    "lastDate": "2026-07-04T00:00:00.000Z",
-    "notificationDate": "2026-06-05T00:00:00.000Z",
-    "applicationStartDate": "2026-06-05T00:00:00.000Z",
-    "applicationEndDate": "2026-07-04T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 28,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th with Science (55% marks) + ITI / 2 years Apprenticeship / 3 years experience in relevant trade",
-    "applicationFee": {
-      "general": 420261700,
-      "sc_st": 210130850,
-      "female": 0
-    },
-    "applyLink": "https://www.indgovtjobs.in/2026/06/csir-igib-technician-recruitment.html",
-    "notificationLink": "https://drive.google.com/file/d/1dKTC-AxvIt7oTsXigUEtvRSYDBAOL99r/view?usp=sharing",
-    "status": "latest",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for CSIR IGIB Technician Recruitment 2026 – Apply Online for 15 Posts | Closing Date 04-07-2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Last Date to Apply",
-        "date": "2026-07-04T00:00:00.000Z"
-      },
-      {
-        "label": "Start Date for Online Application",
-        "date": "2026-06-05T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Submission of Online Application",
-        "date": "2026-07-04T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Payment of Application Fee",
-        "date": "2026-07-04T00:00:00.000Z"
-      }
-    ],
-    "salary": "Pay Level-2 (&#8377;19,900 &#8211; &#8377;63,200) with total emoluments &#8377;39,970/- (approx.)",
-    "location": "All India"
-  },
-  {
-    "id": "last-date-government-jobs",
-    "title": "Sarkari Naukri Last Date 14th June 2026 – Govt Jobs Closing Today | Apply Now",
-    "department": "Sarkari Naukri Last Date 14th June   Govt Jobs Closing Today",
-    "departmentShort": "Sarkari Naukri",
-    "category": "State",
-    "totalPosts": 460,
-    "lastDate": "2026-07-07T23:47:38.510Z",
-    "notificationDate": "2026-06-10T23:47:38.510Z",
-    "applicationStartDate": "2026-06-10T23:47:38.510Z",
-    "applicationEndDate": "2026-07-07T23:47:38.510Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th / 12th / Graduation as per post",
-    "applicationFee": {
-      "general": 0,
-      "sc_st": 0,
-      "female": 0
-    },
-    "applyLink": "https://www.indgovtjobs.in/2024/02/last-date-government-jobs.html",
-    "notificationLink": "https://www.indgovtjobs.in/2024/02/last-date-government-jobs.html",
-    "status": "latest",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for Sarkari Naukri Last Date 14th June 2026 – Govt Jobs Closing Today | Apply Now. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Notification Released",
-        "date": "2026-06-10T23:47:38.510Z"
-      },
-      {
-        "label": "Application Start Date",
-        "date": "2026-06-10T23:47:38.510Z"
-      },
-      {
-        "label": "Last Date to Apply",
-        "date": "2026-07-07T23:47:38.510Z"
-      }
-    ],
-    "salary": "₹25,500 – ₹81,100/- PM",
-    "location": "All India"
-  },
-  {
-    "id": "exim-bank-management-trainee",
-    "title": "Exim Bank MT Recruitment 2026 – Apply Online for 05 Posts | Last Date 14-06-2026",
-    "department": "Exim Bank MT",
-    "departmentShort": "MT",
-    "category": "Banking",
-    "totalPosts": 84,
-    "lastDate": "2026-06-29T00:00:00.000Z",
-    "notificationDate": "2026-06-11T23:47:38.510Z",
-    "applicationStartDate": "2026-06-11T23:47:38.510Z",
-    "applicationEndDate": "2026-06-29T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "Graduation (60%) + PG (60%) in relevant discipline",
-    "applicationFee": {
-      "general": 8377100,
-      "sc_st": 4521535,
-      "female": 8377100
-    },
-    "applyLink": "https://www.indgovtjobs.in/2026/01/exim-bank-management-trainee.html",
-    "notificationLink": "https://drive.google.com/file/d/10kDFMoDqycTI9wvTgCIOA_KdsiCOL25s/view?usp=sharing",
-    "status": "latest",
-    "isNew": true,
-    "isUrgent": false,
-    "description": "Government recruitment notification for Exim Bank MT Recruitment 2026 – Apply Online for 05 Posts | Last Date 14-06-2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Last Date",
-        "date": "2026-06-14T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Online Application &amp; Fee Payment",
-        "date": "2026-06-14T00:00:00.000Z"
-      },
-      {
-        "label": "Last date for printing your application",
-        "date": "2026-06-29T00:00:00.000Z"
-      }
-    ],
-    "salary": "₹35,000 – ₹1,05,000/- PM",
-    "location": "All India"
-  },
-  {
-    "id": "OSWC-Recruitment",
-    "title": "OSWC Recruitment 2026 – Apply Online for 30 Assistant Superintendent & Warehouse Assistant Posts | Last Date 14-06-2026",
-    "department": "OSWC",
-    "departmentShort": "OSWC",
-    "category": "State",
-    "totalPosts": 628,
-    "lastDate": "2026-06-29T00:00:00.000Z",
-    "notificationDate": "2026-06-10T23:47:38.510Z",
-    "applicationStartDate": "2026-06-10T23:47:38.510Z",
-    "applicationEndDate": "2026-06-29T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "MBA/BBA or B.Sc (Hons.) / Any Graduate + Computer Knowledge",
-    "applicationFee": {
-      "general": 1420260500,
-      "sc_st": 4521535,
-      "female": 0
-    },
-    "applyLink": "https://www.indgovtjobs.in/2026/05/OSWC-Recruitment.html",
-    "notificationLink": "https://oswc.in/upload/38919oswc_advt._2026.pdf",
-    "status": "latest",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for OSWC Recruitment 2026 – Apply Online for 30 Assistant Superintendent & Warehouse Assistant Posts | Last Date 14-06-2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Last Date",
-        "date": "2026-06-14T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Online Application &amp; Fee Payment",
-        "date": "2026-06-14T00:00:00.000Z"
-      },
-      {
-        "label": "Last date for printing your application",
-        "date": "2026-06-29T00:00:00.000Z"
-      }
-    ],
-    "salary": "₹25,500 – ₹81,100/- PM",
-    "location": "All India"
-  },
-  {
     "id": "Employment-News",
     "title": "Employment News June 2026: Pdf Download, Weekly Govt Job Notifications",
     "department": "Employment News June  Pdf Download Weekly Govt Job Notifications",
@@ -9429,9 +9155,209 @@
     "location": "All India"
   },
   {
+    "id": "UPSC-Advertisement-No-06",
+    "title": "UPSC Advertisement No. 06/2026 – Apply Online for 538 Various Ministries Posts | Last Date 03-06-2026",
+    "department": "UPSC Advertisement No 062026",
+    "departmentShort": "UPSC",
+    "category": "UPSC",
+    "totalPosts": 538,
+    "lastDate": "2026-07-03T00:00:00.000Z",
+    "notificationDate": "2026-06-14T03:30:04.284Z",
+    "applicationStartDate": "2026-06-14T03:30:04.284Z",
+    "applicationEndDate": "2026-07-03T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 35,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th / 12th / Graduation as per post",
+    "applicationFee": {
+      "general": 0,
+      "sc_st": 0,
+      "female": 0
+    },
+    "applyLink": "https://www.indgovtjobs.in/2026/06/UPSC-Advertisement-No-06.html",
+    "notificationLink": "https://www.indgovtjobs.in/2026/06/UPSC-Advertisement-No-06.html",
+    "status": "latest",
+    "isNew": true,
+    "isUrgent": false,
+    "description": "Government recruitment notification for UPSC Advertisement No. 06/2026 – Apply Online for 538 Various Ministries Posts | Last Date 03-06-2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Last Date to Apply",
+        "date": "2026-07-03T00:00:00.000Z"
+      }
+    ],
+    "salary": "Level 6F to Level 14 (7th CPC)",
+    "location": "All India"
+  },
+  {
+    "id": "RRB-ALP-Recruitment",
+    "title": "RRB ALP Recruitment 2026 – Online Form for 11127 Posts | Last Date 14-06-2026",
+    "department": "RRB ALP",
+    "departmentShort": "RRB ALP",
+    "category": "Railway",
+    "totalPosts": 11127,
+    "lastDate": "2026-06-14T00:00:00.000Z",
+    "notificationDate": "2026-06-10T03:30:04.284Z",
+    "applicationStartDate": "2026-06-10T03:30:04.284Z",
+    "applicationEndDate": "2026-06-14T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 35,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th Pass + ITI / Act Apprenticeship / Diploma",
+    "applicationFee": {
+      "general": 83775008377250,
+      "sc_st": 41887504188625,
+      "female": 0
+    },
+    "applyLink": "https://www.indgovtjobs.in/2026/02/RRB-ALP-Recruitment.html",
+    "notificationLink": "https://www.indgovtjobs.in/2026/02/RRB-ALP-Recruitment.html",
+    "status": "latest",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for RRB ALP Recruitment 2026 – Online Form for 11127 Posts | Last Date 14-06-2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Last Date to Apply",
+        "date": "2026-06-14T00:00:00.000Z"
+      }
+    ],
+    "salary": "&#8377;19,900 (Pay Level-2) + Allowances",
+    "location": "All India"
+  },
+  {
+    "id": "railway-jobs-recruitment",
+    "title": "Latest Railway Jobs 2026 (18864 Vacancies Opening)",
+    "department": "Latest Railway Jobs  18864 Vacancies Opening",
+    "departmentShort": "Latest Railway",
+    "category": "Railway",
+    "totalPosts": 30,
+    "lastDate": "2026-06-26T03:30:04.284Z",
+    "notificationDate": "2026-06-11T03:30:04.284Z",
+    "applicationStartDate": "2026-06-11T03:30:04.284Z",
+    "applicationEndDate": "2026-06-26T03:30:04.284Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 35,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th / 12th / Graduation as per post",
+    "applicationFee": {
+      "general": 0,
+      "sc_st": 0,
+      "female": 0
+    },
+    "applyLink": "https://www.indgovtjobs.in/2013/09/railway-jobs-recruitment.html",
+    "notificationLink": "https://www.indgovtjobs.in/2013/09/railway-jobs-recruitment.html",
+    "status": "latest",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for Latest Railway Jobs 2026 (18864 Vacancies Opening). Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Notification Released",
+        "date": "2026-06-11T03:30:04.284Z"
+      },
+      {
+        "label": "Application Start Date",
+        "date": "2026-06-11T03:30:04.284Z"
+      },
+      {
+        "label": "Last Date to Apply",
+        "date": "2026-06-26T03:30:04.284Z"
+      }
+    ],
+    "salary": "₹21,700 – ₹69,100/- PM",
+    "location": "All India"
+  },
+  {
+    "id": "bank-jobs-openings-august-2013",
+    "title": "Latest Bank Jobs 2026 (12426 Govt Vacancies Opening)",
+    "department": "Latest Bank Jobs  12426 Govt Vacancies Opening",
+    "departmentShort": "Latest Bank",
+    "category": "Banking",
+    "totalPosts": 222,
+    "lastDate": "2026-06-24T03:30:04.284Z",
+    "notificationDate": "2026-06-10T03:30:04.284Z",
+    "applicationStartDate": "2026-06-10T03:30:04.284Z",
+    "applicationEndDate": "2026-06-24T03:30:04.284Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 35,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th / 12th / Graduation as per post",
+    "applicationFee": {
+      "general": 0,
+      "sc_st": 0,
+      "female": 0
+    },
+    "applyLink": "https://www.indgovtjobs.in/2013/08/bank-jobs-openings-august-2013.html",
+    "notificationLink": "https://www.indgovtjobs.in/2013/08/bank-jobs-openings-august-2013.html",
+    "status": "latest",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for Latest Bank Jobs 2026 (12426 Govt Vacancies Opening). Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Notification Released",
+        "date": "2026-06-10T03:30:04.284Z"
+      },
+      {
+        "label": "Application Start Date",
+        "date": "2026-06-10T03:30:04.284Z"
+      },
+      {
+        "label": "Last Date to Apply",
+        "date": "2026-06-24T03:30:04.284Z"
+      }
+    ],
+    "salary": "₹35,000 – ₹1,05,000/- PM",
+    "location": "All India"
+  },
+  {
     "id": "Government-Jobs",
-    "title": "Latest Government Jobs 2026 (54009+ All India Govt Job Vacancies)",
-    "department": "Latest Government Jobs  54009 All India Govt Job Vacancies",
+    "title": "Latest Government Jobs 2026 (59576+ All India Govt Job Vacancies)",
+    "department": "Latest Government Jobs  59576 All India Govt Job Vacancies",
     "departmentShort": "Latest Government",
     "category": "State",
     "totalPosts": 5,
