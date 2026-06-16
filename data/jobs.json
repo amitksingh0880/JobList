@@ -806,7 +806,7 @@
     "notificationLink": "https://www.sarkariresult.com/upload/RRB_ALP_CEN_01_2026_Syllabus.pdf",
     "status": "latest",
     "isNew": false,
-    "isUrgent": true,
+    "isUrgent": false,
     "description": "Government recruitment notification for Railway ALP 2026 Apply Online. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
@@ -832,6 +832,483 @@
       }
     ],
     "salary": "₹21,700 – ₹69,100/- PM",
+    "location": "All India"
+  },
+  {
+    "id": "dsssb-result-apr26",
+    "title": "Delhi DSSSB Staff Car Driver 813/24 &amp; PGT Sanskrit Male 07/25 Result 2026",
+    "department": "Delhi DSSSB Staff Car Driver 81324 amp PGT Sanskrit Male 0725",
+    "departmentShort": "DSSSB PGT",
+    "category": "Teaching",
+    "totalPosts": 0,
+    "lastDate": "2026-06-29T23:51:07.631Z",
+    "notificationDate": "2026-06-13T23:51:07.631Z",
+    "applicationStartDate": "2026-06-13T23:51:07.631Z",
+    "applicationEndDate": "2026-06-29T23:51:07.631Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 35,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th / 12th / Graduation as per post",
+    "applicationFee": {
+      "general": 0,
+      "sc_st": 0,
+      "female": 0
+    },
+    "applyLink": "https://www.sarkariresult.com/delhi/dsssb-result-apr26/",
+    "notificationLink": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/universal-tab/26_25.pdf",
+    "status": "results",
+    "isNew": true,
+    "isUrgent": false,
+    "description": "Government recruitment notification for DSSSB Naib Tehsildar Post Code 26/25 Result. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Notification Released",
+        "date": "2026-06-13T23:51:07.631Z"
+      },
+      {
+        "label": "Application Start Date",
+        "date": "2026-06-13T23:51:07.631Z"
+      },
+      {
+        "label": "Last Date to Apply",
+        "date": "2026-06-29T23:51:07.631Z"
+      }
+    ],
+    "location": "All India"
+  },
+  {
+    "id": "ssc-delhi-police-hc-awo-tpo-2025",
+    "title": "SSC Delhi Police Head Constable AWO / TPO Result 2026",
+    "department": "SSC Delhi Police Head Constable AWO  TPO",
+    "departmentShort": "SSC AWO TPO",
+    "category": "SSC",
+    "totalPosts": 0,
+    "lastDate": "2025-10-16T00:00:00.000Z",
+    "notificationDate": "2025-09-24T00:00:00.000Z",
+    "applicationStartDate": "2025-09-24T00:00:00.000Z",
+    "applicationEndDate": "2025-10-16T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 27,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "Application Fee General / OBC / EWS : 100/- SC / ST : 0/- All Category Female : 0/- Pay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking",
+    "applicationFee": {
+      "general": 100,
+      "sc_st": 8185,
+      "female": 0
+    },
+    "applyLink": "https://ssc.gov.in/",
+    "notificationLink": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice4_25022026.pdf",
+    "status": "results",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for SSC Delhi Police Head Constable AWO / TPO Result 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Application Begin",
+        "date": "2025-09-24T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date for Apply Online",
+        "date": "2025-10-15T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date Pay Exam Fee",
+        "date": "2025-10-16T00:00:00.000Z"
+      }
+    ],
+    "location": "All India"
+  },
+  {
+    "id": "airforce-medical-01-2027",
+    "title": "Indian Airforce Group Y Medical Assistant Result 2026",
+    "department": "Indian Airforce Group Y Medical Assistant",
+    "departmentShort": "Indian Airforce",
+    "category": "State",
+    "totalPosts": 0,
+    "lastDate": "2026-02-01T00:00:00.000Z",
+    "notificationDate": "2026-01-12T00:00:00.000Z",
+    "applicationStartDate": "2026-01-12T00:00:00.000Z",
+    "applicationEndDate": "2026-02-01T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 35,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "B.Sc Nursing / GNM / MBBS",
+    "applicationFee": {
+      "general": 550,
+      "sc_st": 24,
+      "female": 0
+    },
+    "applyLink": "https://cdn.digialm.com/EForms/configuredHtml/1258/97524/login.html",
+    "notificationLink": "https://iafrecruitment.edcil.co.in/airmen/pdfforms/Advt%20Airmen%20Med%20Asst%2001%20of%202027.pdf",
+    "status": "results",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for Indian Airforce Group Y Medical Assistant Result 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Application Begin",
+        "date": "2026-01-12T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date for Apply Online",
+        "date": "2026-02-01T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date Pay Exam Fee",
+        "date": "2026-02-01T00:00:00.000Z"
+      }
+    ],
+    "location": "All India"
+  },
+  {
+    "id": "airforce-agniveer-01-2027",
+    "title": "Indian Airforce Agniveervayu Intake 01/2027 Result",
+    "department": "Indian Airforce Agniveervayu Intake 012027",
+    "departmentShort": "Indian Airforce",
+    "category": "Defence",
+    "totalPosts": 0,
+    "lastDate": "2026-02-08T00:00:00.000Z",
+    "notificationDate": "2026-01-12T00:00:00.000Z",
+    "applicationStartDate": "2026-01-12T00:00:00.000Z",
+    "applicationEndDate": "2026-02-08T00:00:00.000Z",
+    "ageLimit": {
+      "min": 1525,
+      "max": 22,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10+2 / Intermediate Pass",
+    "applicationFee": {
+      "general": 550,
+      "sc_st": 1050,
+      "female": 0
+    },
+    "applyLink": "https://www.sarkariresult.com/force/airforce-agniveer-01-2027/",
+    "notificationLink": "https://iafrecruitment.edcil.co.in/agniveervayu/pdffiles/Corrigendum%20Agniveervayu%20Intake%2001%20of%202027.pdf",
+    "status": "results",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for Indian Airforce Agniveervayu Intake 01/2027 Result. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Application Begin",
+        "date": "2026-01-12T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date for Apply Online",
+        "date": "2026-02-08T00:00:00.000Z"
+      }
+    ],
+    "location": "All India"
+  },
+  {
+    "id": "mpbse-mp-result-2026",
+    "title": "MPBSE MP Board 10th and 12th Second Exam Result 2026",
+    "department": "MPBSE MP Board 10th and 12th Second Exam",
+    "departmentShort": "MPBSE MP",
+    "category": "State",
+    "totalPosts": 0,
+    "lastDate": "2026-06-28T19:01:08.351Z",
+    "notificationDate": "2026-06-13T19:01:08.351Z",
+    "applicationStartDate": "2026-06-13T19:01:08.351Z",
+    "applicationEndDate": "2026-06-28T19:01:08.351Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 35,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th / 12th / Graduation as per post",
+    "applicationFee": {
+      "general": 0,
+      "sc_st": 15042026,
+      "female": 0
+    },
+    "applyLink": "https://www.sarkariresult.com/2026/mpbse-mp-result-2026/",
+    "notificationLink": "https://www.sarkariresult.com/2026/mpbse-mp-result-2026/",
+    "status": "results",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for MPBSE MP Board 10th and 12th Second Exam Result 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Notification Released",
+        "date": "2026-06-13T19:01:08.351Z"
+      },
+      {
+        "label": "Application Start Date",
+        "date": "2026-06-13T19:01:08.351Z"
+      },
+      {
+        "label": "Last Date to Apply",
+        "date": "2026-06-28T19:01:08.351Z"
+      }
+    ],
+    "location": "All India"
+  },
+  {
+    "id": "upbed-2026",
+    "title": "UP BED Result 2026",
+    "department": "UP BED",
+    "departmentShort": "UP BED",
+    "category": "State",
+    "totalPosts": 0,
+    "lastDate": "2026-04-30T00:00:00.000Z",
+    "notificationDate": "2026-05-31T18:30:00.000Z",
+    "applicationStartDate": "2026-05-31T18:30:00.000Z",
+    "applicationEndDate": "2026-04-30T00:00:00.000Z",
+    "ageLimit": {
+      "min": 15,
+      "max": 35,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "2 Years",
+    "applicationFee": {
+      "general": 2000,
+      "sc_st": 1000,
+      "female": 0
+    },
+    "applyLink": "https://www.sarkariresult.com/2026/upbed-2026/",
+    "notificationLink": "https://www.youtube.com/watch?v=heJOPStEKwM",
+    "status": "results",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for UP BED Result 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Application Begin",
+        "date": "2026-02-10T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date for Apply Online",
+        "date": "2026-04-30T00:00:00.000Z"
+      },
+      {
+        "label": "Counseling  Begin",
+        "date": "2026-05-31T18:30:00.000Z"
+      }
+    ],
+    "location": "All India"
+  },
+  {
+    "id": "upsssc-teacher-03-exam-2026",
+    "title": "UPSSSC Teacher Cadre JTC Eligibility Result 2026",
+    "department": "UPSSSC Teacher Cadre JTC Eligibility",
+    "departmentShort": "UPSSSC JTC",
+    "category": "Teaching",
+    "totalPosts": 0,
+    "lastDate": "2026-05-04T00:00:00.000Z",
+    "notificationDate": "2026-04-06T00:00:00.000Z",
+    "applicationStartDate": "2026-04-06T00:00:00.000Z",
+    "applicationEndDate": "2026-05-04T00:00:00.000Z",
+    "ageLimit": {
+      "min": 21,
+      "max": 40,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "Click Here",
+    "applicationFee": {
+      "general": 25,
+      "sc_st": 25,
+      "female": 0
+    },
+    "applyLink": "https://www.sarkariresult.com/upsssc/upsssc-teacher-03-exam-2026/",
+    "notificationLink": "https://www.sarkariresult.com/wp-content/uploads/2026/06/UPSSSC_EligibilityResult_JTC.pdf",
+    "status": "results",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for UPSSSC Teacher Cadre JTC Eligibility Result 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Application Begin",
+        "date": "2026-04-06T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date for Registration",
+        "date": "2026-04-27T00:00:00.000Z"
+      },
+      {
+        "label": "Fee Payment Last Date",
+        "date": "2026-04-27T00:00:00.000Z"
+      },
+      {
+        "label": "Correction Last Date",
+        "date": "2026-05-04T00:00:00.000Z"
+      }
+    ],
+    "location": "All India"
+  },
+  {
+    "id": "upsc-ias-ifs-pre-2026",
+    "title": "UPSC Civil Services IAS IFS Pre Result 2026",
+    "department": "UPSC Civil Services IAS IFS Pre",
+    "departmentShort": "UPSC IAS IFS",
+    "category": "UPSC",
+    "totalPosts": 0,
+    "lastDate": "2026-02-27T00:00:00.000Z",
+    "notificationDate": "2026-02-04T00:00:00.000Z",
+    "applicationStartDate": "2026-02-04T00:00:00.000Z",
+    "applicationEndDate": "2026-02-27T00:00:00.000Z",
+    "ageLimit": {
+      "min": 21,
+      "max": 32,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th / 12th / Graduation as per post",
+    "applicationFee": {
+      "general": 100,
+      "sc_st": 0,
+      "female": 0
+    },
+    "applyLink": "https://www.sarkariresult.com/upsc/upsc-ias-ifs-pre-2026/",
+    "notificationLink": "https://doc.sarkariresults.org.in/UPSC_IAS_2026_SarkariResult_Com_english_notification-compressed.pdf",
+    "status": "results",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for UPSC Civil Services IAS Pre Answer Key 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Application Begin",
+        "date": "2026-02-04T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date for Apply Online",
+        "date": "2026-02-27T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date Pay Exam Fee",
+        "date": "2026-02-27T00:00:00.000Z"
+      }
+    ],
+    "location": "All India"
+  },
+  {
+    "id": "aiims-norcet-10th",
+    "title": "AIIMS Nursing Officer NORCET 10th Seat Allotment Result 2026",
+    "department": "AIIMS Nursing Officer NORCET 10th Seat Allotment",
+    "departmentShort": "AIIMS NORCET",
+    "category": "State",
+    "totalPosts": 0,
+    "lastDate": "2026-03-16T00:00:00.000Z",
+    "notificationDate": "2026-02-24T00:00:00.000Z",
+    "applicationStartDate": "2026-02-24T00:00:00.000Z",
+    "applicationEndDate": "2026-03-16T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 30,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "B.Sc Nursing / GNM / MBBS",
+    "applicationFee": {
+      "general": 2400,
+      "sc_st": 0,
+      "female": 0
+    },
+    "applyLink": "https://www.sarkariresult.com/2026/aiims-norcet-10th/",
+    "notificationLink": "https://doc.sarkariresults.org.in/AIIMS_NOrcet_Stage_II_Result_SarkariResult_Com.pdf",
+    "status": "results",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for AIIMS Nursing Officer NORCET 10th Seat Allotment Result 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Application Begin",
+        "date": "2026-02-24T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date for Apply Online",
+        "date": "2026-03-16T00:00:00.000Z"
+      },
+      {
+        "label": "Fee Payment Last Date",
+        "date": "2026-03-16T00:00:00.000Z"
+      }
+    ],
     "location": "All India"
   },
   {
@@ -1043,59 +1520,6 @@
       {
         "label": "Last Date Pay Exam Fee",
         "date": "2026-04-22T00:00:00.000Z"
-      }
-    ],
-    "location": "All India"
-  },
-  {
-    "id": "dsssb-result-apr26",
-    "title": "DSSSB Naib Tehsildar Post Code 26/25 Result",
-    "department": "DSSSB Naib Tehsildar Post Code 2625",
-    "departmentShort": "DSSSB",
-    "category": "State",
-    "totalPosts": 0,
-    "lastDate": "2026-06-29T23:51:07.631Z",
-    "notificationDate": "2026-06-13T23:51:07.631Z",
-    "applicationStartDate": "2026-06-13T23:51:07.631Z",
-    "applicationEndDate": "2026-06-29T23:51:07.631Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th / 12th / Graduation as per post",
-    "applicationFee": {
-      "general": 0,
-      "sc_st": 0,
-      "female": 0
-    },
-    "applyLink": "https://www.sarkariresult.com/delhi/dsssb-result-apr26/",
-    "notificationLink": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/universal-tab/26_25.pdf",
-    "status": "results",
-    "isNew": true,
-    "isUrgent": false,
-    "description": "Government recruitment notification for DSSSB Naib Tehsildar Post Code 26/25 Result. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Notification Released",
-        "date": "2026-06-13T23:51:07.631Z"
-      },
-      {
-        "label": "Application Start Date",
-        "date": "2026-06-13T23:51:07.631Z"
-      },
-      {
-        "label": "Last Date to Apply",
-        "date": "2026-06-29T23:51:07.631Z"
       }
     ],
     "location": "All India"
@@ -1563,59 +1987,6 @@
     "location": "All India"
   },
   {
-    "id": "ssc-dp-head-constable-min-2025",
-    "title": "SSC Delhi Police Head Constable Ministerial 2025 Result, Cutoff",
-    "department": "SSC Delhi Police Head Constable Ministerial",
-    "departmentShort": "SSC",
-    "category": "SSC",
-    "totalPosts": 0,
-    "lastDate": "2025-10-21T00:00:00.000Z",
-    "notificationDate": "2025-09-29T00:00:00.000Z",
-    "applicationStartDate": "2025-09-29T00:00:00.000Z",
-    "applicationEndDate": "2025-10-21T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 25,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10+2 / Intermediate Pass",
-    "applicationFee": {
-      "general": 100,
-      "sc_st": 7882,
-      "female": 0
-    },
-    "applyLink": "https://ssc.gov.in/",
-    "notificationLink": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/LIST1_05062026.pdf",
-    "status": "results",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for SSC Delhi Police Head Constable Ministerial 2025 Result, Cutoff. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Application Begin",
-        "date": "2025-09-29T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Apply Online",
-        "date": "2025-10-20T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date Pay Exam Fee",
-        "date": "2025-10-21T00:00:00.000Z"
-      }
-    ],
-    "location": "All India"
-  },
-  {
     "id": "nta-ncet-2026",
     "title": "NTA NCET 2026 Result / Score Card",
     "department": "NTA NCET",
@@ -1942,16 +2313,122 @@
     "location": "All India"
   },
   {
-    "id": "csbc-bp-constable-01-2025",
-    "title": "CSBC Bihar Police Constable 2025 Final Result",
-    "department": "CSBC Bihar Police Constable  Final",
+    "id": "pgcil-diploma-trainee-apr26",
+    "title": "PGCIL Diploma Trainee DT Exam Date 2026",
+    "department": "PGCIL Diploma Trainee DT Exam Date",
+    "departmentShort": "PGCIL DT",
+    "category": "State",
+    "totalPosts": 0,
+    "lastDate": "2026-05-11T00:00:00.000Z",
+    "notificationDate": "2026-04-20T00:00:00.000Z",
+    "applicationStartDate": "2026-04-20T00:00:00.000Z",
+    "applicationEndDate": "2026-05-11T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 27,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th / 12th / Graduation as per post",
+    "applicationFee": {
+      "general": 70,
+      "sc_st": 0,
+      "female": 0
+    },
+    "applyLink": "https://www.sarkariresult.com/2026/pgcil-diploma-trainee-apr26/",
+    "notificationLink": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-4-%20Date%20of%20CBT%20and%20eligibilty%20status.pdf",
+    "status": "admit_card",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for PGCIL Diploma Trainee DT Exam Date 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Application Begin",
+        "date": "2026-04-20T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date for Apply Online",
+        "date": "2026-05-11T00:00:00.000Z"
+      },
+      {
+        "label": "Pay Exam Fee Last Date",
+        "date": "2026-05-11T00:00:00.000Z"
+      }
+    ],
+    "location": "All India"
+  },
+  {
+    "id": "ncl-hemm-staff-overseer-apr26",
+    "title": "NCL HEMM Operator, Staff Nurse, Exam Date 2026",
+    "department": "NCL HEMM Operator Staff Nurse Exam Date",
+    "departmentShort": "NCL HEMM",
+    "category": "State",
+    "totalPosts": 0,
+    "lastDate": "2026-05-01T00:00:00.000Z",
+    "notificationDate": "2026-04-09T00:00:00.000Z",
+    "applicationStartDate": "2026-04-09T00:00:00.000Z",
+    "applicationEndDate": "2026-05-01T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 30,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "Click Here",
+    "applicationFee": {
+      "general": 1180,
+      "sc_st": 0,
+      "female": 0
+    },
+    "applyLink": "https://www.sarkariresult.com/2023/aai-jr-executive-03-2023/",
+    "notificationLink": "https://www.nclcil.in/media/documents/Adobe_Scan_15_Jun_2026.pdf",
+    "status": "admit_card",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for NCL HEMM Operator, Staff Nurse, Exam Date 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Application Begin",
+        "date": "2026-04-09T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date for Apply Online",
+        "date": "2026-05-01T00:00:00.000Z"
+      },
+      {
+        "label": "Pay the Exam Last Date",
+        "date": "2026-05-01T00:00:00.000Z"
+      }
+    ],
+    "location": "All India"
+  },
+  {
+    "id": "csbc-constable-operator-02-2026",
+    "title": "CSBC Bihar Police Constable Operator Exam City / Admit card 2026",
+    "department": "CSBC Bihar Police Constable Operator Exam City",
     "departmentShort": "CSBC",
     "category": "Banking",
     "totalPosts": 0,
-    "lastDate": "2025-04-25T00:00:00.000Z",
-    "notificationDate": "2025-03-18T00:00:00.000Z",
-    "applicationStartDate": "2025-03-18T00:00:00.000Z",
-    "applicationEndDate": "2025-04-25T00:00:00.000Z",
+    "lastDate": "2026-03-31T00:00:00.000Z",
+    "notificationDate": "2026-03-01T00:00:00.000Z",
+    "applicationStartDate": "2026-03-01T00:00:00.000Z",
+    "applicationEndDate": "2026-03-31T00:00:00.000Z",
     "ageLimit": {
       "min": 18,
       "max": 25,
@@ -1959,16 +2436,16 @@
     },
     "qualification": "10+2 / Intermediate Pass",
     "applicationFee": {
-      "general": 675,
-      "sc_st": 180,
+      "general": 100,
+      "sc_st": 45,
       "female": 0
     },
-    "applyLink": "https://apply-csbc.com/CSBC_CT_V1_01_2025/",
-    "notificationLink": "https://csbc.bihar.gov.in/Advt/Notice%20-%2012-06-2025.pdf",
-    "status": "results",
+    "applyLink": "https://www.sarkariresult.com/bihar/csbc-constable-operator-02-2026/",
+    "notificationLink": "https://csbc.bihar.gov.in/Advt/Notice-02-2026-e-AdmitCard&amp;Exam-20-05-2026.pdf",
+    "status": "admit_card",
     "isNew": false,
     "isUrgent": false,
-    "description": "Government recruitment notification for CSBC Bihar Police Constable 2025 Final Result. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "description": "Government recruitment notification for CSBC Bihar Police Constable Operator Exam City / Admit card 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
       "Read the detailed notification / advertisement carefully.",
@@ -1981,210 +2458,47 @@
     "importantDates": [
       {
         "label": "Application Begin",
-        "date": "2025-03-18T00:00:00.000Z"
+        "date": "2026-03-01T00:00:00.000Z"
       },
       {
         "label": "Last Date for Apply Online",
-        "date": "2025-04-25T00:00:00.000Z"
+        "date": "2026-03-31T00:00:00.000Z"
       },
       {
         "label": "Pay Exam Fee Last Date",
-        "date": "2025-04-25T00:00:00.000Z"
+        "date": "2026-03-31T00:00:00.000Z"
       }
     ],
     "location": "All India"
   },
   {
-    "id": "upsssc-02-exam-2026",
-    "title": "UPSSSC UP Pollution Control Board Various Post Eligibility Result 2026",
-    "department": "UPSSSC UP Pollution Control Board Various Post Eligibility",
-    "departmentShort": "UPSSSC UP",
-    "category": "State",
-    "totalPosts": 49,
-    "lastDate": "2026-05-06T00:00:00.000Z",
-    "notificationDate": "2026-04-02T00:00:00.000Z",
-    "applicationStartDate": "2026-04-02T00:00:00.000Z",
-    "applicationEndDate": "2026-05-06T00:00:00.000Z",
-    "ageLimit": {
-      "min": 21,
-      "max": 40,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th / 12th / Graduation as per post",
-    "applicationFee": {
-      "general": 25,
-      "sc_st": 25,
-      "female": 0
-    },
-    "applyLink": "https://www.sarkariresult.com/upsssc/upsssc-02-exam-2026/",
-    "notificationLink": "https://doc.sarkariresults.org.in/UPSSSC_02Exam2026_Exam_Date.pdf",
-    "status": "results",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for UPSSSC UP Pollution Control Board Various Post Eligibility Result 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Application Begin",
-        "date": "2026-04-02T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Registration",
-        "date": "2026-04-29T00:00:00.000Z"
-      },
-      {
-        "label": "Fee Payment Last Date",
-        "date": "2026-04-29T00:00:00.000Z"
-      },
-      {
-        "label": "Correction Last Date",
-        "date": "2026-05-06T00:00:00.000Z"
-      }
-    ],
-    "location": "All India"
-  },
-  {
-    "id": "rrb-ntpc-undergraduate-06-2024",
-    "title": "Railway RRB NTPC 10+2 CEN 06/2024 Final Result",
-    "department": "Railway RRB NTPC 102 CEN 062024 Final",
-    "departmentShort": "RRB NTPC CEN",
-    "category": "Railway",
-    "totalPosts": 0,
-    "lastDate": "2024-10-29T00:00:00.000Z",
-    "notificationDate": "2024-09-21T00:00:00.000Z",
-    "applicationStartDate": "2024-09-21T00:00:00.000Z",
-    "applicationEndDate": "2024-10-29T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 33,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "Application Fee General / OBC / EWS : 500/- SC / ST / PH : 250/- All Category Female : 250/- After Appear the Stage I Exam UR/OBC/EWS Fee Refund : 400/- SC / ST / PH / Female Refund : 250/- Pay the Examination Fee Through Debit Card, Credit Card, Net Banking Fee Mode Only.",
-    "applicationFee": {
-      "general": 50,
-      "sc_st": 250,
-      "female": 250
-    },
-    "applyLink": "https://www.sarkariresult.com/railway/rrb-ntpc-undergraduate-06-2024/",
-    "notificationLink": "https://rrbbnc.gov.in/Result/Result%20Pub%20Doc%20of%20CEN%2006-2024%20dated%2026-05-2024.pdf",
-    "status": "results",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for Railway RRB NTPC 10+2 CEN 06/2024 Final Result. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Application Begin",
-        "date": "2024-09-21T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Apply Online",
-        "date": "2024-10-27T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date Pay Exam Fee",
-        "date": "2024-10-29T00:00:00.000Z"
-      }
-    ],
-    "location": "All India"
-  },
-  {
-    "id": "drdo-ceptam-11",
-    "title": "DRDO CEPTAM 11 Tier I Result 2026",
-    "department": "DRDO CEPTAM 11 Tier I",
-    "departmentShort": "DRDO CEPTAM",
+    "id": "nta-neet-ug-2026",
+    "title": "NTA National Eligibility Cum Entrance Test NEET Re-Exam Admit Card",
+    "department": "NTA National Eligibility Cum Entrance Test NEET ReExam",
+    "departmentShort": "NTA NEET",
     "category": "State",
     "totalPosts": 0,
-    "lastDate": "2026-01-13T00:00:00.000Z",
-    "notificationDate": "2025-12-11T00:00:00.000Z",
-    "applicationStartDate": "2025-12-11T00:00:00.000Z",
-    "applicationEndDate": "2026-01-13T00:00:00.000Z",
+    "lastDate": "2026-03-11T00:00:00.000Z",
+    "notificationDate": "2026-02-08T00:00:00.000Z",
+    "applicationStartDate": "2026-02-08T00:00:00.000Z",
+    "applicationEndDate": "2026-03-11T00:00:00.000Z",
     "ageLimit": {
-      "min": 18,
-      "max": 28,
+      "min": 17,
+      "max": 35,
       "relaxation": "As per government rules"
     },
-    "qualification": "10th / 12th / Graduation as per post",
+    "qualification": "NEET UG 2026 Age Limit Minimum Age : 17 Years Maximum Age : No Limit born on or before 31.12.2009 Age Relaxation Extra as per Rules. &nbsp;",
     "applicationFee": {
-      "general": 600,
-      "sc_st": 500,
-      "female": 500
-    },
-    "applyLink": "https://cdn.digialm.com/EForms/configuredHtml/1258/96576/Index.html",
-    "notificationLink": "https://doc.sarkariresults.org.in/sarkariresult.comTier_II_CBT_intimation26052026.pdf",
-    "status": "results",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for DRDO CEPTAM 11 Tier I Result 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Application Begin",
-        "date": "2025-12-11T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Apply Online",
-        "date": "2026-01-11T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date Pay Exam Fee",
-        "date": "2026-01-13T00:00:00.000Z"
-      }
-    ],
-    "location": "All India"
-  },
-  {
-    "id": "rbi-assistant-feb26",
-    "title": "RBI Assistant Pre Result 2026",
-    "department": "RBI Assistant Pre",
-    "departmentShort": "RBI",
-    "category": "Banking",
-    "totalPosts": 0,
-    "lastDate": "2026-03-10T00:00:00.000Z",
-    "notificationDate": "2026-02-16T00:00:00.000Z",
-    "applicationStartDate": "2026-02-16T00:00:00.000Z",
-    "applicationEndDate": "2026-03-10T00:00:00.000Z",
-    "ageLimit": {
-      "min": 20,
-      "max": 28,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th / 12th / Graduation as per post",
-    "applicationFee": {
-      "general": 450,
-      "sc_st": 50,
+      "general": 1600,
+      "sc_st": 42156,
       "female": 0
     },
-    "applyLink": "https://opportunities.rbi.org.in/Scripts/bs_viewcontent.aspx?Id=4934",
-    "notificationLink": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/DISPLAY_PRT25052026.pdf",
-    "status": "results",
+    "applyLink": "https://www.sarkariresult.com/2026/nta-neet-ug-2026/",
+    "notificationLink": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/06/202606071045836990.pdf",
+    "status": "admit_card",
     "isNew": false,
     "isUrgent": false,
-    "description": "Government recruitment notification for RBI Assistant Pre Result 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "description": "Government recruitment notification for NTA NEET UG 2026 Exam City Details. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
       "Read the detailed notification / advertisement carefully.",
@@ -2197,15 +2511,15 @@
     "importantDates": [
       {
         "label": "Application Begin",
-        "date": "2026-02-16T00:00:00.000Z"
+        "date": "2026-02-08T00:00:00.000Z"
       },
       {
         "label": "Last Date for Apply Online",
-        "date": "2026-03-10T00:00:00.000Z"
+        "date": "2026-03-11T00:00:00.000Z"
       },
       {
-        "label": "Last Date for Pay Exam Fee",
-        "date": "2026-03-10T00:00:00.000Z"
+        "label": "Last Date Online Payment",
+        "date": "2026-03-11T00:00:00.000Z"
       }
     ],
     "location": "All India"
@@ -2312,6 +2626,59 @@
       {
         "label": "Pay Exam Fee Last Date",
         "date": "2026-06-02T00:00:00.000Z"
+      }
+    ],
+    "location": "All India"
+  },
+  {
+    "id": "drdo-ceptam-11",
+    "title": "DRDO CEPTAM 11 Tier II Admit Card 2026",
+    "department": "DRDO CEPTAM 11 Tier II",
+    "departmentShort": "DRDO CEPTAM II",
+    "category": "State",
+    "totalPosts": 0,
+    "lastDate": "2026-01-13T00:00:00.000Z",
+    "notificationDate": "2025-12-11T00:00:00.000Z",
+    "applicationStartDate": "2025-12-11T00:00:00.000Z",
+    "applicationEndDate": "2026-01-13T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 28,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th / 12th / Graduation as per post",
+    "applicationFee": {
+      "general": 600,
+      "sc_st": 500,
+      "female": 500
+    },
+    "applyLink": "https://cdn.digialm.com/EForms/configuredHtml/1258/96576/Index.html",
+    "notificationLink": "https://doc.sarkariresults.org.in/sarkariresult.comTier_II_CBT_intimation26052026.pdf",
+    "status": "admit_card",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for DRDO CEPTAM 11 Tier I Result 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Application Begin",
+        "date": "2025-12-11T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date for Apply Online",
+        "date": "2026-01-11T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date Pay Exam Fee",
+        "date": "2026-01-13T00:00:00.000Z"
       }
     ],
     "location": "All India"
@@ -2588,59 +2955,6 @@
     "location": "All India"
   },
   {
-    "id": "csbc-bihar-constable-special-01-2026",
-    "title": "CSBC Bihar Police Constable Special Branch Exam City Details 2026",
-    "department": "CSBC Bihar Police Constable Special Branch Exam City Details",
-    "departmentShort": "CSBC",
-    "category": "Banking",
-    "totalPosts": 0,
-    "lastDate": "2026-03-05T00:00:00.000Z",
-    "notificationDate": "2026-02-06T00:00:00.000Z",
-    "applicationStartDate": "2026-02-06T00:00:00.000Z",
-    "applicationEndDate": "2026-03-05T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 25,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10+2 / Intermediate Pass",
-    "applicationFee": {
-      "general": 100,
-      "sc_st": 100,
-      "female": 0
-    },
-    "applyLink": "https://www.sarkariresult.com/bihar/csbc-bihar-constable-special-01-2026/",
-    "notificationLink": "https://csbc.bihar.gov.in/Advt/Notice-01-2026-e-AdmitCard&amp;Exam-20-05-2026.pdf",
-    "status": "admit_card",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for CSBC Bihar Police Constable Special Branch Exam City Details 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Application Begin",
-        "date": "2026-02-06T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Apply Online",
-        "date": "2026-03-05T00:00:00.000Z"
-      },
-      {
-        "label": "Pay Exam Fee Last Date",
-        "date": "2026-03-05T00:00:00.000Z"
-      }
-    ],
-    "location": "All India"
-  },
-  {
     "id": "nta-ugc-net-june-2026",
     "title": "NTA UGC NET June 2026 Exam City Details",
     "department": "NTA UGC NET June  Exam City Details",
@@ -2689,6 +3003,59 @@
       {
         "label": "Fee Payment Last Date",
         "date": "2026-05-24T00:00:00.000Z"
+      }
+    ],
+    "location": "All India"
+  },
+  {
+    "id": "csbc-bihar-constable-special-01-2026",
+    "title": "CSBC Bihar Police Constable Special Branch Exam City Details 2026",
+    "department": "CSBC Bihar Police Constable Special Branch Exam City Details",
+    "departmentShort": "CSBC",
+    "category": "Banking",
+    "totalPosts": 0,
+    "lastDate": "2026-03-05T00:00:00.000Z",
+    "notificationDate": "2026-02-06T00:00:00.000Z",
+    "applicationStartDate": "2026-02-06T00:00:00.000Z",
+    "applicationEndDate": "2026-03-05T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 25,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10+2 / Intermediate Pass",
+    "applicationFee": {
+      "general": 100,
+      "sc_st": 100,
+      "female": 0
+    },
+    "applyLink": "https://www.sarkariresult.com/bihar/csbc-bihar-constable-special-01-2026/",
+    "notificationLink": "https://csbc.bihar.gov.in/Advt/Notice-01-2026-e-AdmitCard&amp;Exam-20-05-2026.pdf",
+    "status": "admit_card",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for CSBC Bihar Police Constable Special Branch Exam City Details 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Application Begin",
+        "date": "2026-02-06T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date for Apply Online",
+        "date": "2026-03-05T00:00:00.000Z"
+      },
+      {
+        "label": "Pay Exam Fee Last Date",
+        "date": "2026-03-05T00:00:00.000Z"
       }
     ],
     "location": "All India"
@@ -2853,59 +3220,6 @@
       {
         "label": "Last Date to Apply",
         "date": "2026-06-25T23:47:37.819Z"
-      }
-    ],
-    "location": "All India"
-  },
-  {
-    "id": "nta-neet-ug-2026",
-    "title": "NTA NEET UG 2026 Exam City Details",
-    "department": "NTA NEET UG  Exam City Details",
-    "departmentShort": "NTA NEET UG",
-    "category": "State",
-    "totalPosts": 0,
-    "lastDate": "2026-03-11T00:00:00.000Z",
-    "notificationDate": "2026-02-08T00:00:00.000Z",
-    "applicationStartDate": "2026-02-08T00:00:00.000Z",
-    "applicationEndDate": "2026-03-11T00:00:00.000Z",
-    "ageLimit": {
-      "min": 17,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "NEET UG 2026 Age Limit Minimum Age : 17 Years Maximum Age : No Limit born on or before 31.12.2009 Age Relaxation Extra as per Rules. &nbsp;",
-    "applicationFee": {
-      "general": 1600,
-      "sc_st": 42156,
-      "female": 0
-    },
-    "applyLink": "https://www.sarkariresult.com/2026/nta-neet-ug-2026/",
-    "notificationLink": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/06/202606071045836990.pdf",
-    "status": "admit_card",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for NTA NEET UG 2026 Exam City Details. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Application Begin",
-        "date": "2026-02-08T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Apply Online",
-        "date": "2026-03-11T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date Online Payment",
-        "date": "2026-03-11T00:00:00.000Z"
       }
     ],
     "location": "All India"
@@ -3346,33 +3660,33 @@
     "location": "All India"
   },
   {
-    "id": "csbc-bihar-pohibition-03-2025",
-    "title": "CSBC Prohibition Constable, Jail Warder Admit Card 2026",
-    "department": "CSBC Prohibition Constable Jail Warder",
-    "departmentShort": "CSBC",
-    "category": "Police",
-    "totalPosts": 0,
-    "lastDate": "2025-11-05T00:00:00.000Z",
-    "notificationDate": "2025-10-06T00:00:00.000Z",
-    "applicationStartDate": "2025-10-06T00:00:00.000Z",
-    "applicationEndDate": "2025-11-05T00:00:00.000Z",
+    "id": "upsssc-10-exam-2026",
+    "title": "UPSSSC Platoon Commander, Block Organizer Online form 2026",
+    "department": "UPSSSC Platoon Commander Block Organizer",
+    "departmentShort": "UPSSSC",
+    "category": "State",
+    "totalPosts": 134,
+    "lastDate": "2026-07-06T00:00:00.000Z",
+    "notificationDate": "2026-06-16T00:00:00.000Z",
+    "applicationStartDate": "2026-06-16T00:00:00.000Z",
+    "applicationEndDate": "2026-07-06T00:00:00.000Z",
     "ageLimit": {
       "min": 18,
-      "max": 25,
+      "max": 40,
       "relaxation": "As per government rules"
     },
-    "qualification": "10+2 / Intermediate Pass",
+    "qualification": "10th / 12th / Graduation as per post",
     "applicationFee": {
-      "general": 100,
-      "sc_st": 100,
-      "female": 0
+      "general": 25,
+      "sc_st": 102026,
+      "female": 25
     },
-    "applyLink": "https://www.sarkariresult.com/bihar/csbc-bihar-pohibition-03-2025/",
-    "notificationLink": "https://doc.sarkariresults.org.in/CSBC_Notice-03-2025-e-AdmitCard&amp;Exam-20-05-2026.pdf",
-    "status": "admit_card",
-    "isNew": false,
+    "applyLink": "https://upsssc.gov.in/AllNotifications.aspx",
+    "notificationLink": "https://doc.sarkariresults.org.in/sarkariresult.com_UPSSSC_10_Exam_2026_Notification%20(1).pdf",
+    "status": "latest",
+    "isNew": true,
     "isUrgent": false,
-    "description": "Government recruitment notification for CSBC Prohibition Constable, Jail Warder Admit Card 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "description": "Government recruitment notification for UPSSSC Platoon Commander, Block Organizer Online form 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
       "Read the detailed notification / advertisement carefully.",
@@ -3385,101 +3699,48 @@
     "importantDates": [
       {
         "label": "Application Begin",
-        "date": "2025-10-06T00:00:00.000Z"
+        "date": "2026-06-16T00:00:00.000Z"
       },
       {
         "label": "Last Date for Apply Online",
-        "date": "2025-11-05T00:00:00.000Z"
+        "date": "2026-07-06T00:00:00.000Z"
       },
       {
         "label": "Pay Exam Fee Last Date",
-        "date": "2025-11-05T00:00:00.000Z"
-      }
-    ],
-    "location": "All India"
-  },
-  {
-    "id": "aiims-cre-june-2026",
-    "title": "AIIMS Common Recruitment Exam CRE-5 Group B &amp; C 2026 Online Form",
-    "department": "AIIMS Common",
-    "departmentShort": "AIIMS",
-    "category": "State",
-    "totalPosts": 71,
-    "lastDate": "2026-06-28T23:47:37.819Z",
-    "notificationDate": "2026-06-12T23:47:37.819Z",
-    "applicationStartDate": "2026-06-12T23:47:37.819Z",
-    "applicationEndDate": "2026-06-28T23:47:37.819Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th / 12th / Graduation as per post",
-    "applicationFee": {
-      "general": 100,
-      "sc_st": 50,
-      "female": 0
-    },
-    "applyLink": "https://www.sarkariresult.com/2026/aiims-cre-june-2026/",
-    "notificationLink": "https://rrpdocuments.aiimsexams.ac.in/1781357690245-579948214.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAVRUVRLXWMSLVSAP7%2F20260613%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T135714Z&amp;X-Amz-Expires=18000&amp;X-Amz-Signature=af7653dc054df8c3a6f7642efc5d99c825ac93db273b2ef74ffa3856cb6d607b&amp;X-Amz-SignedHeaders=host&amp;response-content-type=application%2Fpdf",
-    "status": "latest",
-    "isNew": true,
-    "isUrgent": false,
-    "description": "Government recruitment notification for AIIMS Common Recruitment Exam CRE-5 Group B &amp; C 2026 Online Form. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Notification Released",
-        "date": "2026-06-12T23:47:37.819Z"
-      },
-      {
-        "label": "Application Start Date",
-        "date": "2026-06-12T23:47:37.819Z"
-      },
-      {
-        "label": "Last Date to Apply",
-        "date": "2026-06-28T23:47:37.819Z"
+        "date": "2026-07-06T00:00:00.000Z"
       }
     ],
     "salary": "₹25,500 – ₹81,100/- PM",
     "location": "All India"
   },
   {
-    "id": "jipmer-non-faculty-june-2026",
-    "title": "JIPMER Group A Non-Faculty Recruitment 2026",
-    "department": "JIPMER Group A NonFaculty",
-    "departmentShort": "JIPMER",
-    "category": "State",
-    "totalPosts": 877,
+    "id": "lakshmibai-college-teaching-post-june-2026",
+    "title": "Lakshmibai College Delhi Non Teaching Post Online Form 2026",
+    "department": "Lakshmibai College Delhi Non Teaching Post",
+    "departmentShort": "Lakshmibai College",
+    "category": "Teaching",
+    "totalPosts": 423,
     "lastDate": "2026-07-01T00:00:00.000Z",
-    "notificationDate": "2026-06-12T00:00:00.000Z",
-    "applicationStartDate": "2026-06-12T00:00:00.000Z",
+    "notificationDate": "2026-06-11T00:00:00.000Z",
+    "applicationStartDate": "2026-06-11T00:00:00.000Z",
     "applicationEndDate": "2026-07-01T00:00:00.000Z",
     "ageLimit": {
       "min": 18,
-      "max": 35,
+      "max": 32,
       "relaxation": "As per government rules"
     },
     "qualification": "10th / 12th / Graduation as per post",
     "applicationFee": {
-      "general": 1500,
+      "general": 800,
       "sc_st": 0,
       "female": 0
     },
-    "applyLink": "https://cdn.digialm.com/EForms/configuredHtml/827/101080/Registration.html",
-    "notificationLink": "https://jipmer.edu.in/sites/default/files/Detailed%20Advertisement%20for%20Various%20Group%20A%20%28Non%20Faculty%29%20posts%202026.pdf",
+    "applyLink": "https://rec.uod.ac.in/",
+    "notificationLink": "https://lakshmibaicollege.in/Secure-admin/webroot/upload/customfiles/11062026111917ADVERTISEMENT-merged.pdf",
     "status": "latest",
-    "isNew": true,
+    "isNew": false,
     "isUrgent": false,
-    "description": "Government recruitment notification for JIPMER Group A Non-Faculty Recruitment 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "description": "Government recruitment notification for Lakshmibai College Delhi Non Teaching Post Online Form 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
       "Read the detailed notification / advertisement carefully.",
@@ -3492,7 +3753,7 @@
     "importantDates": [
       {
         "label": "Application Begin",
-        "date": "2026-06-12T00:00:00.000Z"
+        "date": "2026-06-11T00:00:00.000Z"
       },
       {
         "label": "Last Date for Apply Online",
@@ -3504,60 +3765,6 @@
       }
     ],
     "salary": "₹25,500 – ₹81,100/- PM",
-    "location": "All India"
-  },
-  {
-    "id": "cbi-apprentice-june-2026",
-    "title": "Central Bank of India Apprentice Online Form 2026",
-    "department": "Central Bank of India Apprentice",
-    "departmentShort": "Central Bank",
-    "category": "Banking",
-    "totalPosts": 944,
-    "lastDate": "2026-06-22T00:00:00.000Z",
-    "notificationDate": "2026-06-12T00:00:00.000Z",
-    "applicationStartDate": "2026-06-12T00:00:00.000Z",
-    "applicationEndDate": "2026-06-22T00:00:00.000Z",
-    "ageLimit": {
-      "min": 20,
-      "max": 28,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th / 12th / Graduation as per post",
-    "applicationFee": {
-      "general": 708,
-      "sc_st": 236,
-      "female": 0
-    },
-    "applyLink": "https://nats.education.gov.in/student_type.php",
-    "notificationLink": "https://centralbank.bank.in/sites/default/files/Notification%20for%20the%20Engagement%20of%20Apprentices%20under%20the%20Apprentices%20%20Act%2C%201961%20for%20F.Y.%202026-27%20.pdf",
-    "status": "latest",
-    "isNew": true,
-    "isUrgent": false,
-    "description": "Government recruitment notification for Central Bank of India Apprentice Online Form 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Application Begin",
-        "date": "2026-06-12T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Apply Online",
-        "date": "2026-06-22T00:00:00.000Z"
-      },
-      {
-        "label": "Pay Exam Fee Last Date",
-        "date": "2026-06-22T00:00:00.000Z"
-      }
-    ],
-    "salary": "₹35,000 – ₹1,05,000/- PM",
     "location": "All India"
   },
   {
@@ -3612,6 +3819,168 @@
       }
     ],
     "salary": "₹25,500 – ₹81,100/- PM",
+    "location": "All India"
+  },
+  {
+    "id": "aiims-cre-june-2026",
+    "title": "AIIMS Common Recruitment Exam CRE-5 Group B &amp; C 2026 Online Form",
+    "department": "AIIMS Common",
+    "departmentShort": "AIIMS",
+    "category": "State",
+    "totalPosts": 71,
+    "lastDate": "2026-06-28T23:47:37.819Z",
+    "notificationDate": "2026-06-12T23:47:37.819Z",
+    "applicationStartDate": "2026-06-12T23:47:37.819Z",
+    "applicationEndDate": "2026-06-28T23:47:37.819Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 35,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th / 12th / Graduation as per post",
+    "applicationFee": {
+      "general": 100,
+      "sc_st": 50,
+      "female": 0
+    },
+    "applyLink": "https://www.sarkariresult.com/2026/aiims-cre-june-2026/",
+    "notificationLink": "https://rrpdocuments.aiimsexams.ac.in/1781357690245-579948214.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAVRUVRLXWMSLVSAP7%2F20260613%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T135714Z&amp;X-Amz-Expires=18000&amp;X-Amz-Signature=af7653dc054df8c3a6f7642efc5d99c825ac93db273b2ef74ffa3856cb6d607b&amp;X-Amz-SignedHeaders=host&amp;response-content-type=application%2Fpdf",
+    "status": "latest",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for AIIMS Common Recruitment Exam CRE-5 Group B &amp; C 2026 Online Form. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Notification Released",
+        "date": "2026-06-12T23:47:37.819Z"
+      },
+      {
+        "label": "Application Start Date",
+        "date": "2026-06-12T23:47:37.819Z"
+      },
+      {
+        "label": "Last Date to Apply",
+        "date": "2026-06-28T23:47:37.819Z"
+      }
+    ],
+    "salary": "₹25,500 – ₹81,100/- PM",
+    "location": "All India"
+  },
+  {
+    "id": "jipmer-non-faculty-june-2026",
+    "title": "JIPMER Group A Non-Faculty Online Form 2026",
+    "department": "JIPMER Group A NonFaculty",
+    "departmentShort": "JIPMER",
+    "category": "State",
+    "totalPosts": 877,
+    "lastDate": "2026-07-01T00:00:00.000Z",
+    "notificationDate": "2026-06-12T00:00:00.000Z",
+    "applicationStartDate": "2026-06-12T00:00:00.000Z",
+    "applicationEndDate": "2026-07-01T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 35,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th / 12th / Graduation as per post",
+    "applicationFee": {
+      "general": 1500,
+      "sc_st": 0,
+      "female": 0
+    },
+    "applyLink": "https://cdn.digialm.com/EForms/configuredHtml/827/101080/Registration.html",
+    "notificationLink": "https://jipmer.edu.in/sites/default/files/Detailed%20Advertisement%20for%20Various%20Group%20A%20%28Non%20Faculty%29%20posts%202026.pdf",
+    "status": "latest",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for JIPMER Group A Non-Faculty Recruitment 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Application Begin",
+        "date": "2026-06-12T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date for Apply Online",
+        "date": "2026-07-01T00:00:00.000Z"
+      },
+      {
+        "label": "Pay Exam Fee Last Date",
+        "date": "2026-07-01T00:00:00.000Z"
+      }
+    ],
+    "salary": "₹25,500 – ₹81,100/- PM",
+    "location": "All India"
+  },
+  {
+    "id": "cbi-apprentice-june-2026",
+    "title": "Central Bank of India Apprentice Online Form 2026",
+    "department": "Central Bank of India Apprentice",
+    "departmentShort": "Central Bank",
+    "category": "Banking",
+    "totalPosts": 944,
+    "lastDate": "2026-06-22T00:00:00.000Z",
+    "notificationDate": "2026-06-12T00:00:00.000Z",
+    "applicationStartDate": "2026-06-12T00:00:00.000Z",
+    "applicationEndDate": "2026-06-22T00:00:00.000Z",
+    "ageLimit": {
+      "min": 20,
+      "max": 28,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th / 12th / Graduation as per post",
+    "applicationFee": {
+      "general": 708,
+      "sc_st": 236,
+      "female": 0
+    },
+    "applyLink": "https://nats.education.gov.in/student_type.php",
+    "notificationLink": "https://centralbank.bank.in/sites/default/files/Notification%20for%20the%20Engagement%20of%20Apprentices%20under%20the%20Apprentices%20%20Act%2C%201961%20for%20F.Y.%202026-27%20.pdf",
+    "status": "latest",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for Central Bank of India Apprentice Online Form 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Application Begin",
+        "date": "2026-06-12T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date for Apply Online",
+        "date": "2026-06-22T00:00:00.000Z"
+      },
+      {
+        "label": "Pay Exam Fee Last Date",
+        "date": "2026-06-22T00:00:00.000Z"
+      }
+    ],
+    "salary": "₹35,000 – ₹1,05,000/- PM",
     "location": "All India"
   },
   {
@@ -3968,7 +4337,7 @@
     "notificationLink": "https://youtu.be/Ld0G7fE_pfU",
     "status": "latest",
     "isNew": false,
-    "isUrgent": true,
+    "isUrgent": false,
     "description": "Government recruitment notification for Bank of Baroda Apprentices Online Form 2026 Extended. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
@@ -4021,7 +4390,7 @@
     "applyLink": "https://www.sarkariresult.com/2026/hcl-executive-june-2026/",
     "notificationLink": "https://www.hindustancopper.com/Upload/Notice/0-639145466897053750-NoticeFILE.pdf",
     "status": "latest",
-    "isNew": true,
+    "isNew": false,
     "isUrgent": false,
     "description": "Government recruitment notification for Hindustan Copper Limited HCL Executive Online Form 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
@@ -4076,7 +4445,7 @@
     "notificationLink": "https://doc.sarkariresults.org.in/SBI_SarkariResult.Com_APPRENTICE%202026%20ADVERTISEMENT%20CRPD_APPR_2026-27_07.pdf",
     "status": "latest",
     "isNew": false,
-    "isUrgent": true,
+    "isUrgent": false,
     "description": "Government recruitment notification for State Bank of India SBI Apprentices Online Form 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
@@ -4184,7 +4553,7 @@
     "notificationLink": "https://sgpgims.eapplynow.com/SGPGIBL26/Pages/Index.aspx",
     "status": "latest",
     "isNew": false,
-    "isUrgent": true,
+    "isUrgent": false,
     "description": "Government recruitment notification for SGPGI Non Teaching Various Post Online Form 2026 (Backlog). Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
@@ -4291,7 +4660,7 @@
     "applyLink": "https://www.sarkariresult.com/2026/bsnl-jto-2026/",
     "notificationLink": "https://externalexam.bsnl.co.in/Examination%20notification%20DR%20JTO(T).pdf",
     "status": "latest",
-    "isNew": true,
+    "isNew": false,
     "isUrgent": false,
     "description": "Government recruitment notification for BSNL Junior Telecom Officer JTO Online Form 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
@@ -4508,7 +4877,7 @@
     "notificationLink": "https://www.joinindiannavy.gov.in/files/Advertisement_10+2_B.Tech_Jan_27.pdf",
     "status": "latest",
     "isNew": false,
-    "isUrgent": false,
+    "isUrgent": true,
     "description": "Government recruitment notification for Indian Navy 10+2 B.Tech Entry Online Form 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
@@ -4558,7 +4927,7 @@
     "notificationLink": "https://tinyurl.com/2b7fx3zf",
     "status": "latest",
     "isNew": false,
-    "isUrgent": false,
+    "isUrgent": true,
     "description": "Government recruitment notification for UPSSSC Technical Assistant Group C Online Form 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
@@ -4591,33 +4960,33 @@
     "location": "All India"
   },
   {
-    "id": "afcat-02-2026",
-    "title": "Indian Airforce AFCAT 02/2026 Online Form",
-    "department": "Indian Airforce AFCAT 022026",
-    "departmentShort": "AFCAT",
-    "category": "State",
-    "totalPosts": 619,
-    "lastDate": "2026-06-19T00:00:00.000Z",
-    "notificationDate": "2026-05-20T00:00:00.000Z",
-    "applicationStartDate": "2026-05-20T00:00:00.000Z",
-    "applicationEndDate": "2026-06-19T00:00:00.000Z",
+    "id": "ssc-gd-2025-exam-2026",
+    "title": "SSC GD Constable Answer Key 2026",
+    "department": "SSC GD Constable",
+    "departmentShort": "SSC GD",
+    "category": "SSC",
+    "totalPosts": 0,
+    "lastDate": "2026-01-01T00:00:00.000Z",
+    "notificationDate": "2025-12-01T00:00:00.000Z",
+    "applicationStartDate": "2025-12-01T00:00:00.000Z",
+    "applicationEndDate": "2026-01-01T00:00:00.000Z",
     "ageLimit": {
       "min": 18,
-      "max": 35,
+      "max": 23,
       "relaxation": "As per government rules"
     },
-    "qualification": "10th / 12th / Graduation as per post",
+    "qualification": "Application Fee General / OBC / EWS : 100/- SC / ST : 0/- Exempted Female : 0/- Exempted Correction Charge : 200/- First Time Correction Charge : 500/- (Second Time) Pay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking",
     "applicationFee": {
-      "general": 0,
-      "sc_st": 19062026,
+      "general": 100,
+      "sc_st": 0,
       "female": 0
     },
-    "applyLink": "https://www.sarkariresult.com/force/afcat-02-2026/",
-    "notificationLink": "https://doc.sarkariresults.org.in/SarkariResult.Com_Notification%20for%20AFCAT%20Cycle%2002-2026.pdf",
-    "status": "latest",
+    "applyLink": "https://www.sarkariresult.com/ssc/ssc-gd-2025-exam-2026/",
+    "notificationLink": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_17022026.pdf",
+    "status": "answer_key",
     "isNew": false,
     "isUrgent": false,
-    "description": "Government recruitment notification for Indian Airforce AFCAT 02/2026 Online Form. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "description": "Government recruitment notification for SSC GD Constable Answer Key 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
       "Read the detailed notification / advertisement carefully.",
@@ -4630,72 +4999,17 @@
     "importantDates": [
       {
         "label": "Application Begin",
-        "date": "2026-05-20T00:00:00.000Z"
+        "date": "2025-12-01T00:00:00.000Z"
       },
       {
         "label": "Last Date for Apply Online",
-        "date": "2026-06-19T00:00:00.000Z"
+        "date": "2025-12-31T00:00:00.000Z"
       },
       {
         "label": "Last Date Pay Exam Fee",
-        "date": "2026-06-19T00:00:00.000Z"
+        "date": "2026-01-01T00:00:00.000Z"
       }
     ],
-    "salary": "₹25,500 – ₹81,100/- PM",
-    "location": "All India"
-  },
-  {
-    "id": "secr-nagpur-apprentices-may26",
-    "title": "Railway SECR Nagpur Apprentices Online Form 2026",
-    "department": "Railway SECR Nagpur Apprentices",
-    "departmentShort": "SECR",
-    "category": "Railway",
-    "totalPosts": 457,
-    "lastDate": "2026-06-18T00:00:00.000Z",
-    "notificationDate": "2026-05-19T00:00:00.000Z",
-    "applicationStartDate": "2026-05-19T00:00:00.000Z",
-    "applicationEndDate": "2026-06-18T00:00:00.000Z",
-    "ageLimit": {
-      "min": 15,
-      "max": 24,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th / 12th / Graduation as per post",
-    "applicationFee": {
-      "general": 500,
-      "sc_st": 18062026,
-      "female": 0
-    },
-    "applyLink": "https://www.sarkariresult.com/railway/secr-nagpur-apprentices-may26/",
-    "notificationLink": "https://doc.sarkariresults.org.in/SECR_Nagpur_SarkariResult.Com_Apprentices_Notification_2026.pdf",
-    "status": "latest",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for Railway SECR Nagpur Apprentices Online Form 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Application Begin",
-        "date": "2026-05-19T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Apply Online",
-        "date": "2026-06-18T00:00:00.000Z"
-      },
-      {
-        "label": "Complete Form Last Date",
-        "date": "2026-06-18T00:00:00.000Z"
-      }
-    ],
-    "salary": "₹21,700 – ₹69,100/- PM",
     "location": "All India"
   },
   {
@@ -5074,59 +5388,6 @@
     "location": "All India"
   },
   {
-    "id": "upsc-ias-ifs-pre-2026",
-    "title": "UPSC Civil Services IAS Pre Answer Key 2026",
-    "department": "UPSC Civil Services IAS Pre",
-    "departmentShort": "UPSC IAS",
-    "category": "UPSC",
-    "totalPosts": 0,
-    "lastDate": "2026-02-27T00:00:00.000Z",
-    "notificationDate": "2026-02-04T00:00:00.000Z",
-    "applicationStartDate": "2026-02-04T00:00:00.000Z",
-    "applicationEndDate": "2026-02-27T00:00:00.000Z",
-    "ageLimit": {
-      "min": 21,
-      "max": 32,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th / 12th / Graduation as per post",
-    "applicationFee": {
-      "general": 100,
-      "sc_st": 0,
-      "female": 0
-    },
-    "applyLink": "https://www.sarkariresult.com/upsc/upsc-ias-ifs-pre-2026/",
-    "notificationLink": "https://doc.sarkariresults.org.in/UPSC_IAS_2026_SarkariResult_Com_english_notification-compressed.pdf",
-    "status": "answer_key",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for UPSC Civil Services IAS Pre Answer Key 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Application Begin",
-        "date": "2026-02-04T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Apply Online",
-        "date": "2026-02-27T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date Pay Exam Fee",
-        "date": "2026-02-27T00:00:00.000Z"
-      }
-    ],
-    "location": "All India"
-  },
-  {
     "id": "upsssc-lekhpal-02-exam-2025",
     "title": "UPSSSC Lekhpal Answer Key 2026",
     "department": "UPSSSC Lekhpal",
@@ -5409,11 +5670,11 @@
     "department": "Certificate",
     "departmentShort": "Certificate",
     "category": "State",
-    "totalPosts": 268,
-    "lastDate": "2026-06-29T03:30:03.087Z",
-    "notificationDate": "2026-06-13T03:30:03.087Z",
-    "applicationStartDate": "2026-06-13T03:30:03.087Z",
-    "applicationEndDate": "2026-06-29T03:30:03.087Z",
+    "totalPosts": 582,
+    "lastDate": "2026-06-27T19:01:08.356Z",
+    "notificationDate": "2026-06-14T19:01:08.356Z",
+    "applicationStartDate": "2026-06-14T19:01:08.356Z",
+    "applicationEndDate": "2026-06-27T19:01:08.356Z",
     "ageLimit": {
       "min": 18,
       "max": 35,
@@ -5421,8 +5682,8 @@
     },
     "qualification": "10th / 12th / Graduation as per post",
     "applicationFee": {
-      "general": 500,
-      "sc_st": 250,
+      "general": 0,
+      "sc_st": 0,
       "female": 0
     },
     "applyLink": "https://sarkariresult.com/certificate/",
@@ -5443,15 +5704,15 @@
     "importantDates": [
       {
         "label": "Notification Released",
-        "date": "2026-06-13T03:30:03.087Z"
+        "date": "2026-06-14T19:01:08.356Z"
       },
       {
         "label": "Application Start Date",
-        "date": "2026-06-13T03:30:03.087Z"
+        "date": "2026-06-14T19:01:08.356Z"
       },
       {
         "label": "Last Date to Apply",
-        "date": "2026-06-29T03:30:03.087Z"
+        "date": "2026-06-27T19:01:08.356Z"
       }
     ],
     "salary": "₹25,500 – ₹81,100/- PM",
@@ -5699,7 +5960,7 @@
     "notificationLink": "https://www.sarkariresult.com/outsourcing/",
     "status": "latest",
     "isNew": false,
-    "isUrgent": true,
+    "isUrgent": false,
     "description": "Government recruitment notification for Outsourcing / Offline Jobs. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
@@ -5714,6 +5975,60 @@
       {
         "label": "UP Sewayojan Vibhag MTS Online Form 2026 | Last Date",
         "date": "2026-06-16T00:00:00.000Z"
+      }
+    ],
+    "salary": "₹25,500 – ₹81,100/- PM",
+    "location": "All India"
+  },
+  {
+    "id": "up-basic-shiksha-june-2026",
+    "title": "UP Special Educator Recruitment 2026",
+    "department": "UP Special Educator",
+    "departmentShort": "UP",
+    "category": "State",
+    "totalPosts": 901,
+    "lastDate": "2026-06-30T19:01:08.356Z",
+    "notificationDate": "2026-06-15T19:01:08.356Z",
+    "applicationStartDate": "2026-06-15T19:01:08.356Z",
+    "applicationEndDate": "2026-06-30T19:01:08.356Z",
+    "ageLimit": {
+      "min": 21,
+      "max": 40,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th / 12th / Graduation as per post",
+    "applicationFee": {
+      "general": 0,
+      "sc_st": 0,
+      "female": 0
+    },
+    "applyLink": "https://www.sarkariresult.com/2026/up-basic-shiksha-june-2026/",
+    "notificationLink": "https://www.sarkariresult.com/2026/up-basic-shiksha-june-2026/",
+    "status": "latest",
+    "isNew": true,
+    "isUrgent": false,
+    "description": "Government recruitment notification for UP Special Educator Recruitment 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Notification Released",
+        "date": "2026-06-15T19:01:08.356Z"
+      },
+      {
+        "label": "Application Start Date",
+        "date": "2026-06-15T19:01:08.356Z"
+      },
+      {
+        "label": "Last Date to Apply",
+        "date": "2026-06-30T19:01:08.356Z"
       }
     ],
     "salary": "₹25,500 – ₹81,100/- PM",
@@ -5745,7 +6060,7 @@
     "notificationLink": "https://www.sarkariresult.com/wp-content/uploads/2026/06/SarkariResult.com_UP_SewaYojan_MTS_June26.pdf",
     "status": "latest",
     "isNew": false,
-    "isUrgent": true,
+    "isUrgent": false,
     "description": "Government recruitment notification for UP Sewayojan Vibhag MTS Online Form 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
@@ -5794,7 +6109,7 @@
     "applyLink": "https://tinyurl.com/bddkhszz",
     "notificationLink": "https://tinyurl.com/mcb7235",
     "status": "latest",
-    "isNew": true,
+    "isNew": false,
     "isUrgent": false,
     "description": "Government recruitment notification for Kasturba Gandhi School Kushinagar Recruitment 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
@@ -6207,11 +6522,11 @@
     "department": "UPSSSC",
     "departmentShort": "UPSSSC",
     "category": "State",
-    "totalPosts": 758,
-    "lastDate": "2026-07-08T03:30:03.088Z",
-    "notificationDate": "2026-06-10T03:30:03.088Z",
-    "applicationStartDate": "2026-06-10T03:30:03.088Z",
-    "applicationEndDate": "2026-07-08T03:30:03.088Z",
+    "totalPosts": 305,
+    "lastDate": "2026-06-24T19:01:08.356Z",
+    "notificationDate": "2026-06-15T19:01:08.356Z",
+    "applicationStartDate": "2026-06-15T19:01:08.356Z",
+    "applicationEndDate": "2026-06-24T19:01:08.356Z",
     "ageLimit": {
       "min": 18,
       "max": 35,
@@ -6219,14 +6534,14 @@
     },
     "qualification": "10th / 12th / Graduation as per post",
     "applicationFee": {
-      "general": 500,
-      "sc_st": 250,
+      "general": 100,
+      "sc_st": 50,
       "female": 0
     },
     "applyLink": "https://sarkariresult.com/upsssc/",
     "notificationLink": "https://sarkariresult.com/upsssc/",
     "status": "latest",
-    "isNew": false,
+    "isNew": true,
     "isUrgent": false,
     "description": "Government recruitment notification for UPSSSC. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
@@ -6241,15 +6556,15 @@
     "importantDates": [
       {
         "label": "Notification Released",
-        "date": "2026-06-10T03:30:03.088Z"
+        "date": "2026-06-15T19:01:08.356Z"
       },
       {
         "label": "Application Start Date",
-        "date": "2026-06-10T03:30:03.088Z"
+        "date": "2026-06-15T19:01:08.356Z"
       },
       {
         "label": "Last Date to Apply",
-        "date": "2026-07-08T03:30:03.088Z"
+        "date": "2026-06-24T19:01:08.356Z"
       }
     ],
     "salary": "₹25,500 – ₹81,100/- PM",
@@ -6261,11 +6576,11 @@
     "department": "Air Force",
     "departmentShort": "Air Force",
     "category": "Defence",
-    "totalPosts": 135,
-    "lastDate": "2026-06-19T03:30:03.088Z",
-    "notificationDate": "2026-06-13T03:30:03.088Z",
-    "applicationStartDate": "2026-06-13T03:30:03.088Z",
-    "applicationEndDate": "2026-06-19T03:30:03.088Z",
+    "totalPosts": 528,
+    "lastDate": "2026-07-01T19:01:08.356Z",
+    "notificationDate": "2026-06-13T19:01:08.356Z",
+    "applicationStartDate": "2026-06-13T19:01:08.356Z",
+    "applicationEndDate": "2026-07-01T19:01:08.356Z",
     "ageLimit": {
       "min": 18,
       "max": 22,
@@ -6273,14 +6588,14 @@
     },
     "qualification": "10th / 12th / Graduation as per post",
     "applicationFee": {
-      "general": 500,
-      "sc_st": 250,
+      "general": 0,
+      "sc_st": 0,
       "female": 0
     },
     "applyLink": "https://sarkariresult.com/indian-air-force/",
     "notificationLink": "https://sarkariresult.com/indian-air-force/",
     "status": "latest",
-    "isNew": true,
+    "isNew": false,
     "isUrgent": false,
     "description": "Government recruitment notification for Air Force. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
@@ -6295,15 +6610,15 @@
     "importantDates": [
       {
         "label": "Notification Released",
-        "date": "2026-06-13T03:30:03.088Z"
+        "date": "2026-06-13T19:01:08.356Z"
       },
       {
         "label": "Application Start Date",
-        "date": "2026-06-13T03:30:03.088Z"
+        "date": "2026-06-13T19:01:08.356Z"
       },
       {
         "label": "Last Date to Apply",
-        "date": "2026-06-19T03:30:03.088Z"
+        "date": "2026-07-01T19:01:08.356Z"
       }
     ],
     "salary": "₹25,500 – ₹81,100/- PM",
@@ -6418,6 +6733,330 @@
     "location": "All India"
   },
   {
+    "id": "nhsrcl-engineer-recruitment-2026",
+    "title": "NHSRCL Recruitment 2026: Apply Online for 209 Deputy Engineer & Junior Engineer Posts (Absorption Basis)",
+    "department": "NHSRCL",
+    "departmentShort": "NHSRCL",
+    "category": "State",
+    "totalPosts": 209,
+    "lastDate": "2026-07-14T00:00:00.000Z",
+    "notificationDate": "2026-06-15T19:01:08.608Z",
+    "applicationStartDate": "2026-06-15T19:01:08.608Z",
+    "applicationEndDate": "2026-07-14T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 45,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "31 May 2026",
+    "applicationFee": {
+      "general": 500,
+      "sc_st": 142026,
+      "female": 0
+    },
+    "applyLink": "https://www.nhsrcl.in/en/career/vacancy-notice",
+    "notificationLink": "https://files.govtjobsalert.in/2026/06/NHSRCL-Recruitment-2026-Notification-No-21-25.pdf",
+    "status": "latest",
+    "isNew": true,
+    "isUrgent": false,
+    "description": "Government recruitment notification for NHSRCL Recruitment 2026: Apply Online for 209 Deputy Engineer & Junior Engineer Posts (Absorption Basis). Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Last Date to Apply Online",
+        "date": "2026-07-14T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date to Apply",
+        "date": "2026-07-14T00:00:00.000Z"
+      }
+    ],
+    "salary": "₹25,500 – ₹81,100/- PM",
+    "location": "All India"
+  },
+  {
+    "id": "osssc-nursing-officer-recruitment-2026",
+    "title": "OSSSC Nursing Officer Recruitment 2026: Apply Online for 5,989 Posts, Salary up to",
+    "department": "OSSSC Nursing Officer",
+    "departmentShort": "OSSSC",
+    "category": "SSC",
+    "totalPosts": 5989,
+    "lastDate": "2026-07-13T00:00:00.000Z",
+    "notificationDate": "2026-06-12T00:00:00.000Z",
+    "applicationStartDate": "2026-06-12T00:00:00.000Z",
+    "applicationEndDate": "2026-07-13T00:00:00.000Z",
+    "ageLimit": {
+      "min": 21,
+      "max": 42122026,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "B.Sc Nursing / GNM / MBBS",
+    "applicationFee": {
+      "general": 500,
+      "sc_st": 29200,
+      "female": 0
+    },
+    "applyLink": "https://www.osssc.gov.in/Public/OSSSC/Default.aspx",
+    "notificationLink": "https://files.govtjobsalert.in/2026/06/OSSSC-Nursing-Officer-Recruitment-2026-Notification.pdf",
+    "status": "latest",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for OSSSC Nursing Officer Recruitment 2026: Apply Online for 5,989 Posts, Salary up to. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Notification Released",
+        "date": "2026-06-12T00:00:00.000Z"
+      },
+      {
+        "label": "Registration Last Date",
+        "date": "2026-07-06T00:00:00.000Z"
+      },
+      {
+        "label": "Application Last Date",
+        "date": "2026-07-13T00:00:00.000Z"
+      },
+      {
+        "label": "Application Start Date",
+        "date": "2026-06-13T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date to Apply",
+        "date": "2026-07-13T00:00:00.000Z"
+      }
+    ],
+    "salary": "₹92,300",
+    "location": "All India"
+  },
+  {
+    "id": "rbi-young-professional-recruitment-2026",
+    "title": "RBI Young Professional Recruitment 2026: Apply for 12 Posts, Stipend  Per Month",
+    "department": "RBI Young Professional",
+    "departmentShort": "RBI",
+    "category": "Banking",
+    "totalPosts": 12,
+    "lastDate": "2026-07-06T00:00:00.000Z",
+    "notificationDate": "2026-06-15T00:00:00.000Z",
+    "applicationStartDate": "2026-06-15T00:00:00.000Z",
+    "applicationEndDate": "2026-07-06T00:00:00.000Z",
+    "ageLimit": {
+      "min": 21,
+      "max": 3062026,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th / 12th / Graduation as per post",
+    "applicationFee": {
+      "general": 100,
+      "sc_st": 150000,
+      "female": 0
+    },
+    "applyLink": "https://govtjobsalert.in/rbi-young-professional-recruitment-2026/",
+    "notificationLink": "https://files.govtjobsalert.in/2026/06/RBI-Young-Professional-Recruitment-2026-Notification-Form.pdf",
+    "status": "latest",
+    "isNew": true,
+    "isUrgent": false,
+    "description": "Government recruitment notification for RBI Young Professional Recruitment 2026: Apply for 12 Posts, Stipend  Per Month. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Notification Released",
+        "date": "2026-06-15T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date to Apply",
+        "date": "2026-07-06T00:00:00.000Z"
+      }
+    ],
+    "salary": "₹1,50,000",
+    "location": "All India"
+  },
+  {
+    "id": "csu-teaching-academic-posts-recruitment-2026",
+    "title": "CSU Teaching & Other Academic Posts Recruitment 2026: Apply Online for 90 Professor & Assistant Professor Posts",
+    "department": "CSU Teaching  Other Academic Posts",
+    "departmentShort": "CSU",
+    "category": "Teaching",
+    "totalPosts": 90,
+    "lastDate": "2026-07-10T00:00:00.000Z",
+    "notificationDate": "2026-06-10T00:00:00.000Z",
+    "applicationStartDate": "2026-06-10T00:00:00.000Z",
+    "applicationEndDate": "2026-07-10T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 35,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "2",
+    "applicationFee": {
+      "general": 0,
+      "sc_st": 1057700182400,
+      "female": 0
+    },
+    "applyLink": "https://curec.samarth.ac.in/",
+    "notificationLink": "https://files.govtjobsalert.in/2026/06/CSU-Teaching-Other-Academic-Posts-Recruitment-2026-Notification.pdf",
+    "status": "latest",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for CSU Teaching & Other Academic Posts Recruitment 2026: Apply Online for 90 Professor & Assistant Professor Posts. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Notification Released",
+        "date": "2026-06-10T00:00:00.000Z"
+      },
+      {
+        "label": "Online Application Last Date",
+        "date": "2026-07-10T00:00:00.000Z"
+      },
+      {
+        "label": "Application Start Date",
+        "date": "2026-06-10T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date to Apply Online",
+        "date": "2026-07-10T00:00:00.000Z"
+      }
+    ],
+    "salary": "₹25,500 – ₹81,100/- PM",
+    "location": "All India"
+  },
+  {
+    "id": "sikkim-psc-accounts-clerk-recruitment-2026",
+    "title": "Sikkim PSC Accounts Clerk / Junior Storekeeper Recruitment 2026: Apply Online for 50 Posts",
+    "department": "Sikkim PSC Accounts Clerk  Junior Storekeeper",
+    "departmentShort": "PSC",
+    "category": "Banking",
+    "totalPosts": 50,
+    "lastDate": "2026-07-31T00:00:00.000Z",
+    "notificationDate": "2026-06-15T00:00:00.000Z",
+    "applicationStartDate": "2026-06-15T00:00:00.000Z",
+    "applicationEndDate": "2026-07-31T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 40312026,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "3",
+    "applicationFee": {
+      "general": 0,
+      "sc_st": 35400,
+      "female": 0
+    },
+    "applyLink": "https://spsc.sikkim.gov.in/",
+    "notificationLink": "https://files.govtjobsalert.in/2026/06/Sikkim-PSC-Accounts-Clerk-Junior-Storekeeper-Recruitment-2026-Notification.pdf",
+    "status": "latest",
+    "isNew": true,
+    "isUrgent": false,
+    "description": "Government recruitment notification for Sikkim PSC Accounts Clerk / Junior Storekeeper Recruitment 2026: Apply Online for 50 Posts. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Notification Date",
+        "date": "2026-06-15T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date to Apply",
+        "date": "2026-07-31T00:00:00.000Z"
+      }
+    ],
+    "salary": "₹35,000 – ₹1,05,000/- PM",
+    "location": "All India"
+  },
+  {
+    "id": "gsssb-aae-mechanical-recruitment-2026",
+    "title": "GSSSB AAE (Mechanical) Recruitment 2026: Apply Online for 110 Additional Assistant Engineer Posts",
+    "department": "GSSSB AAE Mechanical",
+    "departmentShort": "GSSSB AAE",
+    "category": "Police",
+    "totalPosts": 110,
+    "lastDate": "2026-07-01T00:00:00.000Z",
+    "notificationDate": "2026-06-15T00:00:00.000Z",
+    "applicationStartDate": "2026-06-15T00:00:00.000Z",
+    "applicationEndDate": "2026-07-01T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 33292026,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "17",
+    "applicationFee": {
+      "general": 12026,
+      "sc_st": 38038,
+      "female": 0
+    },
+    "applyLink": "https://gsssb.gujarat.gov.in/Index",
+    "notificationLink": "https://files.govtjobsalert.in/2026/06/GSSSB-AAE-Mechanical-Recruitment-2026-Notification.pdf",
+    "status": "latest",
+    "isNew": true,
+    "isUrgent": false,
+    "description": "Government recruitment notification for GSSSB AAE (Mechanical) Recruitment 2026: Apply Online for 110 Additional Assistant Engineer Posts. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Notification Date",
+        "date": "2026-06-15T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date to Apply",
+        "date": "2026-06-29T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date for Fee Payment",
+        "date": "2026-07-01T00:00:00.000Z"
+      }
+    ],
+    "salary": "₹25,500 – ₹81,100/- PM",
+    "location": "All India"
+  },
+  {
     "id": "aiims-cre-5-recruitment-2026",
     "title": "AIIMS CRE 5th Group B, C Recruitment 2026: Apply Online for 2,693 Posts, Salary Up to",
     "department": "AIIMS CRE 5th Group B C",
@@ -6442,7 +7081,7 @@
     "applyLink": "https://www.aiimsexams.ac.in/advertisement/6a2cdd89be81945a8330d450",
     "notificationLink": "https://files.govtjobsalert.in/2026/06/AIIMS-CRE-5th-Group-B-C-Recruitment-2026-Notification.pdf",
     "status": "latest",
-    "isNew": true,
+    "isNew": false,
     "isUrgent": false,
     "description": "Government recruitment notification for AIIMS CRE 5th Group B, C Recruitment 2026: Apply Online for 2,693 Posts, Salary Up to. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
@@ -6550,7 +7189,7 @@
     "applyLink": "https://upsconline.nic.in/ora/",
     "notificationLink": "https://files.govtjobsalert.in/2026/06/UPSC-Special-Recruitment-Drive-No.-06-2026-Notification-3.pdf",
     "status": "latest",
-    "isNew": true,
+    "isNew": false,
     "isUrgent": false,
     "description": "Government recruitment notification for UPSC Special Recruitment Drive 06/2026: 546 Vacancies, Apply Online. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
@@ -6584,141 +7223,33 @@
     "location": "All India"
   },
   {
-    "id": "gsssb-x-ray-technician-recruitment-2026",
-    "title": "GSSSB X-Ray Technician Recruitment 2026: 246 Posts (Advt 424), Apply Online at OJAS",
-    "department": "GSSSB XRay Technician",
-    "departmentShort": "GSSSB",
-    "category": "Police",
-    "totalPosts": 246,
-    "lastDate": "2026-07-01T00:00:00.000Z",
-    "notificationDate": "2026-06-15T00:00:00.000Z",
-    "applicationStartDate": "2026-06-15T00:00:00.000Z",
-    "applicationEndDate": "2026-07-01T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th Pass with ITI Certificate",
-    "applicationFee": {
-      "general": 12026,
-      "sc_st": 40800,
-      "female": 0
-    },
-    "applyLink": "https://ojas.gujarat.gov.in/",
-    "notificationLink": "https://files.govtjobsalert.in/2026/06/GSSSB-X-Ray-Technician-Recruitment-2026-Notification-1.pdf",
-    "status": "latest",
-    "isNew": true,
-    "isUrgent": false,
-    "description": "Government recruitment notification for GSSSB X-Ray Technician Recruitment 2026: 246 Posts (Advt 424), Apply Online at OJAS. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Application Start Date",
-        "date": "2026-06-15T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date to Apply",
-        "date": "2026-06-29T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Fee Payment",
-        "date": "2026-07-01T00:00:00.000Z"
-      }
-    ],
-    "salary": "₹25,500 – ₹81,100/- PM",
-    "location": "All India"
-  },
-  {
-    "id": "goa-psc-advt-06-recruitment-2026",
-    "title": "Goa PSC Recruitment 2026 for Multiple",
-    "department": "Goa PSC",
-    "departmentShort": "PSC",
-    "category": "State",
-    "totalPosts": 36,
-    "lastDate": "2026-06-26T00:00:00.000Z",
-    "notificationDate": "2026-06-12T00:00:00.000Z",
-    "applicationStartDate": "2026-06-12T00:00:00.000Z",
-    "applicationEndDate": "2026-06-26T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "4",
-    "applicationFee": {
-      "general": 100,
-      "sc_st": 8217,
-      "female": 0
-    },
-    "applyLink": "https://gpsc.goa.gov.in/",
-    "notificationLink": "https://files.govtjobsalert.in/2026/06/Goa-PSC-Recruitment-2026-for-Multiple-Vacancy-1.pdf",
-    "status": "latest",
-    "isNew": true,
-    "isUrgent": false,
-    "description": "Government recruitment notification for Goa PSC Recruitment 2026 for Multiple. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Notification Published",
-        "date": "2026-06-12T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date to Apply Online",
-        "date": "2026-06-26T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date to Apply",
-        "date": "2026-06-26T00:00:00.000Z"
-      }
-    ],
-    "salary": "₹25,500 – ₹81,100/- PM",
-    "location": "All India"
-  },
-  {
-    "id": "apsc-chemist-recruitment-2026",
-    "title": "APSC Chemist Recruitment 2026: 2 Chemist Posts in Assam, Apply Online by 17 July",
-    "department": "APSC Chemist",
-    "departmentShort": "APSC",
-    "category": "State",
-    "totalPosts": 2,
-    "lastDate": "2026-07-19T00:00:00.000Z",
-    "notificationDate": "2026-06-18T00:00:00.000Z",
-    "applicationStartDate": "2026-06-18T00:00:00.000Z",
-    "applicationEndDate": "2026-07-19T00:00:00.000Z",
+    "id": "upsc-forest-service-exam-2026",
+    "title": "UPSC IFoS (Prelims) Result 2026 Declared: Check Indian Forest Service Pre Result for Mains",
+    "department": "UPSC IFoS Prelims",
+    "departmentShort": "UPSC",
+    "category": "UPSC",
+    "totalPosts": 0,
+    "lastDate": "2026-02-27T00:00:00.000Z",
+    "notificationDate": "2026-02-04T00:00:00.000Z",
+    "applicationStartDate": "2026-02-04T00:00:00.000Z",
+    "applicationEndDate": "2026-02-27T00:00:00.000Z",
     "ageLimit": {
       "min": 21,
-      "max": 38,
+      "max": 32,
       "relaxation": "As per government rules"
     },
-    "qualification": "10th / 12th / Graduation as per post",
+    "qualification": "06",
     "applicationFee": {
-      "general": 192026,
-      "sc_st": 172026,
+      "general": 200,
+      "sc_st": 300,
       "female": 0
     },
-    "applyLink": "https://apscrecruitment.in/",
-    "notificationLink": "https://files.govtjobsalert.in/2026/06/APSC-Chemist-Recruitment-2026-Notification.pdf",
-    "status": "latest",
-    "isNew": true,
+    "applyLink": "https://govtjobsalert.in/upsc-forest-service-exam-2026/",
+    "notificationLink": "https://files.govtjobsalert.in/2026/06/UPSC-IFoS-Prelims-2026-Written-Result-Roll-Numbers.pdf",
+    "status": "results",
+    "isNew": false,
     "isUrgent": false,
-    "description": "Government recruitment notification for APSC Chemist Recruitment 2026: 2 Chemist Posts in Assam, Apply Online by 17 July. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "description": "Government recruitment notification for UPSC IFoS (Prelims) Result 2026 Declared: Check Indian Forest Service Pre Result for Mains. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
       "Read the detailed notification / advertisement carefully.",
@@ -6730,185 +7261,71 @@
     ],
     "importantDates": [
       {
-        "label": "Application Start Date",
-        "date": "2026-06-18T00:00:00.000Z"
+        "label": "Notification Released",
+        "date": "2026-02-04T00:00:00.000Z"
+      },
+      {
+        "label": "Last Date to Apply",
+        "date": "2026-02-27T00:00:00.000Z"
+      },
+      {
+        "label": "Prelims Exam Date",
+        "date": "2026-05-24T00:00:00.000Z"
+      }
+    ],
+    "location": "All India"
+  },
+  {
+    "id": "upsc-civil-services-2026",
+    "title": "UPSC Civil Services Prelims Result 2026 Declared: Check CSE (P) Result — 13,343 Qualified for Mains",
+    "department": "UPSC Civil Services Prelims",
+    "departmentShort": "UPSC",
+    "category": "UPSC",
+    "totalPosts": 0,
+    "lastDate": "2026-02-27T00:00:00.000Z",
+    "notificationDate": "2026-02-04T00:00:00.000Z",
+    "applicationStartDate": "2026-02-04T00:00:00.000Z",
+    "applicationEndDate": "2026-02-27T00:00:00.000Z",
+    "ageLimit": {
+      "min": 21,
+      "max": 32,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "10th / 12th / Graduation as per post",
+    "applicationFee": {
+      "general": 200,
+      "sc_st": 17502752025,
+      "female": 0
+    },
+    "applyLink": "https://govtjobsalert.in/upsc-civil-services-2026/",
+    "notificationLink": "https://files.govtjobsalert.in/2026/06/UPSC-Civil-Services-Prelims-2026-Written-Result.pdf",
+    "status": "results",
+    "isNew": false,
+    "isUrgent": false,
+    "description": "Government recruitment notification for UPSC Civil Services Prelims Result 2026 Declared: Check CSE (P) Result — 13,343 Qualified for Mains. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Notification Release Date",
+        "date": "2026-02-04T00:00:00.000Z"
       },
       {
         "label": "Last Date to Apply Online",
-        "date": "2026-07-17T00:00:00.000Z"
+        "date": "2026-02-27T00:00:00.000Z"
       },
       {
-        "label": "Last Date for Fee Payment",
-        "date": "2026-07-19T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date to Apply",
-        "date": "2026-07-17T00:00:00.000Z"
+        "label": "UPSC Prelims Exam Date",
+        "date": "2026-05-24T00:00:00.000Z"
       }
     ],
-    "salary": "₹25,500 – ₹81,100/- PM",
-    "location": "All India"
-  },
-  {
-    "id": "iit-dharwad-non-teaching-recruitment-2026",
-    "title": "IIT Dharwad Non Teaching Recruitment 2026: 12 Posts (Asst Registrar, JTS & More), Apply Online",
-    "department": "IIT Dharwad Non Teaching",
-    "departmentShort": "IIT",
-    "category": "Teaching",
-    "totalPosts": 12,
-    "lastDate": "2026-07-13T00:00:00.000Z",
-    "notificationDate": "2026-06-11T00:00:00.000Z",
-    "applicationStartDate": "2026-06-11T00:00:00.000Z",
-    "applicationEndDate": "2026-07-13T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th / 12th / Graduation as per post",
-    "applicationFee": {
-      "general": 0,
-      "sc_st": 56100177500,
-      "female": 0
-    },
-    "applyLink": "https://iitdhnt.samarth.edu.in/index.php/site/login",
-    "notificationLink": "https://files.govtjobsalert.in/2026/06/IIT-Dharwad-Non-Teaching-Recruitment-2026-Notification.pdf",
-    "status": "latest",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for IIT Dharwad Non Teaching Recruitment 2026: 12 Posts (Asst Registrar, JTS & More), Apply Online. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Notification Date",
-        "date": "2026-06-11T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date to Apply Online",
-        "date": "2026-07-13T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date to Apply",
-        "date": "2026-07-13T00:00:00.000Z"
-      }
-    ],
-    "salary": "₹25,500 – ₹81,100/- PM",
-    "location": "All India"
-  },
-  {
-    "id": "drdo-lrde-paid-internship-2026",
-    "title": "DRDO LRDE Bengaluru Paid Internship 2026: 75 Posts for Engineering Students, Apply by 1 July",
-    "department": "DRDO LRDE Bengaluru Paid Internship  75 Posts for Engineering Students",
-    "departmentShort": "DRDO LRDE",
-    "category": "State",
-    "totalPosts": 75,
-    "lastDate": "2026-07-01T00:00:00.000Z",
-    "notificationDate": "2026-08-01T00:00:00.000Z",
-    "applicationStartDate": "2026-08-01T00:00:00.000Z",
-    "applicationEndDate": "2026-07-01T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "Diploma / B.E. / B.Tech in Engineering",
-    "applicationFee": {
-      "general": 0,
-      "sc_st": 5000,
-      "female": 0
-    },
-    "applyLink": "https://govtjobsalert.in/drdo-lrde-paid-internship-2026/",
-    "notificationLink": "https://files.govtjobsalert.in/2026/06/DRDO-LRDE-Bengaluru-Paid-Internship-2026-Notification-Form.pdf",
-    "status": "latest",
-    "isNew": true,
-    "isUrgent": false,
-    "description": "Government recruitment notification for DRDO LRDE Bengaluru Paid Internship 2026: 75 Posts for Engineering Students, Apply by 1 July. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Last Date for Application",
-        "date": "2026-07-01T00:00:00.000Z"
-      },
-      {
-        "label": "Internship Start Date",
-        "date": "2026-08-01T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date to Apply",
-        "date": "2026-07-01T00:00:00.000Z"
-      }
-    ],
-    "salary": "₹25,500 – ₹81,100/- PM",
-    "location": "All India"
-  },
-  {
-    "id": "nabard-internship-2026",
-    "title": "NABARD Internship 2026: Apply for 39 Posts with  Stipend, Last Date 16 June",
-    "department": "NABARD Internship",
-    "departmentShort": "NABARD",
-    "category": "Banking",
-    "totalPosts": 39,
-    "lastDate": "2026-06-16T00:00:00.000Z",
-    "notificationDate": "2026-06-10T00:00:00.000Z",
-    "applicationStartDate": "2026-06-10T00:00:00.000Z",
-    "applicationEndDate": "2026-06-16T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th / 12th / Graduation as per post",
-    "applicationFee": {
-      "general": 500,
-      "sc_st": 20000,
-      "female": 0
-    },
-    "applyLink": "https://forms.gle/y5j9Ad1CQWLpzRRN8",
-    "notificationLink": "https://files.govtjobsalert.in/2026/06/NABARD-Internship-2026-Notification-1.pdf",
-    "status": "latest",
-    "isNew": false,
-    "isUrgent": true,
-    "description": "Government recruitment notification for NABARD Internship 2026: Apply for 39 Posts with  Stipend, Last Date 16 June. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Application Start Date",
-        "date": "2026-06-10T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date to Apply",
-        "date": "2026-06-16T00:00:00.000Z"
-      },
-      {
-        "label": "Shortlisting of Candidates",
-        "date": "2026-06-17T00:00:00.000Z"
-      }
-    ],
-    "salary": "₹20,000",
     "location": "All India"
   },
   {
@@ -7315,120 +7732,6 @@
       {
         "label": "Last Date to Apply",
         "date": "2025-10-14T18:30:00.000Z"
-      }
-    ],
-    "location": "All India"
-  },
-  {
-    "id": "rrb-technician-recruitment-2025",
-    "title": "RRB Technician CBT Result 2025: CEN 02/2025 Grade I & III Result Out — Check Region-Wise Score Card Now",
-    "department": "RRB Technician CBT",
-    "departmentShort": "RRB CBT",
-    "category": "Railway",
-    "totalPosts": 6238,
-    "lastDate": "2025-08-09T00:00:00.000Z",
-    "notificationDate": "2025-06-27T18:30:00.000Z",
-    "applicationStartDate": "2025-06-27T18:30:00.000Z",
-    "applicationEndDate": "2025-08-09T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th Pass with ITI Certificate",
-    "applicationFee": {
-      "general": 3,
-      "sc_st": 400,
-      "female": 0
-    },
-    "applyLink": "https://govtjobsalert.in/rrb-technician-recruitment-2025/",
-    "notificationLink": "https://files.govtjobsalert.in/2026/03/RRB-Technician-CEN-022025-Answer-Key-Notice-for-Technician-Grade-I.pdf",
-    "status": "results",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for RRB Technician CBT Result 2025: CEN 02/2025 Grade I & III Result Out — Check Region-Wise Score Card Now. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Online Application Start Date",
-        "date": "2025-06-27T18:30:00.000Z"
-      },
-      {
-        "label": "Online Application End Date",
-        "date": "2025-08-07T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Fee Payment",
-        "date": "2025-08-09T00:00:00.000Z"
-      },
-      {
-        "label": "CBT Exam Dates",
-        "date": "2026-03-13T00:00:00.000Z"
-      }
-    ],
-    "location": "All India"
-  },
-  {
-    "id": "ib-mts-recruitment-2025",
-    "title": "IB MTS Recruitment 2025: Tier-I Result Out — Check Shortlisted Roll Numbers for Tier-II",
-    "department": "IB MTS",
-    "departmentShort": "IB MTS",
-    "category": "Defence",
-    "totalPosts": 0,
-    "lastDate": "2025-12-16T00:00:00.000Z",
-    "notificationDate": "2025-11-22T00:00:00.000Z",
-    "applicationStartDate": "2025-11-22T00:00:00.000Z",
-    "applicationEndDate": "2025-12-16T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 22,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th / 12th / Graduation as per post",
-    "applicationFee": {
-      "general": 328,
-      "sc_st": 822020258221,
-      "female": 0
-    },
-    "applyLink": "https://cdn.digialm.com/EForms/configuredHtml/1258/96684/Index.html",
-    "notificationLink": "https://files.govtjobsalert.in/2026/04/IB-MTS-2025-Tier-I-Result.pdf",
-    "status": "results",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for IB MTS Recruitment 2025: Tier-I Result Out — Check Shortlisted Roll Numbers for Tier-II. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Application Portal Opening Date",
-        "date": "2025-11-22T00:00:00.000Z"
-      },
-      {
-        "label": "Closing Date for Online Application",
-        "date": "2025-12-14T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date for Fee Payment (SBI Challan)",
-        "date": "2025-12-16T00:00:00.000Z"
-      },
-      {
-        "label": "Application Start Date",
-        "date": "2025-11-22T00:00:00.000Z"
       }
     ],
     "location": "All India"
@@ -8581,7 +8884,7 @@
     "applyLink": "https://beep.bfsissc.com/",
     "notificationLink": "https://files.govtjobsalert.in/2026/06/Central-Bank-Apprentice-Recruitment-2026-Notification-1.pdf",
     "status": "latest",
-    "isNew": true,
+    "isNew": false,
     "isUrgent": false,
     "description": "Government recruitment notification for &#9654;Central Bank Apprentice Recruitment 2026: 4500 Posts,  Stipend, Apply by 22 June. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
@@ -8608,56 +8911,6 @@
       }
     ],
     "salary": "₹15,000",
-    "location": "All India"
-  },
-  {
-    "id": "bob-apprentice-recruitment-2026",
-    "title": "&#9654;BoB Apprentice Recruitment 2026 – 5000 Vacancies, Rs 15000 Stipend, Apply Online (Last Date Extended to 15 June 2026)",
-    "department": "9654BoB Apprentice",
-    "departmentShort": "9654BoB Apprentice",
-    "category": "Banking",
-    "totalPosts": 929,
-    "lastDate": "2026-06-08T00:00:00.000Z",
-    "notificationDate": "2026-05-19T00:00:00.000Z",
-    "applicationStartDate": "2026-05-19T00:00:00.000Z",
-    "applicationEndDate": "2026-06-08T00:00:00.000Z",
-    "ageLimit": {
-      "min": 20,
-      "max": 2812026,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "1 May 2026",
-    "applicationFee": {
-      "general": 82026152026,
-      "sc_st": 180000,
-      "female": 0
-    },
-    "applyLink": "https://bankofbaroda.bank.in/career/current-opportunities/engagement-of-apprentices-under-the-apprentices-act-1961-08-06",
-    "notificationLink": "https://files.govtjobsalert.in/2026/06/BoB-Apprentice-Last-Date-Extension-Notice-2026.pdf",
-    "status": "latest",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for &#9654;BoB Apprentice Recruitment 2026 – 5000 Vacancies, Rs 15000 Stipend, Apply Online (Last Date Extended to 15 June 2026). Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Notification Released",
-        "date": "2026-05-19T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date to Apply",
-        "date": "2026-06-08T00:00:00.000Z"
-      }
-    ],
-    "salary": "₹35,000 – ₹1,05,000/- PM",
     "location": "All India"
   },
   {
@@ -8802,7 +9055,7 @@
     "notificationLink": "https://files.govtjobsalert.in/2026/05/Indian-Navy-102-B.Tech-Cadet-Entry-2026-Notification.pdf",
     "status": "latest",
     "isNew": false,
-    "isUrgent": false,
+    "isUrgent": true,
     "description": "Government recruitment notification for &#9654;Indian Navy 10+2 (B.Tech) Cadet Entry 2026 — 60 Vacancies for Jan 2027 Course, Apply Online from 29 May 2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
@@ -8914,7 +9167,7 @@
     "notificationLink": "https://files.govtjobsalert.in/2026/05/AFCAT-02-2026-Official-Notice-1.pdf",
     "status": "latest",
     "isNew": false,
-    "isUrgent": false,
+    "isUrgent": true,
     "description": "Government recruitment notification for &#9654;AFCAT 02/2026 Notification — Apply Online for 379 Indian Air Force Flying & Ground Duty Vacancies. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
@@ -8989,64 +9242,6 @@
     "location": "All India"
   },
   {
-    "id": "rrb-alp-recruitment-2026",
-    "title": "&#9654;RRB ALP 2026 — Apply Online for 11,127 Assistant Loco Pilot Jobs, Salary upto",
-    "department": "9654RRB ALP",
-    "departmentShort": "ALP",
-    "category": "Railway",
-    "totalPosts": 447,
-    "lastDate": "2026-06-14T00:00:00.000Z",
-    "notificationDate": "2026-05-15T00:00:00.000Z",
-    "applicationStartDate": "2026-05-15T00:00:00.000Z",
-    "applicationEndDate": "2026-06-14T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 30,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th / 12th / Graduation as per post",
-    "applicationFee": {
-      "general": 100,
-      "sc_st": 142026,
-      "female": 0
-    },
-    "applyLink": "https://govtjobsalert.in/rrb-alp-recruitment-2026/",
-    "notificationLink": "https://files.govtjobsalert.in/2026/03/RRB-ALP-CEN-012026-Short-Notice-1.pdf",
-    "status": "latest",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for &#9654;RRB ALP 2026 — Apply Online for 11,127 Assistant Loco Pilot Jobs, Salary upto. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Online Application Start Date",
-        "date": "2026-05-15T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date to Apply Online",
-        "date": "2026-06-14T00:00:00.000Z"
-      },
-      {
-        "label": "Application Start Date",
-        "date": "2026-05-15T00:00:00.000Z"
-      },
-      {
-        "label": "Last Date to Apply",
-        "date": "2026-06-14T00:00:00.000Z"
-      }
-    ],
-    "salary": "₹63,200",
-    "location": "All India"
-  },
-  {
     "id": "terms-and-conditions",
     "title": "Terms & Conditions",
     "department": "Terms  Conditions",
@@ -9101,33 +9296,33 @@
     "location": "All India"
   },
   {
-    "id": "Employment-News",
-    "title": "Employment News June 2026: Pdf Download, Weekly Govt Job Notifications",
-    "department": "Employment News June  Pdf Download Weekly Govt Job Notifications",
-    "departmentShort": "Employment News",
-    "category": "State",
-    "totalPosts": 15,
-    "lastDate": "2026-07-02T23:47:38.510Z",
-    "notificationDate": "2026-06-10T23:47:38.510Z",
-    "applicationStartDate": "2026-06-10T23:47:38.510Z",
-    "applicationEndDate": "2026-07-02T23:47:38.510Z",
+    "id": "government-jobs-for-diploma-holders",
+    "title": "Govt Jobs for Diploma Holders 2026 – PSU, Railway, JE | 10,000+ Vacancies",
+    "department": "Govt Jobs for Diploma Holders   PSU Railway JE  10000 Vacancies",
+    "departmentShort": "PSU JE",
+    "category": "Railway",
+    "totalPosts": 21,
+    "lastDate": "2026-06-27T19:01:09.001Z",
+    "notificationDate": "2026-06-15T19:01:09.001Z",
+    "applicationStartDate": "2026-06-15T19:01:09.001Z",
+    "applicationEndDate": "2026-06-27T19:01:09.001Z",
     "ageLimit": {
       "min": 18,
       "max": 35,
       "relaxation": "As per government rules"
     },
-    "qualification": "10th / 12th / Graduation as per post",
+    "qualification": "Diploma / B.E. / B.Tech in Engineering",
     "applicationFee": {
-      "general": 100,
-      "sc_st": 50,
+      "general": 0,
+      "sc_st": 0,
       "female": 0
     },
-    "applyLink": "https://www.indgovtjobs.in/2017/04/Employment-News.html",
-    "notificationLink": "https://www.indgovtjobs.in/2017/04/Employment-News.html",
+    "applyLink": "https://www.indgovtjobs.in/2013/09/government-jobs-for-diploma-holders.html",
+    "notificationLink": "https://www.indgovtjobs.in/2013/09/government-jobs-for-diploma-holders.html",
     "status": "latest",
-    "isNew": false,
+    "isNew": true,
     "isUrgent": false,
-    "description": "Government recruitment notification for Employment News June 2026: Pdf Download, Weekly Govt Job Notifications. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "description": "Government recruitment notification for Govt Jobs for Diploma Holders 2026 – PSU, Railway, JE | 10,000+ Vacancies. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
       "Read the detailed notification / advertisement carefully.",
@@ -9140,31 +9335,77 @@
     "importantDates": [
       {
         "label": "Notification Released",
-        "date": "2026-06-10T23:47:38.510Z"
+        "date": "2026-06-15T19:01:09.001Z"
       },
       {
         "label": "Application Start Date",
-        "date": "2026-06-10T23:47:38.510Z"
+        "date": "2026-06-15T19:01:09.001Z"
       },
       {
         "label": "Last Date to Apply",
-        "date": "2026-07-02T23:47:38.510Z"
+        "date": "2026-06-27T19:01:09.001Z"
+      }
+    ],
+    "salary": "₹21,700 – ₹69,100/- PM",
+    "location": "All India"
+  },
+  {
+    "id": "aiims-cre-5-recruitment",
+    "title": "AIIMS CRE 5 Recruitment 2026 – Notification, Online Form, 1484 Posts | Last Date 30-06-2026",
+    "department": "AIIMS CRE 5",
+    "departmentShort": "AIIMS CRE",
+    "category": "State",
+    "totalPosts": 426,
+    "lastDate": "2026-06-30T00:00:00.000Z",
+    "notificationDate": "2026-06-14T19:01:09.001Z",
+    "applicationStartDate": "2026-06-14T19:01:09.001Z",
+    "applicationEndDate": "2026-06-30T00:00:00.000Z",
+    "ageLimit": {
+      "min": 18,
+      "max": 35,
+      "relaxation": "As per government rules"
+    },
+    "qualification": "12th Pass, Diploma, Degree",
+    "applicationFee": {
+      "general": 0,
+      "sc_st": 0,
+      "female": 0
+    },
+    "applyLink": "https://www.indgovtjobs.in/2026/06/aiims-cre-5-recruitment.html",
+    "notificationLink": "https://www.indgovtjobs.in/2026/06/aiims-cre-5-recruitment.html",
+    "status": "latest",
+    "isNew": true,
+    "isUrgent": false,
+    "description": "Government recruitment notification for AIIMS CRE 5 Recruitment 2026 – Notification, Online Form, 1484 Posts | Last Date 30-06-2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "howToApply": [
+      "Click \"Apply Online\" to visit the official recruitment page.",
+      "Read the detailed notification / advertisement carefully.",
+      "Register with your email and phone number on the official portal.",
+      "Fill in personal, educational, and experience details.",
+      "Upload photo, signature and required documents.",
+      "Pay the application fee (if applicable) and submit.",
+      "Download and save the confirmation / printout."
+    ],
+    "importantDates": [
+      {
+        "label": "Last Date",
+        "date": "2026-06-30T00:00:00.000Z"
       }
     ],
     "salary": "₹25,500 – ₹81,100/- PM",
     "location": "All India"
   },
   {
-    "id": "UPSC-Advertisement-No-06",
-    "title": "UPSC Advertisement No. 06/2026 – Apply Online for 538 Various Ministries Posts | Last Date 03-06-2026",
-    "department": "UPSC Advertisement No 062026",
-    "departmentShort": "UPSC",
-    "category": "UPSC",
-    "totalPosts": 538,
-    "lastDate": "2026-07-03T00:00:00.000Z",
-    "notificationDate": "2026-06-14T03:30:04.284Z",
-    "applicationStartDate": "2026-06-14T03:30:04.284Z",
-    "applicationEndDate": "2026-07-03T00:00:00.000Z",
+    "id": "10th-12th-pass-govt-jobs",
+    "title": "10th 12th Pass Govt Jobs 2026 – Railway, SSC, Bank, Police | 24,000+ Vacancies",
+    "department": "10th 12th Pass Govt Jobs   Railway SSC Bank Police  24000 Vacancies",
+    "departmentShort": "SSC",
+    "category": "SSC",
+    "totalPosts": 17,
+    "lastDate": "2026-06-23T19:01:09.001Z",
+    "notificationDate": "2026-06-16T19:01:09.001Z",
+    "applicationStartDate": "2026-06-16T19:01:09.001Z",
+    "applicationEndDate": "2026-06-23T19:01:09.001Z",
     "ageLimit": {
       "min": 18,
       "max": 35,
@@ -9176,12 +9417,12 @@
       "sc_st": 0,
       "female": 0
     },
-    "applyLink": "https://www.indgovtjobs.in/2026/06/UPSC-Advertisement-No-06.html",
-    "notificationLink": "https://www.indgovtjobs.in/2026/06/UPSC-Advertisement-No-06.html",
+    "applyLink": "https://www.indgovtjobs.in/2013/09/10th-12th-pass-govt-jobs.html",
+    "notificationLink": "https://www.indgovtjobs.in/2013/09/10th-12th-pass-govt-jobs.html",
     "status": "latest",
     "isNew": true,
     "isUrgent": false,
-    "description": "Government recruitment notification for UPSC Advertisement No. 06/2026 – Apply Online for 538 Various Ministries Posts | Last Date 03-06-2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
+    "description": "Government recruitment notification for 10th 12th Pass Govt Jobs 2026 – Railway, SSC, Bank, Police | 24,000+ Vacancies. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
     "howToApply": [
       "Click \"Apply Online\" to visit the official recruitment page.",
       "Read the detailed notification / advertisement carefully.",
@@ -9193,64 +9434,26 @@
     ],
     "importantDates": [
       {
-        "label": "Last Date to Apply",
-        "date": "2026-07-03T00:00:00.000Z"
-      }
-    ],
-    "salary": "Level 6F to Level 14 (7th CPC)",
-    "location": "All India"
-  },
-  {
-    "id": "RRB-ALP-Recruitment",
-    "title": "RRB ALP Recruitment 2026 – Online Form for 11127 Posts | Last Date 14-06-2026",
-    "department": "RRB ALP",
-    "departmentShort": "RRB ALP",
-    "category": "Railway",
-    "totalPosts": 11127,
-    "lastDate": "2026-06-14T00:00:00.000Z",
-    "notificationDate": "2026-06-10T03:30:04.284Z",
-    "applicationStartDate": "2026-06-10T03:30:04.284Z",
-    "applicationEndDate": "2026-06-14T00:00:00.000Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th Pass + ITI / Act Apprenticeship / Diploma",
-    "applicationFee": {
-      "general": 83775008377250,
-      "sc_st": 41887504188625,
-      "female": 0
-    },
-    "applyLink": "https://www.indgovtjobs.in/2026/02/RRB-ALP-Recruitment.html",
-    "notificationLink": "https://www.indgovtjobs.in/2026/02/RRB-ALP-Recruitment.html",
-    "status": "latest",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for RRB ALP Recruitment 2026 – Online Form for 11127 Posts | Last Date 14-06-2026. Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
+        "label": "Notification Released",
+        "date": "2026-06-16T19:01:09.001Z"
+      },
+      {
+        "label": "Application Start Date",
+        "date": "2026-06-16T19:01:09.001Z"
+      },
       {
         "label": "Last Date to Apply",
-        "date": "2026-06-14T00:00:00.000Z"
+        "date": "2026-06-23T19:01:09.001Z"
       }
     ],
-    "salary": "&#8377;19,900 (Pay Level-2) + Allowances",
+    "salary": "₹25,500 – ₹81,100/- PM",
     "location": "All India"
   },
   {
     "id": "railway-jobs-recruitment",
-    "title": "Latest Railway Jobs 2026 (18864 Vacancies Opening)",
-    "department": "Latest Railway Jobs  18864 Vacancies Opening",
-    "departmentShort": "Latest Railway",
+    "title": "7945 Railway Vacancies 2026 | RRB ALP, Technician, NTPC, Group D Jobs Alert",
+    "department": "7945 Railway Vacancies   RRB ALP Technician NTPC Group D Jobs Alert",
+    "departmentShort": "RRB ALP NTPC",
     "category": "Railway",
     "totalPosts": 30,
     "lastDate": "2026-06-26T03:30:04.284Z",
@@ -9301,63 +9504,9 @@
     "location": "All India"
   },
   {
-    "id": "bank-jobs-openings-august-2013",
-    "title": "Latest Bank Jobs 2026 (12426 Govt Vacancies Opening)",
-    "department": "Latest Bank Jobs  12426 Govt Vacancies Opening",
-    "departmentShort": "Latest Bank",
-    "category": "Banking",
-    "totalPosts": 222,
-    "lastDate": "2026-06-24T03:30:04.284Z",
-    "notificationDate": "2026-06-10T03:30:04.284Z",
-    "applicationStartDate": "2026-06-10T03:30:04.284Z",
-    "applicationEndDate": "2026-06-24T03:30:04.284Z",
-    "ageLimit": {
-      "min": 18,
-      "max": 35,
-      "relaxation": "As per government rules"
-    },
-    "qualification": "10th / 12th / Graduation as per post",
-    "applicationFee": {
-      "general": 0,
-      "sc_st": 0,
-      "female": 0
-    },
-    "applyLink": "https://www.indgovtjobs.in/2013/08/bank-jobs-openings-august-2013.html",
-    "notificationLink": "https://www.indgovtjobs.in/2013/08/bank-jobs-openings-august-2013.html",
-    "status": "latest",
-    "isNew": false,
-    "isUrgent": false,
-    "description": "Government recruitment notification for Latest Bank Jobs 2026 (12426 Govt Vacancies Opening). Check eligibility, age limit, salary, application fee, and how to apply on the official portal.",
-    "howToApply": [
-      "Click \"Apply Online\" to visit the official recruitment page.",
-      "Read the detailed notification / advertisement carefully.",
-      "Register with your email and phone number on the official portal.",
-      "Fill in personal, educational, and experience details.",
-      "Upload photo, signature and required documents.",
-      "Pay the application fee (if applicable) and submit.",
-      "Download and save the confirmation / printout."
-    ],
-    "importantDates": [
-      {
-        "label": "Notification Released",
-        "date": "2026-06-10T03:30:04.284Z"
-      },
-      {
-        "label": "Application Start Date",
-        "date": "2026-06-10T03:30:04.284Z"
-      },
-      {
-        "label": "Last Date to Apply",
-        "date": "2026-06-24T03:30:04.284Z"
-      }
-    ],
-    "salary": "₹35,000 – ₹1,05,000/- PM",
-    "location": "All India"
-  },
-  {
     "id": "Government-Jobs",
-    "title": "Latest Government Jobs 2026 (59576+ All India Govt Job Vacancies)",
-    "department": "Latest Government Jobs  59576 All India Govt Job Vacancies",
+    "title": "Latest Government Jobs 2026 (63632+ All India Govt Job Vacancies)",
+    "department": "Latest Government Jobs  63632 All India Govt Job Vacancies",
     "departmentShort": "Latest Government",
     "category": "State",
     "totalPosts": 5,
